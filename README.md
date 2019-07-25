@@ -1,6 +1,10 @@
 # UFKit
 快速集成表单
-[UFFormView makeFormView:^(UFFormViewMaker * _Nonnull make) {
+
+- (void)viewDidLoad {
+    [super viewDidLoad];
+
+    __block UFFormView *formView = [UFFormView makeFormView:^(UFFormViewMaker * _Nonnull make) {
         make
         .addSection([UFSection makeSection:^(UFSectionMaker * _Nonnull make) {
             make
@@ -97,6 +101,9 @@
                 make
                 .title(@"车牌号")
                 .value(@"鲁A123456")
+                //                .valueStyle([UFTextStyle makeTextStyle:^(UFRowTextStyleMaker * _Nonnull make) {
+                //                    make.textAlignment(NSTextAlignmentLeft);
+                //                }])
                 .name(@"plate")
                 .accessoryType(UFRowAccessorySpace);
             }])
@@ -121,3 +128,8 @@
         }])
         .addToSuperView(self.view);
     }];
+
+    [formView mas_makeConstraints:^(MASConstraintMaker *make) {
+        make.edges.mas_equalTo(self.view);
+    }];
+}
