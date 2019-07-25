@@ -1,0 +1,26 @@
+PODS:
+  - IQKeyboardManager (6.3.0)
+  - Masonry (1.1.0)
+  - SDWebImage (5.0.6):
+    - SDWebImage/Core (= 5.0.6)
+  - SDWebImage/Core (5.0.6)
+
+DEPENDENCIES:
+  - IQKeyboardManager (~> 6.3.0)
+  - Masonry (~> 1.1.0)
+  - SDWebImage (~> 5.0.6)
+
+SPEC REPOS:
+  https://github.com/cocoapods/specs.git:
+    - IQKeyboardManager
+    - Masonry
+    - SDWebImage
+
+SPEC CHECKSUMS:
+  IQKeyboardManager: 2ca9d64893247556f53523dcd8d78641f0ba7c23
+  Masonry: 678fab65091a9290e40e2832a55e7ab731aad201
+  SDWebImage: 920f1a2ff1ca8296ad34f6e0510a1ef1d70ac965
+
+PODFILE CHECKSUM: d506794fb334cc753b081274912d84e4b18b4fd9
+
+COCOAPODS: 1.7.1

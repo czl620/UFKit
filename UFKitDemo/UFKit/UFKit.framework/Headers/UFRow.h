@@ -1,0 +1,90 @@
+//
+//  UFRow.h
+//  UFKit
+//
+//  Created by ChenZhangli QQ893419255 on 2019/6/21.
+//  Copyright © 2019 UFKit. All rights reserved.
+//
+
+#import <UIKit/UIKit.h>
+#import "UFRowValue.h"
+#import "UFRowTitleStyle.h"
+
+NS_ASSUME_NONNULL_BEGIN
+
+typedef NS_ENUM(NSInteger, UFRowAccessoryType) {
+    UFRowAccessoryNone = UITableViewCellAccessoryNone,
+    UFRowAccessoryDisclosureIndicator = UITableViewCellAccessoryDisclosureIndicator,
+    UFRowAccessoryDetailDisclosureButton = UITableViewCellAccessoryDetailDisclosureButton,
+    UFRowAccessoryUITableViewCellAccessoryCheckmark = UITableViewCellAccessoryCheckmark,
+    UFRowAccessoryDetailButton = UITableViewCellAccessoryDetailButton,
+    UFRowAccessorySpace
+};
+
+@class UFRow;
+typedef void(^UFValueDidChanged)(__kindof UFRow *row, __kindof NSString *value);
+typedef void(^UFRowDidSelected)(__kindof UFRow *row);
+
+@class UFRowMaker;
+@interface UFRow : NSObject
+
+// 行名称 (同一表单保证其唯一性)
+@property (nonatomic, copy, nullable) NSString *name;
+
+// 图标
+@property (nonatomic, strong, nullable) UIImage *image;
+
+// 标题
+@property (nonatomic, copy, nullable) NSString *title;
+// 标题样式
+@property (nonatomic, strong, nullable) UFRowTitleStyle *titleStyle;
+
+// 值
+@property (nonatomic, copy, nullable) __kindof NSString *value;
+// 值样式
+@property (nonatomic, strong, nullable) UFTextStyle *valueStyle;
+
+// 行高
+@property (nonatomic, assign) CGFloat height;
+@property (nonatomic, strong) UIColor *seperatorColor;
+
+@property (nonatomic, assign) UFRowAccessoryType accessoryType;
+
+// 值发生改变时回调
+@property (nonatomic, copy) UFValueDidChanged valueDidChanged;
+// 行点击时回调
+@property (nonatomic, copy) UFRowDidSelected rowDidSelected;
+
++ (UFRow *)makeRow:(NS_NOESCAPE void(^)(UFRowMaker *make))block;
+
+@end
+
+
+@interface UFRowMaker : NSObject
+
+- (instancetype)init NS_UNAVAILABLE;
+- (instancetype)initWithRow:(UFRow *)row NS_DESIGNATED_INITIALIZER;
+
+@property (nonatomic, strong, readonly) UFRow *row;
+
+@property (nonatomic, copy, readonly) UFRowMaker *(^image)(UIImage *image);
+
+@property (nonatomic, copy, readonly) UFRowMaker *(^name)(NSString *name);
+
+@property (nonatomic, copy, readonly) UFRowMaker *(^title)(NSString * _Nullable title);
+@property (nonatomic, copy, readonly) UFRowMaker *(^titleStyle)(UFRowTitleStyle *titleStyle);
+
+@property (nonatomic, copy, readonly) UFRowMaker *(^value)(__kindof NSString * _Nullable value);
+@property (nonatomic, copy, readonly) UFRowMaker *(^valueStyle)(UFTextStyle *valueStyle);
+
+@property (nonatomic, copy, readonly) UFRowMaker *(^height)(CGFloat height);
+@property (nonatomic, copy, readonly) UFRowMaker *(^seperatorColor)(UIColor *seperatorColor);
+
+@property (nonatomic, copy, readonly) UFRowMaker *(^accessoryType)(UFRowAccessoryType accessoryType);
+
+@property (nonatomic, copy, readonly) UFRowMaker *(^valueDidChanged)(UFValueDidChanged valueDidChanged);
+@property (nonatomic, copy, readonly) UFRowMaker *(^rowDidSelected)(UFRowDidSelected rowDidSelected);
+
+@end
+
+NS_ASSUME_NONNULL_END

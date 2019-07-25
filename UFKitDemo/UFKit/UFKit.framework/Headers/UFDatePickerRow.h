@@ -1,0 +1,39 @@
+//
+//  UFDatePickerRow.h
+//  UFKit
+//
+//  Created by ChenZhangli QQ893419255 on 2019/6/24.
+//  Copyright © 2019 UFKit. All rights reserved.
+//
+
+#import "UFTextFieldRow.h"
+
+NS_ASSUME_NONNULL_BEGIN
+
+@class UFDatePickerRowMaker;
+@interface UFDatePickerRow : UFTextFieldRow
+
+// 日期样式
+@property (nonatomic, assign) UIDatePickerMode datePickerMode;
+// 日期格式（如:yyyy-MM-dd）
+@property (nonatomic, copy) NSString *dateFormat;
+
++ (UFDatePickerRow *)makeDatePickerRow:(NS_NOESCAPE void(^)(UFDatePickerRowMaker *make))block;
+
+@end
+
+@interface UFDatePickerRowMaker : UFTextFieldRowMaker
+
+- (instancetype)init NS_UNAVAILABLE;
+- (instancetype)initWithRow:(UFRow *)row NS_UNAVAILABLE;
+- (instancetype)initWithTextFieldRow:(UFTextFieldRow *)row NS_UNAVAILABLE;
+- (instancetype)initWithDatePickerRow:(UFDatePickerRow *)row NS_DESIGNATED_INITIALIZER;
+
+@property (nonatomic, strong, readonly) UFDatePickerRow *datePickerRow;
+
+@property (nonatomic, copy, readonly) UFDatePickerRowMaker *(^datePickerMode)(UIDatePickerMode datePickerMode);
+@property (nonatomic, copy, readonly) UFDatePickerRowMaker *(^dateFormat)(NSString * _Nullable dateFormat);
+
+@end
+
+NS_ASSUME_NONNULL_END
