@@ -8,6 +8,8 @@
 ### 使用：
 
 ```c
+
+pod 'UFKit', '~> 1.0.0'
  
  - (void)viewDidLoad {
     [super viewDidLoad];
