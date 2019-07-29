@@ -39,8 +39,8 @@ s.resources          = "UFKit/UFKit.bundle"
 #依赖库
 s.frameworks   = 'UIKit','Foundation'
 
-s.dependency = 'Masonry', '~> 1.1.0'
-s.dependency = 'SDWebImage', '~> 5.0.6'
-s.dependency = 'IQKeyboardManager', '~> 6.3.0'
+s.dependency  'Masonry', '~> 1.1.0'
+s.dependency  'SDWebImage', '~> 5.0.6'
+s.dependency  'IQKeyboardManager', '~> 6.3.0'
 
 end
