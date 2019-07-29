@@ -1,9 +1,5 @@
 
-### 效果：
 
-![](https://imgconvert.csdnimg.cn/aHR0cHM6Ly91c2VyLWdvbGQtY2RuLnhpdHUuaW8vMjAxOS83LzI1LzE2YzI4NzI3NjlhMjA2YzI)  
-
-![](https://img-blog.csdnimg.cn/20190726140738297.png)
 
 ### 使用：
 
@@ -152,5 +148,9 @@ pod 'UFKit', '~> 1.0.0'
 'IQKeyboardManager', '~> 6.3.0'
 
 
+### 效果：
 
+![](https://imgconvert.csdnimg.cn/aHR0cHM6Ly91c2VyLWdvbGQtY2RuLnhpdHUuaW8vMjAxOS83LzI1LzE2YzI4NzI3NjlhMjA2YzI)  
+
+![](https://img-blog.csdnimg.cn/20190726140738297.png)
 
