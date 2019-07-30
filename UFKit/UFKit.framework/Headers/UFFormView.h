@@ -103,6 +103,7 @@ typedef void(^UFActionsDidClicked)(UIButton *button, NSInteger index);
  */
 + (UFFormView *)makeFormView:(NS_NOESCAPE void(^)(UFFormViewMaker *make))block;
 
+
 @end
 
 
@@ -127,6 +128,7 @@ typedef void(^UFActionsDidClicked)(UIButton *button, NSInteger index);
 @property (nonatomic, copy, readonly) UFFormViewMaker *(^addToSuperView)(UIView *superView);
 
 @property (nonatomic, copy, readonly) UFFormViewMaker *(^scrollEnabled)(BOOL scrollEnabled);
+
 
 @end
 

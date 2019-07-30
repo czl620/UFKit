@@ -53,8 +53,6 @@ typedef void(^UFKeyboardDidDone)(__kindof UFRow <UFRowInput> *row, NSString *tex
 // 是否允许复制粘贴选择等
 @property (nonatomic, assign) BOOL canPerformAction;
 
-@property (nonatomic, assign) BOOL becomeFirstResponder;
-
 @end
 
 

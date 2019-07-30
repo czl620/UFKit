@@ -37,7 +37,6 @@ NS_ASSUME_NONNULL_BEGIN
 
 @property (nonatomic, copy, readonly) UFTextViewRowMaker *(^barTintColor)(UIColor *barTintColor);
 @property (nonatomic, copy, readonly) UFTextViewRowMaker *(^keyboardDidDone)(UFKeyboardDidDone keyboardDidDone);
-@property (nonatomic, copy, readonly) UFTextViewRowMaker *(^becomeFirstResponder)(BOOL becomeFirstResponder);
 
 @end
 

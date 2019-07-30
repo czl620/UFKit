@@ -16,6 +16,7 @@
 #import <UFKit/UFTextFieldRow.h>
 #import <UFKit/UFDatePickerRow.h>
 #import <UFKit/UFPickerViewRow.h>
+#import <UFKit/UFAreaPickerRow.h>
 #import <UFKit/UFMultiplePickerViewRow.h>
 #import <UFKit/UFTextViewRow.h>
 #import <UFKit/UFMobileCodeRow.h>

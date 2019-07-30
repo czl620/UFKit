@@ -135,18 +135,26 @@
             make
             .titleForState(@"提交", UIControlStateNormal)
             .titleColorForState([UIColor whiteColor], UIControlStateNormal)
-            .cornerRadius(17)
+            .cornerRadius(22)
             .backgroundColor([UIColor redColor])
             .actionButtonClick(^(UFActionButton * _Nonnull button) {
                 NSLog(@"提交的信息：\n%@",[formView toDictionary]);
             });
         }])
-        .addToSuperView(self.view);
+        .addToSuperView(self.view)
+        .becomeFirstResponder(UFMakeRange(0, 1));
     }];
+
+
 
     [formView mas_makeConstraints:^(MASConstraintMaker *make) {
         make.edges.mas_equalTo(self.view);
     }];
+
+    [formView reloadData];
+
+    UFTextFieldRow *r = [formView findRowInRange:UFMakeRange(0, 1)];
+    [r.textField becomeFirstResponder];
 }
 
 @end
