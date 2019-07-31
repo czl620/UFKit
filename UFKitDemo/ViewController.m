@@ -52,9 +52,7 @@
             }])
             .addRow([UFTextFieldRow makeTextFieldRow:^(UFTextFieldRowMaker * _Nonnull make) {
                 make
-                .maxLength(11)
-                .regex(@"^[1][3-9]*$")
-                .keyboardType(UIKeyboardTypeNumberPad)
+                .limitType(UFInputLimitTypeMobile)
                 .title(@"联系方式")
                 .name(@"mobile")
                 .accessoryType(UFRowAccessorySpace);
@@ -97,6 +95,12 @@
                 .name(@"birthday")
                 .accessoryType(UFRowAccessoryDisclosureIndicator);
             }])
+            .addRow([UFAreaPickerRow makeAreaPickerRow:^(UFAreaPickerRowMaker * _Nonnull make) {
+                make
+                .title(@"地址")
+                .name(@"address")
+                .accessoryType(UFRowAccessoryDisclosureIndicator);
+            }])
             .addRow([UFSwitchRow makeSwitchRow:^(UFSwitchRowMaker * _Nonnull make) {
                 make
                 .tintColor([UIColor redColor])
@@ -115,10 +119,7 @@
             .addRow([UFPlateNumberRow makePlateNumberRow:^(UFPlateNumberRowMaker * _Nonnull make) {
                 make
                 .title(@"车牌号")
-                .value(@"鲁A123456")
-                //                .valueStyle([UFTextStyle makeTextStyle:^(UFRowTextStyleMaker * _Nonnull make) {
-                //                    make.textAlignment(NSTextAlignmentLeft);
-                //                }])
+                .value(@"鲁A12345")
                 .name(@"plate")
                 .accessoryType(UFRowAccessorySpace);
             }])
@@ -141,20 +142,13 @@
                 NSLog(@"提交的信息：\n%@",[formView toDictionary]);
             });
         }])
-        .addToSuperView(self.view)
-        .becomeFirstResponder(UFMakeRange(0, 1));
+        .addToSuperView(self.view);
     }];
-
-
 
     [formView mas_makeConstraints:^(MASConstraintMaker *make) {
         make.edges.mas_equalTo(self.view);
     }];
 
-    [formView reloadData];
-
-    UFTextFieldRow *r = [formView findRowInRange:UFMakeRange(0, 1)];
-    [r.textField becomeFirstResponder];
 }
 
 @end
