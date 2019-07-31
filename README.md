@@ -2,7 +2,7 @@
 
 ```c
 
-pod 'UFKit', '~> 1.0.0'
+pod 'UFKit'
  
  - (void)viewDidLoad {
     [super viewDidLoad];
