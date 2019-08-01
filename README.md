@@ -4,13 +4,25 @@
 
 pod 'UFKit'
  
- - (void)viewDidLoad {
+   - (void)viewDidLoad {
     [super viewDidLoad];
 
     __block UFFormView *formView = [UFFormView makeFormView:^(UFFormViewMaker * _Nonnull make) {
         make
+        .rowHeight(50)
         .addSection([UFSection makeSection:^(UFSectionMaker * _Nonnull make) {
             make
+            .titleStyle([UFRowTitleStyle makeTitleStyle:^(UFRowTitleStyleMaker * _Nonnull make) {
+                make
+                .font([UIFont systemFontOfSize:15])
+                .textAlignment(NSTextAlignmentLeft);
+            }])
+            .valueStyle([UFTextStyle makeTextStyle:^(UFRowTextStyleMaker * _Nonnull make) {
+                make
+                .font([UIFont systemFontOfSize:15])
+                .color([UIColor darkTextColor])
+                .textAlignment(NSTextAlignmentRight);
+            }])
             .addRow([UFAvatarRow makeAvatarRow:^(UFAvatarRowMaker * _Nonnull make) {
                 make
                 .cornerRadius(30)
@@ -25,8 +37,9 @@ pod 'UFKit'
             }])
             .addRow([UFTextFieldRow makeTextFieldRow:^(UFTextFieldRowMaker * _Nonnull make) {
                 make
+                .limitType(UFInputLimitTypeIdCard)
                 .title(@"姓名")
-                .value(@"苹果")
+                .value(@"")
                 .name(@"name")
                 .accessoryType(UFRowAccessorySpace);
             }])
@@ -40,9 +53,7 @@ pod 'UFKit'
             }])
             .addRow([UFTextFieldRow makeTextFieldRow:^(UFTextFieldRowMaker * _Nonnull make) {
                 make
-                .maxLength(11)
-                .regex(@"^[1][3-9]*$")
-                .keyboardType(UIKeyboardTypeNumberPad)
+                .limitType(UFInputLimitTypeMobile)
                 .title(@"联系方式")
                 .name(@"mobile")
                 .accessoryType(UFRowAccessorySpace);
@@ -50,13 +61,13 @@ pod 'UFKit'
             .addRow([UFMobileCodeRow makeCodeRow:^(UFCodeRowMaker * _Nonnull make) {
                 make
                 .codeStyle([UFMobileCodeStyle makeMobileCodeStyle:^(UFMobileCodeStyleMaker * _Nonnull make) {
-
+                    
                 }])
                 .codeDidClicked(^(__kindof UFMobileCodeRow * _Nonnull row, UIButton * _Nonnull button) {
                     NSLog(@"点了了获取验证码");
                 })
                 .maxLength(4)
-                .keyboardType(UIKeyboardTypeNumberPad)
+                .limitType(UFInputLimitTypeNumbers)
                 .title(@"验证码")
                 .name(@"code")
                 .accessoryType(UFRowAccessorySpace);
@@ -85,6 +96,13 @@ pod 'UFKit'
                 .name(@"birthday")
                 .accessoryType(UFRowAccessoryDisclosureIndicator);
             }])
+            .addRow([UFAreaPickerRow makeAreaPickerRow:^(UFAreaPickerRowMaker * _Nonnull make) {
+                make
+                .areaSeparator(@",")
+                .title(@"地址")
+                .name(@"address")
+                .accessoryType(UFRowAccessoryDisclosureIndicator);
+            }])
             .addRow([UFSwitchRow makeSwitchRow:^(UFSwitchRowMaker * _Nonnull make) {
                 make
                 .tintColor([UIColor redColor])
@@ -103,13 +121,18 @@ pod 'UFKit'
             .addRow([UFPlateNumberRow makePlateNumberRow:^(UFPlateNumberRowMaker * _Nonnull make) {
                 make
                 .title(@"车牌号")
-                .value(@"鲁A123456")
+                .value(@"鲁A12345")
+                .titleStyle([UFRowTitleStyle makeTitleStyle:^(UFRowTitleStyleMaker * _Nonnull make) {
+                    make
+                    .width([UIScreen mainScreen].bounds.size.width - 175)
+                    .textAlignment(NSTextAlignmentLeft);
+                }])
                 .name(@"plate")
                 .accessoryType(UFRowAccessorySpace);
             }])
             .addRow([UFTextViewRow makeTextViewRow:^(UFTextViewRowMaker * _Nonnull make) {
                 make
-                .maxLength(120)
+                .maxLength(0)
                 .title(@"个人简介")
                 .value(@"苹果公司是美国一家高科技公司。由史蒂夫·乔布斯、斯蒂夫·沃兹尼亚克和罗·韦恩等人于1976年4月1日创立，总部位于加利福尼亚州的库比蒂诺")
                 .name(@"introduction")
