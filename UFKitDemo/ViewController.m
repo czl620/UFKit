@@ -65,6 +65,11 @@
                 .avatarImage([UIImage imageNamed:@"touxiang"])
                 .avatarDidSelected(^(__kindof UFAvatarRow * _Nonnull row, UIImageView * _Nonnull avatarView) {
                     NSLog(@"你点击了头像");
+                    [weakSelf ufk_pickerImageForResult:^(UIImage * _Nonnull image) {
+                        row.avatarImage = image;
+                        row.value = nil;
+                        avatarView.image = image;
+                    }];
                 })
                 .title(@"头像")
                 .value(@"http://img0.imgtn.bdimg.com/it/u=2572957358,1108684168&fm=26&gp=0.jpg")
@@ -101,6 +106,7 @@
                 }])
                 .codeDidClicked(^(__kindof UFMobileCodeRow * _Nonnull row, UIButton * _Nonnull button) {
                     NSLog(@"点了了获取验证码");
+                    [button ufk_countDown:60];
                 })
                 .maxLength(4)
                 .limitType(UFInputLimitTypeNumbers)
