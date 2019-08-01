@@ -20,6 +20,10 @@
 		<data>
 		MbmCSsA+DROI44AZdDgFaaKXlc0=
 		</data>
+		<key>Headers/UFCustomPickerViewRow.h</key>
+		<data>
+		Gs+CJl+3uRj/DykDkn8XVBfPriQ=
+		</data>
 		<key>Headers/UFDatePickerRow.h</key>
 		<data>
 		6Wd1byUAarbUyMVxvyLylHjBGQg=
@@ -30,7 +34,7 @@
 		</data>
 		<key>Headers/UFKit.h</key>
 		<data>
-		HR8YcDudn+YezhY5KObJFHQB0D4=
+		6xAHGR00Zv7mmhHSo7mNNCbgwdY=
 		</data>
 		<key>Headers/UFMobileCodeRow.h</key>
 		<data>
@@ -102,7 +106,7 @@
 		</data>
 		<key>Info.plist</key>
 		<data>
-		vHcItslVTe7fjy0w3/AG19DOqjg=
+		Z75UpttDnZ1gNPb2LCFIVfHnWfs=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -155,6 +159,17 @@
 			OAn8OuTbbO9kCVeK2MiJbKBbZbCRDwFrpheJQHFcsrs=
 			</data>
 		</dict>
+		<key>Headers/UFCustomPickerViewRow.h</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			Gs+CJl+3uRj/DykDkn8XVBfPriQ=
+			</data>
+			<key>hash2</key>
+			<data>
+			OCEXg22iZEjvScnzOhNXKRDhVqSLUGn8SlP/gGHpUwI=
+			</data>
+		</dict>
 		<key>Headers/UFDatePickerRow.h</key>
 		<dict>
 			<key>hash</key>
@@ -181,11 +196,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			HR8YcDudn+YezhY5KObJFHQB0D4=
+			6xAHGR00Zv7mmhHSo7mNNCbgwdY=
 			</data>
 			<key>hash2</key>
 			<data>
-			2h7kvftv35wQqq/r0REFVjEoHIbJwE8P1bWNEbwlN2k=
+			cCKRObRlgpV10IWanPPxM5nd7hm8aeHKVM9RMjhoCDM=
 			</data>
 		</dict>
 		<key>Headers/UFMobileCodeRow.h</key>
