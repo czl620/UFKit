@@ -10,7 +10,12 @@
 #import <UFKit/UFKit.h>
 #import "Masonry.h"
 
-@interface ViewController ()
+
+@interface ViewController () <UFCustomPickerViewRowDelegate>
+
+@property (nonatomic, copy) NSArray *customArray;
+@property (nonatomic, copy) NSDictionary *currentDict;
+@property (nonatomic, copy) NSString *currentStr;
 
 @end
 
@@ -19,10 +24,41 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
 
+    _customArray = @[@{@"title":@"A",
+                       @"children":@[@"a1",
+                                     @"a2",
+                                     @"a3"]
+                       },
+                     @{@"title":@"B",
+                       @"children":@[@"b1",
+                                     @"b2",
+                                     @"b3"]
+                       },
+                     @{@"title":@"C",
+                       @"children":@[@"c1",
+                                     @"c2",
+                                     @"c3"]
+                       },
+                     ];
+    _currentDict = _customArray[0];
+
+    __weak typeof(self) weakSelf = self;
     __block UFFormView *formView = [UFFormView makeFormView:^(UFFormViewMaker * _Nonnull make) {
         make
+        .rowHeight(50)
         .addSection([UFSection makeSection:^(UFSectionMaker * _Nonnull make) {
             make
+            .titleStyle([UFRowTitleStyle makeTitleStyle:^(UFRowTitleStyleMaker * _Nonnull make) {
+                make
+                .font([UIFont systemFontOfSize:15])
+                .textAlignment(NSTextAlignmentLeft);
+            }])
+            .valueStyle([UFTextStyle makeTextStyle:^(UFRowTextStyleMaker * _Nonnull make) {
+                make
+                .font([UIFont systemFontOfSize:15])
+                .color([UIColor darkTextColor])
+                .textAlignment(NSTextAlignmentRight);
+            }])
             .addRow([UFAvatarRow makeAvatarRow:^(UFAvatarRowMaker * _Nonnull make) {
                 make
                 .cornerRadius(30)
@@ -37,8 +73,9 @@
             }])
             .addRow([UFTextFieldRow makeTextFieldRow:^(UFTextFieldRowMaker * _Nonnull make) {
                 make
+                .limitType(UFInputLimitTypeIdCard)
                 .title(@"姓名")
-                .value(@"苹果")
+                .value(@"")
                 .name(@"name")
                 .accessoryType(UFRowAccessorySpace);
             }])
@@ -66,7 +103,7 @@
                     NSLog(@"点了了获取验证码");
                 })
                 .maxLength(4)
-                .keyboardType(UIKeyboardTypeNumberPad)
+                .limitType(UFInputLimitTypeNumbers)
                 .title(@"验证码")
                 .name(@"code")
                 .accessoryType(UFRowAccessorySpace);
@@ -97,6 +134,7 @@
             }])
             .addRow([UFAreaPickerRow makeAreaPickerRow:^(UFAreaPickerRowMaker * _Nonnull make) {
                 make
+                .areaSeparator(@",")
                 .title(@"地址")
                 .name(@"address")
                 .accessoryType(UFRowAccessoryDisclosureIndicator);
@@ -120,12 +158,29 @@
                 make
                 .title(@"车牌号")
                 .value(@"鲁A12345")
+                .titleStyle([UFRowTitleStyle makeTitleStyle:^(UFRowTitleStyleMaker * _Nonnull make) {
+                    make
+                    .width([UIScreen mainScreen].bounds.size.width - 175)
+                    .textAlignment(NSTextAlignmentLeft);
+                }])
                 .name(@"plate")
                 .accessoryType(UFRowAccessorySpace);
             }])
+            .addRow([UFCustomPickerViewRow makeCustomPickerViewRow:^(UFCustomPickerViewRowMaker * _Nonnull make) {
+                make.
+                delegate(weakSelf)
+                .valueDidSelected(^(__kindof UFCustomPickerViewRow * _Nonnull row, UITextField * _Nonnull textField) {
+                    NSString *value = [NSString stringWithFormat:@"%@%@",weakSelf.currentDict[@"title"],weakSelf.currentStr];
+                    row.value = value;
+                    textField.text = value;
+                })
+                .title(@"选择器")
+                .name(@"custom")
+                .accessoryType(UFRowAccessoryDisclosureIndicator);;
+            }])
             .addRow([UFTextViewRow makeTextViewRow:^(UFTextViewRowMaker * _Nonnull make) {
                 make
-                .maxLength(120)
+                .maxLength(0)
                 .title(@"个人简介")
                 .value(@"苹果公司是美国一家高科技公司。由史蒂夫·乔布斯、斯蒂夫·沃兹尼亚克和罗·韦恩等人于1976年4月1日创立，总部位于加利福尼亚州的库比蒂诺")
                 .name(@"introduction")
@@ -136,7 +191,7 @@
             make
             .titleForState(@"提交", UIControlStateNormal)
             .titleColorForState([UIColor whiteColor], UIControlStateNormal)
-            .cornerRadius(22)
+            .cornerRadius(17)
             .backgroundColor([UIColor redColor])
             .actionButtonClick(^(UFActionButton * _Nonnull button) {
                 NSLog(@"提交的信息：\n%@",[formView toDictionary]);
@@ -149,6 +204,40 @@
         make.edges.mas_equalTo(self.view);
     }];
 
+
+    // 查找某一行
+//    UFRow *row_range = [formView findRowInRange:UFMakeRange(0, 9)];
+//    UFRow *row_name = [formView findRowByName:@"name"];
+
+
 }
+
+- (NSInteger)numberOfComponentsInPickerViewRow:(nonnull UFCustomPickerViewRow *)pickerViewRow {
+    return 2;
+}
+
+- (NSInteger)pickerViewRow:(nonnull UFCustomPickerViewRow *)pickerViewRow numberOfRowsInComponent:(NSInteger)component {
+    if (component == 0) {
+        return [_customArray count];
+    }
+    return ((NSArray *)(_currentDict[@"children"])).count;
+}
+
+- (nonnull NSString *)pickerViewRow:(nonnull UFCustomPickerViewRow *)pickerViewRow titleForRow:(NSInteger)row forComponent:(NSInteger)component {
+    if (component == 0) {
+        return _customArray[row][@"title"];
+    }
+    return ((NSArray *)(_currentDict[@"children"]))[row];
+}
+
+- (void)pickerViewRow:(nonnull UFCustomPickerViewRow *)pickerViewRow didSelectRow:(NSInteger)row inComponent:(NSInteger)component {
+    if (component == 0) {
+        _currentDict = _customArray[row];
+        _currentStr = _currentDict[@"children"][0];
+    } else {
+        _currentStr = _currentDict[@"children"][row];
+    }
+}
+
 
 @end
