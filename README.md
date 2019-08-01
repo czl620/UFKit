@@ -150,7 +150,7 @@ pod 'UFKit'
 
 ## 效果：
 
-![](https://imgconvert.csdnimg.cn/aHR0cHM6Ly91c2VyLWdvbGQtY2RuLnhpdHUuaW8vMjAxOS83LzI1LzE2YzI4NzI3NjlhMjA2YzI)  
+![](https://user-gold-cdn.xitu.io/2019/8/1/16c4adcabc513e84?w=1242&h=2688&f=png&s=256793)  
 
 ![](https://img-blog.csdnimg.cn/20190726140738297.png)
 
