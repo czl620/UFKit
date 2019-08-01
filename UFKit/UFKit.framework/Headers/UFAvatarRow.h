@@ -19,6 +19,10 @@ typedef void(^UFAvatarDidSelected)(__kindof UFAvatarRow *row, UIImageView *avata
 // 头像圆角
 @property (nonatomic, assign) CGFloat cornerRadius;
 
+/*
+ *  头像，当网络图片作为头像时，加载失败情况下可以作为占位头像
+ *  如果不使用网络图片仅使用UIImage作为头像，需将value设为nil
+ */
 @property (nonatomic, strong) UIImage *avatarImage;
 
 // 点击头像时回调

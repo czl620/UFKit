@@ -18,7 +18,7 @@
 		</data>
 		<key>Headers/UFAvatarRow.h</key>
 		<data>
-		MbmCSsA+DROI44AZdDgFaaKXlc0=
+		dKGduBUTfVQMop0iWv3SyFaKo7U=
 		</data>
 		<key>Headers/UFCustomPickerViewRow.h</key>
 		<data>
@@ -34,7 +34,7 @@
 		</data>
 		<key>Headers/UFKit.h</key>
 		<data>
-		mmi30/L5kURnMcwhXsvRb53xTg4=
+		NCICaKPa0MZiJdHvB4YzgDdxUEA=
 		</data>
 		<key>Headers/UFMobileCodeRow.h</key>
 		<data>
@@ -104,6 +104,14 @@
 		<data>
 		9RLj0UE5a2CWGUTymuFbsAMO5ek=
 		</data>
+		<key>Headers/UIButton+UFKit.h</key>
+		<data>
+		tf/K984GWVC5hRjMYBGU7xIp004=
+		</data>
+		<key>Headers/UIViewController+UFKit.h</key>
+		<data>
+		eV7YtQqD6CjZ6TMYqQDK3UuTxhE=
+		</data>
 		<key>Info.plist</key>
 		<data>
 		Z75UpttDnZ1gNPb2LCFIVfHnWfs=
@@ -152,11 +160,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			MbmCSsA+DROI44AZdDgFaaKXlc0=
+			dKGduBUTfVQMop0iWv3SyFaKo7U=
 			</data>
 			<key>hash2</key>
 			<data>
-			OAn8OuTbbO9kCVeK2MiJbKBbZbCRDwFrpheJQHFcsrs=
+			TZF9Kv5yz1LmwEN4OfB7uRoSIJEdSMqaiLmJvb6OaRk=
 			</data>
 		</dict>
 		<key>Headers/UFCustomPickerViewRow.h</key>
@@ -196,11 +204,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			mmi30/L5kURnMcwhXsvRb53xTg4=
+			NCICaKPa0MZiJdHvB4YzgDdxUEA=
 			</data>
 			<key>hash2</key>
 			<data>
-			oKx+ZHTU9/7jFYrauoofGde9ZuKrjNSX3KRFgXHCzTc=
+			rCxFKJNqjtVLFAzRyzBkaaDbrs96Ia1lA+UVUJpX1qw=
 			</data>
 		</dict>
 		<key>Headers/UFMobileCodeRow.h</key>
@@ -388,6 +396,28 @@
 			<key>hash2</key>
 			<data>
 			077FuL0385SP1SfpBUpc+18swovyK5fQSUtsxOc+wDY=
+			</data>
+		</dict>
+		<key>Headers/UIButton+UFKit.h</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			tf/K984GWVC5hRjMYBGU7xIp004=
+			</data>
+			<key>hash2</key>
+			<data>
+			qBnkwbXA7aK7Xb6xX9blaPpLrh1/TPDh54FTUcRLmPI=
+			</data>
+		</dict>
+		<key>Headers/UIViewController+UFKit.h</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			eV7YtQqD6CjZ6TMYqQDK3UuTxhE=
+			</data>
+			<key>hash2</key>
+			<data>
+			YKRPBVNTLZoda/AJneBQLUqx64RC3gJCAJzR1qDRj4s=
 			</data>
 		</dict>
 		<key>Modules/module.modulemap</key>
