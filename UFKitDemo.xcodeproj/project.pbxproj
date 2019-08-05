@@ -7,7 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		4C0F7F1222F82D8D0025A9C3 /* area.plist in Resources */ = {isa = PBXBuildFile; fileRef = 4C0F7F1122F82D8D0025A9C3 /* area.plist */; };
 		4CA0CD0622C4B0ED00EAB6DE /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 4CA0CD0522C4B0ED00EAB6DE /* AppDelegate.m */; };
 		4CA0CD0922C4B0ED00EAB6DE /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4CA0CD0822C4B0ED00EAB6DE /* ViewController.m */; };
 		4CA0CD0C22C4B0ED00EAB6DE /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4CA0CD0A22C4B0ED00EAB6DE /* Main.storyboard */; };
@@ -18,7 +17,6 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		4C0F7F1122F82D8D0025A9C3 /* area.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = area.plist; sourceTree = "<group>"; };
 		4CA0CD0122C4B0ED00EAB6DE /* UFKitDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = UFKitDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		4CA0CD0422C4B0ED00EAB6DE /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		4CA0CD0522C4B0ED00EAB6DE /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -71,7 +69,6 @@
 				4CA0CD0522C4B0ED00EAB6DE /* AppDelegate.m */,
 				4CA0CD0722C4B0ED00EAB6DE /* ViewController.h */,
 				4CA0CD0822C4B0ED00EAB6DE /* ViewController.m */,
-				4C0F7F1122F82D8D0025A9C3 /* area.plist */,
 				4CA0CD0A22C4B0ED00EAB6DE /* Main.storyboard */,
 				4CA0CD0D22C4B0EE00EAB6DE /* Assets.xcassets */,
 				4CA0CD0F22C4B0EE00EAB6DE /* LaunchScreen.storyboard */,
@@ -159,7 +156,6 @@
 			files = (
 				4CA0CD1122C4B0EE00EAB6DE /* LaunchScreen.storyboard in Resources */,
 				4CA0CD0E22C4B0EE00EAB6DE /* Assets.xcassets in Resources */,
-				4C0F7F1222F82D8D0025A9C3 /* area.plist in Resources */,
 				4CA0CD0C22C4B0ED00EAB6DE /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
