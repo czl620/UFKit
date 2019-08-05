@@ -4,8 +4,6 @@ inhibit_all_warnings!
 
 target 'UFKitDemo' do
   
-    pod 'Masonry', '~> 1.1.0'
-    pod 'SDWebImage', '~> 5.0.6'
-    pod 'IQKeyboardManager', '~> 6.3.0'
+    pod 'UFKit', '~> 1.0.4'
 
 end
