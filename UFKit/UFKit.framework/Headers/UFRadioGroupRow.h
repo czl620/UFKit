@@ -15,7 +15,7 @@ NS_ASSUME_NONNULL_BEGIN
 @interface UFRadioGroupRow : UFRow
 
 // 选择项
-@property (nonatomic, strong) NSArray <__kindof NSString *> *itemArray;
+@property (nonatomic, strong) NSArray <NSString *> *itemArray;
 // 单选样式
 @property (nonatomic, strong, nullable) UFRadioGroupStyle *radioGroupStyle;
 
@@ -35,7 +35,7 @@ NS_ASSUME_NONNULL_BEGIN
 @property (nonatomic, strong, readonly) UFRadioGroupRow *radioGroupRow;
 
 @property (nonatomic, copy, readonly) UFRadioGroupRowMaker *(^radioGroupStyle)(UFRadioGroupStyle * _Nullable radioGroupStyle);
-@property (nonatomic, copy, readonly) UFRadioGroupRowMaker *(^itemArray)(NSArray <__kindof NSString *> * _Nullable itemArray);
+@property (nonatomic, copy, readonly) UFRadioGroupRowMaker *(^itemArray)(NSArray <NSString *> * _Nullable itemArray);
 
 @property (nonatomic, copy, readonly) UFRadioGroupRowMaker *(^editable)(BOOL editable);
 

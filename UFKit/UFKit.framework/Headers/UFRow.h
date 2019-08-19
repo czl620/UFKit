@@ -22,7 +22,7 @@ typedef NS_ENUM(NSInteger, UFRowAccessoryType) {
 };
 
 @class UFRow;
-typedef void(^UFValueDidChanged)(__kindof UFRow *row, __kindof NSString *value);
+typedef void(^UFValueDidChanged)(__kindof UFRow *row, NSString *value);
 typedef void(^UFRowDidSelected)(__kindof UFRow *row);
 
 @class UFRowMaker;
@@ -40,7 +40,7 @@ typedef void(^UFRowDidSelected)(__kindof UFRow *row);
 @property (nonatomic, strong, nullable) UFRowTitleStyle *titleStyle;
 
 // 值
-@property (nonatomic, copy, nullable) __kindof NSString *value;
+@property (nonatomic, copy, nullable) NSString *value;
 // 值样式
 @property (nonatomic, strong, nullable) UFTextStyle *valueStyle;
 
@@ -74,7 +74,7 @@ typedef void(^UFRowDidSelected)(__kindof UFRow *row);
 @property (nonatomic, copy, readonly) UFRowMaker *(^title)(NSString * _Nullable title);
 @property (nonatomic, copy, readonly) UFRowMaker *(^titleStyle)(UFRowTitleStyle *titleStyle);
 
-@property (nonatomic, copy, readonly) UFRowMaker *(^value)(__kindof NSString * _Nullable value);
+@property (nonatomic, copy, readonly) UFRowMaker *(^value)(NSString * _Nullable value);
 @property (nonatomic, copy, readonly) UFRowMaker *(^valueStyle)(UFTextStyle *valueStyle);
 
 @property (nonatomic, copy, readonly) UFRowMaker *(^height)(CGFloat height);
