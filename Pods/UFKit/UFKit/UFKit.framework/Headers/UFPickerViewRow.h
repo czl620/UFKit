@@ -14,7 +14,7 @@ NS_ASSUME_NONNULL_BEGIN
 @interface UFPickerViewRow : UFTextFieldRow
 
 // 选择项
-@property (nonatomic, strong) NSArray <__kindof NSString *> *itemArray;
+@property (nonatomic, strong) NSArray <NSString *> *itemArray;
 
 + (UFPickerViewRow *)makePickerViewRow:(NS_NOESCAPE void(^)(UFPickerViewRowMaker *make))block;
 
@@ -29,7 +29,7 @@ NS_ASSUME_NONNULL_BEGIN
 
 @property (nonatomic, strong, readonly) UFPickerViewRow *pickerViewRow;
 
-@property (nonatomic, copy, readonly) UFPickerViewRowMaker *(^itemArray)(NSArray <__kindof NSString *> * _Nullable itemArray);
+@property (nonatomic, copy, readonly) UFPickerViewRowMaker *(^itemArray)(NSArray <NSString *> * _Nullable itemArray);
 
 @end
 

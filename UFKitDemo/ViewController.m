@@ -50,6 +50,7 @@
             make
             .titleStyle([UFRowTitleStyle makeTitleStyle:^(UFRowTitleStyleMaker * _Nonnull make) {
                 make
+                .width(100)
                 .font([UIFont systemFontOfSize:15])
                 .textAlignment(NSTextAlignmentLeft);
             }])
@@ -183,6 +184,20 @@
                 .title(@"自定义选择器")
                 .name(@"custom")
                 .accessoryType(UFRowAccessoryDisclosureIndicator);;
+            }])
+            .addRow([UFSubtitleRow makeSubtitleRow:^(UFSubtitleRowMaker * _Nonnull make) {
+                make
+                .subtitle(@"推荐支付宝用户使用")
+                .subtitleStyle([UFRowTitleStyle makeTitleStyle:^(UFRowTitleStyleMaker * _Nonnull make) {
+                    make
+                    .width(140)
+                    .font([UIFont systemFontOfSize:12])
+                    .color([UIColor lightGrayColor]);
+                }])
+                .accessoryImage([UIImage imageNamed:@"checked"])
+                .height(80)
+                .title(@"支付宝")
+                .image([UIImage imageNamed:@"alipay"]);
             }])
             .addRow([UFTextViewRow makeTextViewRow:^(UFTextViewRowMaker * _Nonnull make) {
                 make

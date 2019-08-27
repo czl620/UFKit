@@ -10,12 +10,11 @@
 
 NS_ASSUME_NONNULL_BEGIN
 
-@interface UFRowValue : NSString
+@interface NSString (rowValue)
 
-// 额外信息
-@property (nonatomic, strong, nullable) id value;
+// 扩展字段
+@property (nonatomic, strong) id ext;
 
 @end
-
 
 NS_ASSUME_NONNULL_END

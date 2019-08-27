@@ -2,8 +2,8 @@
 //  UFMutablePickerView.h
 //  UFKit
 //
-//  Created by ChenZhangli on 2019/6/29.
-//  Copyright © 2019 UFKIT. All rights reserved.
+//  Created by ChenZhangli QQ893419255 on 2019/6/29.
+//  Copyright © 2019 UFKit. All rights reserved.
 //
 
 #import <UFKit/UFKit.h>
@@ -14,7 +14,7 @@ NS_ASSUME_NONNULL_BEGIN
 @interface UFMultiplePickerViewRow : UFTextFieldRow
 
 // 选择项
-@property (nonatomic, strong) NSArray <__kindof NSString *> *itemArray;
+@property (nonatomic, strong) NSArray <NSString *> *itemArray;
 
 @property (nonatomic, strong) UIColor *checkmarkColor;
 
@@ -31,11 +31,10 @@ NS_ASSUME_NONNULL_BEGIN
 
 @property (nonatomic, strong, readonly) UFMultiplePickerViewRow *pickerViewRow;
 
-@property (nonatomic, copy, readonly) UFMultiplePickerViewRowMaker *(^itemArray)(NSArray <__kindof NSString *> * _Nullable itemArray);
+@property (nonatomic, copy, readonly) UFMultiplePickerViewRowMaker *(^itemArray)(NSArray <NSString *> * _Nullable itemArray);
 
 @property (nonatomic, copy, readonly) UFMultiplePickerViewRowMaker *(^checkmarkColor)(UIColor *checkmarkColor);
 
 @end
-
 
 NS_ASSUME_NONNULL_END

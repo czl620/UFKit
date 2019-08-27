@@ -2,8 +2,8 @@
 //  UFMobileCodeStyle.h
 //  UFKit
 //
-//  Created by ChenZhangli on 2019/6/29.
-//  Copyright © 2019 UFKIT. All rights reserved.
+//  Created by ChenZhangli QQ893419255 on 2019/6/29.
+//  Copyright © 2019 UFKit. All rights reserved.
 //
 
 #import "UFTextStyle.h"

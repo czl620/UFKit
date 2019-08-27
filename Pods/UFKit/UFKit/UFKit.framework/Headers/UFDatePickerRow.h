@@ -18,6 +18,9 @@ NS_ASSUME_NONNULL_BEGIN
 // 日期格式（如:yyyy-MM-dd）
 @property (nonatomic, copy) NSString *dateFormat;
 
+@property (nonatomic, strong) NSDate *minimumDate;
+@property (nonatomic, strong) NSDate *maximumDate;
+
 + (UFDatePickerRow *)makeDatePickerRow:(NS_NOESCAPE void(^)(UFDatePickerRowMaker *make))block;
 
 @end
@@ -33,6 +36,8 @@ NS_ASSUME_NONNULL_BEGIN
 
 @property (nonatomic, copy, readonly) UFDatePickerRowMaker *(^datePickerMode)(UIDatePickerMode datePickerMode);
 @property (nonatomic, copy, readonly) UFDatePickerRowMaker *(^dateFormat)(NSString * _Nullable dateFormat);
+@property (nonatomic, copy, readonly) UFDatePickerRowMaker *(^minimumDate)(NSDate * _Nullable minimumDate);
+@property (nonatomic, copy, readonly) UFDatePickerRowMaker *(^maximumDate)(NSDate * _Nullable maximumDate);
 
 @end
 
