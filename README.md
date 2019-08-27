@@ -172,6 +172,7 @@ pod 'UFKit'
 
 
 ## 效果：
+![](https://user-gold-cdn.xitu.io/2019/8/27/16cd2037fb3104e4?w=1242&h=2688&f=png&s=283943)
 
 ![](https://user-gold-cdn.xitu.io/2019/8/1/16c4adcabc513e84?w=1242&h=2688&f=png&s=256793)  
 
