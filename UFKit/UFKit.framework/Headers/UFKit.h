@@ -3,13 +3,14 @@
 //  UFKit
 //
 //  Created by ChenZhangli QQ893419255 on 2019/6/27.
-//  Copyright © 2019 UFKIT. All rights reserved.
+//  Copyright © 2019 UFKit. All rights reserved.
 //
 
 
 #import <UFKit/UFFormView.h>
 #import <UFKit/UFSection.h>
 #import <UFKit/UFRow.h>
+#import <UFKit/UFSubtitleRow.h>
 #import <UFKit/UFTextFieldRow.h>
 #import <UFKit/UFDatePickerRow.h>
 #import <UFKit/UFPickerViewRow.h>

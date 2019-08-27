@@ -6,7 +6,7 @@
 	<dict>
 		<key>Headers/NSArray+UFRow.h</key>
 		<data>
-		WP2Jyz39D81ZC5NO8mOomTiKuHY=
+		pYu2MDiG+ryHQ+DWJ7ubViTXa6s=
 		</data>
 		<key>Headers/UFActionButton.h</key>
 		<data>
@@ -34,7 +34,7 @@
 		</data>
 		<key>Headers/UFKit.h</key>
 		<data>
-		NCICaKPa0MZiJdHvB4YzgDdxUEA=
+		HFeNF4vVCs4HcGl+n9Fk7kJvd4k=
 		</data>
 		<key>Headers/UFMobileCodeRow.h</key>
 		<data>
@@ -42,11 +42,11 @@
 		</data>
 		<key>Headers/UFMobileCodeStyle.h</key>
 		<data>
-		REy14P3Os9UBPz09GrXib0aoyAI=
+		BAE6Jz+UtPDCtxIplCmTYZVfE5o=
 		</data>
 		<key>Headers/UFMultiplePickerViewRow.h</key>
 		<data>
-		lGBoH8KAXN2fPHyLewQL6vfkKIw=
+		jJ6EFavqAvNB6rBsi/nkMH1NByY=
 		</data>
 		<key>Headers/UFPickerViewRow.h</key>
 		<data>
@@ -54,7 +54,7 @@
 		</data>
 		<key>Headers/UFPlateNumberRow.h</key>
 		<data>
-		0q9qh/1bnR7WGuSBg2D2MAFeyS4=
+		oWteBQ2lXvHn0Fs72/+/6B63q4Q=
 		</data>
 		<key>Headers/UFRadioGroupRow.h</key>
 		<data>
@@ -66,7 +66,7 @@
 		</data>
 		<key>Headers/UFRow.h</key>
 		<data>
-		vZ0ZW0zWdzWv+ij0JjypzBJMP/A=
+		rX3RJTMAAPGLZ44H2mZ1dmoXimw=
 		</data>
 		<key>Headers/UFRowInput.h</key>
 		<data>
@@ -87,6 +87,10 @@
 		<key>Headers/UFSectionStyle.h</key>
 		<data>
 		WWYrV+CpSOehDXh7Os5jzvtMl58=
+		</data>
+		<key>Headers/UFSubtitleRow.h</key>
+		<data>
+		hMUreJS9Sh6siAWXIZ/JBcbzg2k=
 		</data>
 		<key>Headers/UFSwitchRow.h</key>
 		<data>
@@ -114,7 +118,7 @@
 		</data>
 		<key>Info.plist</key>
 		<data>
-		+vhkKwAeBt0Jbnq9MXCwd5WsFpo=
+		g4kKkrjP7pkDRcbi/AbhWbXydfE=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -127,11 +131,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			WP2Jyz39D81ZC5NO8mOomTiKuHY=
+			pYu2MDiG+ryHQ+DWJ7ubViTXa6s=
 			</data>
 			<key>hash2</key>
 			<data>
-			IObl3JrKAnpN6rw7StWgVfYnR3nfUmar37iRL6KMsBc=
+			i9XSTzywdXLnb5b/BU9+gRsFbQs4w9C2PVM4YMzjDlQ=
 			</data>
 		</dict>
 		<key>Headers/UFActionButton.h</key>
@@ -204,11 +208,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			NCICaKPa0MZiJdHvB4YzgDdxUEA=
+			HFeNF4vVCs4HcGl+n9Fk7kJvd4k=
 			</data>
 			<key>hash2</key>
 			<data>
-			rCxFKJNqjtVLFAzRyzBkaaDbrs96Ia1lA+UVUJpX1qw=
+			BJ3xqqfu/myhJCRMgFqZtMdgqnoO6ynzqjhchYsITMw=
 			</data>
 		</dict>
 		<key>Headers/UFMobileCodeRow.h</key>
@@ -226,22 +230,22 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			REy14P3Os9UBPz09GrXib0aoyAI=
+			BAE6Jz+UtPDCtxIplCmTYZVfE5o=
 			</data>
 			<key>hash2</key>
 			<data>
-			y8svtX2abrME6bONisLftlidV7gdLtG2afXDREN/mVU=
+			4L1ngF7rBl9ZhfFEoKi7E4Dl1/PKKWyGDXuz7LSYrx0=
 			</data>
 		</dict>
 		<key>Headers/UFMultiplePickerViewRow.h</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			lGBoH8KAXN2fPHyLewQL6vfkKIw=
+			jJ6EFavqAvNB6rBsi/nkMH1NByY=
 			</data>
 			<key>hash2</key>
 			<data>
-			GnoxKCwTVMmP5D1m89LT+pKHnJppcpFijlYT8PL+tAA=
+			XY6AHeWgdPXHES8C8pF2G0OH9nEnjviK603im5MCv2I=
 			</data>
 		</dict>
 		<key>Headers/UFPickerViewRow.h</key>
@@ -259,11 +263,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			0q9qh/1bnR7WGuSBg2D2MAFeyS4=
+			oWteBQ2lXvHn0Fs72/+/6B63q4Q=
 			</data>
 			<key>hash2</key>
 			<data>
-			yTylWoi4+fGzcXVitC1ea9bJSr/Oi6WVJ+hko3T+0Vs=
+			/eJprELG21k8GOj8yA/if+b8m5XerYbiziF9fyQxdbM=
 			</data>
 		</dict>
 		<key>Headers/UFRadioGroupRow.h</key>
@@ -292,11 +296,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			vZ0ZW0zWdzWv+ij0JjypzBJMP/A=
+			rX3RJTMAAPGLZ44H2mZ1dmoXimw=
 			</data>
 			<key>hash2</key>
 			<data>
-			QH5oAFwwRMQEPTsxq3pQZLUXsNsXPBFVzaoaDEKUaf0=
+			qmmlrb20BOnt0g8MfqkAv0LCEz4k2oHzdTnvThwrUaE=
 			</data>
 		</dict>
 		<key>Headers/UFRowInput.h</key>
@@ -352,6 +356,17 @@
 			<key>hash2</key>
 			<data>
 			viFTjxqv0gbofRoDojvGNMJc7d4tf3bCnbpUoTSk9d0=
+			</data>
+		</dict>
+		<key>Headers/UFSubtitleRow.h</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			hMUreJS9Sh6siAWXIZ/JBcbzg2k=
+			</data>
+			<key>hash2</key>
+			<data>
+			39RYyY1rsg20vlN88bYP+kiQzEcZpxGxQdRP7IaUMqc=
 			</data>
 		</dict>
 		<key>Headers/UFSwitchRow.h</key>

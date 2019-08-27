@@ -3,7 +3,7 @@
 //  UFKit
 //
 //  Created by ChenZhangli QQ893419255 on 2019/6/28.
-//  Copyright © 2019 UFKIT. All rights reserved.
+//  Copyright © 2019 UFKit. All rights reserved.
 //
 
 #import <UFKit/UFKit.h>

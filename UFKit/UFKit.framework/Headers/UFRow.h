@@ -55,6 +55,8 @@ typedef void(^UFRowDidSelected)(__kindof UFRow *row);
 // 行点击时回调
 @property (nonatomic, copy) UFRowDidSelected rowDidSelected;
 
+@property (nonatomic, strong) UIImage *accessoryImage;
+
 + (UFRow *)makeRow:(NS_NOESCAPE void(^)(UFRowMaker *make))block;
 
 @end
@@ -81,6 +83,7 @@ typedef void(^UFRowDidSelected)(__kindof UFRow *row);
 @property (nonatomic, copy, readonly) UFRowMaker *(^seperatorColor)(UIColor *seperatorColor);
 
 @property (nonatomic, copy, readonly) UFRowMaker *(^accessoryType)(UFRowAccessoryType accessoryType);
+@property (nonatomic, copy, readonly) UFRowMaker *(^accessoryImage)(UIImage *accessoryImage);
 
 @property (nonatomic, copy, readonly) UFRowMaker *(^valueDidChanged)(UFValueDidChanged valueDidChanged);
 @property (nonatomic, copy, readonly) UFRowMaker *(^rowDidSelected)(UFRowDidSelected rowDidSelected);
