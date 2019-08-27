@@ -78,7 +78,6 @@
             }])
             .addRow([UFTextFieldRow makeTextFieldRow:^(UFTextFieldRowMaker * _Nonnull make) {
                 make
-                .limitType(UFInputLimitTypeIdCard)
                 .title(@"姓名")
                 .value(@"")
                 .name(@"name")
@@ -118,7 +117,7 @@
                 make
                 .itemArray(@[@"iOS",@"macOS",@"swift",@"iPhone",@"iPad",@"iPod"])
                 .title(@"技能")
-                .value(@"iOS")
+                .value(@"swift")
                 .name(@"skills")
                 .accessoryType(UFRowAccessoryDisclosureIndicator);
             }])
@@ -136,6 +135,7 @@
                 .dateFormat(@"yyyy-MM-dd")
                 .title(@"生日")
                 .name(@"birthday")
+                .value(@"1987-01-01")
                 .accessoryType(UFRowAccessoryDisclosureIndicator);
             }])
             .addRow([UFAreaPickerRow makeAreaPickerRow:^(UFAreaPickerRowMaker * _Nonnull make) {
@@ -180,7 +180,7 @@
                     row.value = value;
                     textField.text = value;
                 })
-                .title(@"选择器")
+                .title(@"自定义选择器")
                 .name(@"custom")
                 .accessoryType(UFRowAccessoryDisclosureIndicator);;
             }])
