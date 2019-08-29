@@ -1,12 +1,24 @@
 //
 //  UFKit.h
-//  UFKit
-//
 //  Created by ChenZhangli QQ893419255 on 2019/6/27.
 //  Copyright © 2019 UFKit. All rights reserved.
 //
+//          _ _     _ _   _ _ _ _ _   _ _    _ _     _ _   _ _ _ _ _ _ __
+//         /  /    /  /  /  _ _ _ /  /  /   ╱  ╱    /__/  /_ _ _   _ _ _/
+//        /  /    /  /  /  /        /  /  ╱  ╱     _ _         /  /
+//       /  /    /  /  /  /_ _ _   /  / ╱  ╱      /  /        /  /
+//      /  /    /  /  /  _ _ _ /  /  / \  \      /  /        /  /
+//     /  /_ __/  /  /  /        /  /   \  \    /  /        /  /
+//     \ _ _ _ _ /  /__/        /__/     \__\  /__/        /__/
 
 
+#ifdef __cplusplus
+#define UFKIT_EXTERN        extern "C" __attribute__((visibility ("default")))
+#else
+#define UFKIT_EXTERN        extern __attribute__((visibility ("default")))
+#endif
+
+#import <UIKit/UIKit.h>
 #import <UFKit/UFFormView.h>
 #import <UFKit/UFSection.h>
 #import <UFKit/UFRow.h>
@@ -34,3 +46,6 @@
 #import <UFKit/NSArray+UFRow.h>
 #import <UFKit/UIViewController+UFKit.h>
 #import <UFKit/UIButton+UFKit.h>
+
+// UFKit版本号
+UFKIT_EXTERN NSString * const UFKIT_VERSION;

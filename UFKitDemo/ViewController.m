@@ -136,8 +136,11 @@
                 .dateFormat(@"yyyy-MM-dd")
                 .title(@"生日")
                 .name(@"birthday")
-                .value(@"1987-01-01")
-                .accessoryType(UFRowAccessoryDisclosureIndicator);
+                .value(@"")
+                .accessoryType(UFRowAccessoryDisclosureIndicator)
+                .valueDidChanged(^(__kindof UFRow * _Nonnull row, NSString * _Nonnull value) {
+                    
+                });
             }])
             .addRow([UFAreaPickerRow makeAreaPickerRow:^(UFAreaPickerRowMaker * _Nonnull make) {
                 make

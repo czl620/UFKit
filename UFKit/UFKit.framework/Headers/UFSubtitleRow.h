@@ -1,12 +1,17 @@
 //
 //  UFSubtitleRow.h
-//  UFKit
-//
 //  Created by Chen Zhangli on 2019/8/27.
-//  Copyright © 2019 Uniauto. All rights reserved.
+//  Copyright © 2019 UFKit. All rights reserved.
 //
+//          _ _     _ _   _ _ _ _ _   _ _   _ _      _ _   _ _ _ _ _ _ __
+//         /  /    /  /  /  _ _ _ /  /  /  ╱  ╱     /__/  /_ _ _   _ _ _/
+//        /  /    /  /  /  /        /  / ╱  ╱      _ _         /  /
+//       /  /    /  /  /  /_ _ _   /  /╱  ╱       /  /        /  /
+//      /  /    /  /  /  _ _ _ /  /  / \  \      /  /        /  /
+//     /  /_ __/  /  /  /        /  /   \  \    /  /        /  /
+//     \ _ _ _ _ /  /__/        /__/     \__\  /__/        /__/
 
-#import "UFRow.h"
+#import  "UFRow.h"
 
 NS_ASSUME_NONNULL_BEGIN
 
