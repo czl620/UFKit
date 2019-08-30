@@ -6,16 +6,16 @@
 #### 1、表单UFFormView
 
 ```objective-c
-    UFFormView *formView = [UFFormView makeFormView:^(UFFormViewMaker * _Nonnull make) {
+UFFormView *formView = [UFFormView makeFormView:^(UFFormViewMaker * _Nonnull make) {
       // TODO:设置表单样式        
-    }];
+      }];
 ```
 
 或者
 
 ```objective-c
-    UFFormView *formView = [[UFFormView alloc] init];
-		// TODO:设置表单样式
+UFFormView *formView = [[UFFormView alloc] init];
+// TODO:设置表单样式
 ```
 
 #### 2、表单样式
@@ -29,33 +29,33 @@
 ​	1、文本样式
 
 ```objective-c
-      UFTextStyle *textStyle = [UFTextStyle makeTextStyle:^(UFRowTextStyleMaker * _Nonnull make) {
-              make
-              .color([UIColor redColor])            // 设置文本颜色
-              .font([UIFont systemFontOfSize:14])   // 设置文本字体
-              .textAlignment(NSTextAlignmentLeft);  // 设置文本对齐方式
-      }];
+UFTextStyle *textStyle = [UFTextStyle makeTextStyle:^(UFRowTextStyleMaker * _Nonnull make) {
+	 make
+	.color([UIColor redColor])            // 设置文本颜色
+	.font([UIFont systemFontOfSize:14])   // 设置文本字体
+	.textAlignment(NSTextAlignmentLeft);  // 设置文本对齐方式             
+ }];      
 ```
 
 或者
 
 ```objective-c
-      UFTextStyle *textStyle = [[UFTextStyle alloc] init];
-      textStyle.color = [UIColor redColor];           // 设置文本颜色
-      textStyle.font = [UIFont systemFontOfSize:14];  // 设置文本字体
-      textStyle.textAlignment = NSTextAlignmentLeft;  // 设置文本对齐方式
+UFTextStyle *textStyle = [[UFTextStyle alloc] init];
+textStyle.color = [UIColor redColor];           // 设置文本颜色
+textStyle.font = [UIFont systemFontOfSize:14];  // 设置文本字体
+textStyle.textAlignment = NSTextAlignmentLeft;  // 设置文本对齐方式
 ```
 
 ​	2、标题样式
 
 ```objective-c
-      UFRowTitleStyle *titleStyle = [UFRowTitleStyle makeTitleStyle:^(UFRowTitleStyleMaker * _Nonnull make) {
-              make
-              .width(90)                           // 设置标题宽度
-              .color([UIColor redColor])           // 设置标题颜色
-              .font([UIFont systemFontOfSize:14])  // 设置标题字体
-              .textAlignment(NSTextAlignmentLeft); // 设置标题对齐方式
-          }];
+UFRowTitleStyle *titleStyle = [UFRowTitleStyle makeTitleStyle:^(UFRowTitleStyleMaker * _Nonnull make) {
+	make
+	.width(90)                           // 设置标题宽度
+	.color([UIColor redColor])           // 设置标题颜色
+	.font([UIFont systemFontOfSize:14])  // 设置标题字体
+	.textAlignment(NSTextAlignmentLeft); // 设置标题对齐方式             
+}];     
 ```
 
 或
