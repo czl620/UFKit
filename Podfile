@@ -4,6 +4,6 @@ inhibit_all_warnings!
 
 target 'UFKitDemo' do
   
-    pod 'UFKit', '~> 1.0.9'
+    pod 'UFKit', '~> 1.1.0'
 
 end

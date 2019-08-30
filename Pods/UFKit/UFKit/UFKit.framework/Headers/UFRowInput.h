@@ -1,10 +1,15 @@
 //
 //  UFRowInput.h
-//  UFKit
-//
 //  Created by ChenZhangli QQ893419255 on 2019/6/24.
 //  Copyright © 2019 UFKit. All rights reserved.
 //
+//          _ _     _ _   _ _ _ _ _   _ _    _ _     _ _   _ _ _ _ _ _ __
+//         /  /    /  /  /  _ _ _ /  /  /   ╱  ╱    /__/  /_ _ _   _ _ _/
+//        /  /    /  /  /  /        /  /  ╱  ╱     _ _         /  /
+//       /  /    /  /  /  /_ _ _   /  / ╱  ╱      /  /        /  /
+//      /  /    /  /  /  _ _ _ /  /  / \  \      /  /        /  /
+//     /  /_ __/  /  /  /        /  /   \  \    /  /        /  /
+//     \ _ _ _ _ /  /__/        /__/     \__\  /__/        /__/
 
 #import <UIKit/UIKit.h>
 #import "UFRow.h"

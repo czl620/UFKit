@@ -24,6 +24,8 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
 
+    NSLog(@"版本：%@",UFKIT_VERSION);
+
     _customArray = @[@{@"title":@"A",
                        @"children":@[@"a1",
                                      @"a2",
@@ -41,6 +43,8 @@
                        },
                      ];
     _currentDict = _customArray[0];
+    _currentStr = _currentDict[@"children"][0];
+
 
     __weak typeof(self) weakSelf = self;
     __block UFFormView *formView = [UFFormView makeFormView:^(UFFormViewMaker * _Nonnull make) {
@@ -67,9 +71,11 @@
                 .avatarDidSelected(^(__kindof UFAvatarRow * _Nonnull row, UIImageView * _Nonnull avatarView) {
                     NSLog(@"你点击了头像");
                     [weakSelf ufk_pickerImageForResult:^(UIImage * _Nonnull image) {
-                        row.avatarImage = image;
-                        row.value = nil;
-                        avatarView.image = image;
+                        if (image) {
+                            row.avatarImage = image;
+                            row.value = nil;
+                            avatarView.image = image;
+                        }
                     }];
                 })
                 .title(@"头像")
@@ -79,6 +85,7 @@
             }])
             .addRow([UFTextFieldRow makeTextFieldRow:^(UFTextFieldRowMaker * _Nonnull make) {
                 make
+                .maxLength(4)
                 .title(@"姓名")
                 .value(@"")
                 .name(@"name")

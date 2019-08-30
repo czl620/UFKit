@@ -1,10 +1,15 @@
 //
 //  UFAreaPickerRow.h
-//  UFKit
-//
 //  Created by Chen Zhangli on 2019/7/30.
-//  Copyright © 2019 Uniauto. All rights reserved.
+//  Copyright © 2019 UFKit. All rights reserved.
 //
+//          _ _     _ _   _ _ _ _ _   _ _    _ _     _ _   _ _ _ _ _ _ __
+//         /  /    /  /  /  _ _ _ /  /  /   ╱  ╱    /__/  /_ _ _   _ _ _/
+//        /  /    /  /  /  /        /  /  ╱  ╱     _ _         /  /
+//       /  /    /  /  /  /_ _ _   /  / ╱  ╱      /  /        /  /
+//      /  /    /  /  /  _ _ _ /  /  / \  \      /  /        /  /
+//     /  /_ __/  /  /  /        /  /   \  \    /  /        /  /
+//     \ _ _ _ _ /  /__/        /__/     \__\  /__/        /__/
 
 #import "UFTextFieldRow.h"
 
