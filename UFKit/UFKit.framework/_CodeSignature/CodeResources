@@ -6,79 +6,83 @@
 	<dict>
 		<key>Headers/NSArray+UFRow.h</key>
 		<data>
-		34ZsSfEreiHPSRNVLRT+DNhLOY0=
+		USmXtzyP5xngZlE0DBG073ZoGiM=
 		</data>
 		<key>Headers/UFActionButton.h</key>
 		<data>
-		ypxGQimXiO9tNB9nxGRKEwvvKQg=
+		6tuDh0vEoI9L80upXNm4cPyMJq4=
 		</data>
 		<key>Headers/UFAreaPickerRow.h</key>
 		<data>
-		ZTgP+/0OpEtqvPFUTO5dNhLsSkQ=
+		Mx1ss8w7h4jInAQgYUBl0S0D4RI=
 		</data>
 		<key>Headers/UFAvatarRow.h</key>
 		<data>
-		KfY+8zzIdsGUKSV8RCSnOYrlzuM=
+		6fsfURfuy7bUG5JZ4m6BYkSF0Xc=
 		</data>
 		<key>Headers/UFCustomPickerViewRow.h</key>
 		<data>
-		VIV9spyvuQiQxzWPJVZByAhTcus=
+		OjpDqQiqjE4/gLF12BcQIQrYb1M=
 		</data>
 		<key>Headers/UFDatePickerRow.h</key>
 		<data>
-		FZiCAQQlwsoJ9ZP8LSRplUG73N4=
+		4cjRhqD4NQl0Ph8e+EJCvKvQAXg=
 		</data>
 		<key>Headers/UFFormView.h</key>
 		<data>
-		JGawNwmeld08NSk91A75md295s8=
+		S2o5445Y7LoGeN177XDblgYQJ0s=
 		</data>
 		<key>Headers/UFKit.h</key>
 		<data>
-		e6gC3G/4egHnyMJPcX17ZFHbxFE=
+		Qmrl29PBNt/bmFhEwQUfEh6InFg=
 		</data>
 		<key>Headers/UFMobileCodeRow.h</key>
 		<data>
-		tcYcCGlvKJCP9LtjivMLHBecYkg=
+		u6lJWF72ijZMLNImYhp/riDa+Hc=
 		</data>
 		<key>Headers/UFMobileCodeStyle.h</key>
 		<data>
-		tdPT4CKwQx596RfTw6M3Ne/3flw=
+		zzvzu01Ks0WajEUs5ASbl5ieI9g=
 		</data>
 		<key>Headers/UFMultiplePickerViewRow.h</key>
 		<data>
-		wCqafv5TmOLoaYZb/5iYosL04yU=
+		JqRCB+8EdhJaFCcBIEAL2jPQ+Cw=
 		</data>
 		<key>Headers/UFPickerViewRow.h</key>
 		<data>
-		sxZw2Jt5EvwZCahROP71OdVOm2M=
+		osk3zQG6I0Q9M6ca+a2fsw2EpVo=
 		</data>
 		<key>Headers/UFPlateNumberRow.h</key>
 		<data>
-		St1Cwx06qLmUMGuPu3Ux9AMtDCE=
+		jKTFuyqdTO6GrzS6rWoDKb7pKYI=
 		</data>
 		<key>Headers/UFRadioGroupRow.h</key>
 		<data>
-		MbmyypOF6D6Llmo8fCe+d9FH7EE=
+		ZO1QJ1NFRDbGGhV4ndFgXJxWiyU=
 		</data>
 		<key>Headers/UFRadioGroupStyle.h</key>
 		<data>
-		Y1XyzS+CUkrzn7W7l9eYSCRff9M=
+		oX5pPRjB7uZUtwn+nGi4F6GLO5E=
 		</data>
 		<key>Headers/UFRow.h</key>
 		<data>
-		v3cVrO5HtA4M1DsCzM2qVMDVnxo=
+		zjmNzHNYZmyr/vrxhWYo/yBoLw4=
+		</data>
+		<key>Headers/UFRowCell.h</key>
+		<data>
+		xmhBDLANlorohnOAUo1hlExRAAk=
 		</data>
 		<key>Headers/UFRowInput.h</key>
 		<data>
-		leRJuyxmUYu5F3Czdc7nch3+nhk=
+		QDIPWwRpYJxaMAd7YN5i9DTDhY0=
 		</data>
 		<key>Headers/UFRowTitleStyle.h</key>
 		<data>
-		AMW3LLF2eL70H8j7yRxUf0PO5Tg=
+		5hXTDi9BTDtsAO0VtO18qzbxwgA=
 		</data>
 		<key>Headers/UFRowValue.h</key>
 		<data>
-		5vspilVH8Shj7hs065J4bd2GDrY=
+		Xt2oLR+ae9a7145jn1EcNgwVnWU=
 		</data>
 		<key>Headers/UFSection.h</key>
 		<data>
@@ -90,35 +94,35 @@
 		</data>
 		<key>Headers/UFSubtitleRow.h</key>
 		<data>
-		fnII1ci5OLVUBNjZIYxI8PG7+8M=
+		C0da6Py2RTf7OsXW7CZk1ywCsY8=
 		</data>
 		<key>Headers/UFSwitchRow.h</key>
 		<data>
-		dtjjROk/5RXBBb3VRuYLQfGIWLk=
+		h/hn3yCEfczvjTznhS+G6sCzE9M=
 		</data>
 		<key>Headers/UFTextFieldRow.h</key>
 		<data>
-		Qg7LnsAfs746erXxwpPVB6CyTjA=
+		GqAZwLqKyLlRl8zWN2ita3phyXc=
 		</data>
 		<key>Headers/UFTextStyle.h</key>
 		<data>
-		geHjgmrwnhdOXmcKRzE/faRpU1M=
+		6gCr2u9gdX4SZcappaJvd+weCIo=
 		</data>
 		<key>Headers/UFTextViewRow.h</key>
 		<data>
-		rvT/tc7HKSEFnEBSgZz5tIPqVzw=
+		IpnMJNjgklVdjCEmeBuVuqRd0GM=
 		</data>
 		<key>Headers/UIButton+UFKit.h</key>
 		<data>
-		pwf9h/okZZgfPJi/18xKFy9qasU=
+		zGN+aGz1bVpP0wM7FjmIGtk6LR8=
 		</data>
 		<key>Headers/UIViewController+UFKit.h</key>
 		<data>
-		jNO3SHt/EanvGh0GDveK+PtMKqU=
+		hZtu5mDMHEFLuh1/ZbjTxgiXh5w=
 		</data>
 		<key>Info.plist</key>
 		<data>
-		3HqhafO6m2tfl0GaqEPS15LIExM=
+		oV8h9EomELRAZdTY3HXdJDeYFQQ=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -131,209 +135,220 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			34ZsSfEreiHPSRNVLRT+DNhLOY0=
+			USmXtzyP5xngZlE0DBG073ZoGiM=
 			</data>
 			<key>hash2</key>
 			<data>
-			aiWI+LVl4NqIAEWEM8eyeB6xoUEwBS7nljKq2Vo7dsI=
+			Mbkne0ub8Ud1AgpVClKlBNHkrdsKBb5C5sbYrshLSdU=
 			</data>
 		</dict>
 		<key>Headers/UFActionButton.h</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			ypxGQimXiO9tNB9nxGRKEwvvKQg=
+			6tuDh0vEoI9L80upXNm4cPyMJq4=
 			</data>
 			<key>hash2</key>
 			<data>
-			fiwbMLgv3Oiz/aknEC1DpGvk6sY7kD91Sg+3PbEAoag=
+			DJgetg8tsYLkzC+xnHJpY2v183UQispEliZn6azU2yo=
 			</data>
 		</dict>
 		<key>Headers/UFAreaPickerRow.h</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			ZTgP+/0OpEtqvPFUTO5dNhLsSkQ=
+			Mx1ss8w7h4jInAQgYUBl0S0D4RI=
 			</data>
 			<key>hash2</key>
 			<data>
-			LNwSV21e1tSwdCJ7T938topXIQuEdWKZmOaT1on+JhU=
+			ByWGtNogxuDv28GARfEKZCK4gPymwhxNDrFLFGDkN4Y=
 			</data>
 		</dict>
 		<key>Headers/UFAvatarRow.h</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			KfY+8zzIdsGUKSV8RCSnOYrlzuM=
+			6fsfURfuy7bUG5JZ4m6BYkSF0Xc=
 			</data>
 			<key>hash2</key>
 			<data>
-			vQM4xQMd6/dN+KEb9V/SwgEjSDpUHA6bPOqXrhnbJDo=
+			YkvUYkIOHyomk+/poHzHoCqYBV+ibvZfVGi0BcuUq24=
 			</data>
 		</dict>
 		<key>Headers/UFCustomPickerViewRow.h</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			VIV9spyvuQiQxzWPJVZByAhTcus=
+			OjpDqQiqjE4/gLF12BcQIQrYb1M=
 			</data>
 			<key>hash2</key>
 			<data>
-			XY5giQHGfUWBz2ja1bxgiEpbq2K/l7FR3hzoo6W80/c=
+			4xJPPj7JiiG0ENi3J+hf02pS/XtJs15X476fklKbfoI=
 			</data>
 		</dict>
 		<key>Headers/UFDatePickerRow.h</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			FZiCAQQlwsoJ9ZP8LSRplUG73N4=
+			4cjRhqD4NQl0Ph8e+EJCvKvQAXg=
 			</data>
 			<key>hash2</key>
 			<data>
-			s9gBeD1PCsy163ewFWIaUx8rnXQa9FTuBbqLhBSQ11c=
+			lryDFsrUm7MxuagWyVtnFQOqltUZvoCJlioWg7ECVng=
 			</data>
 		</dict>
 		<key>Headers/UFFormView.h</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			JGawNwmeld08NSk91A75md295s8=
+			S2o5445Y7LoGeN177XDblgYQJ0s=
 			</data>
 			<key>hash2</key>
 			<data>
-			5vXHMXnbZvD73Go0rqJ2012gKxRnRN98EbWQDhwZmBU=
+			n76eo55ZDmRXZl/DVgC3Utml7UYXD7nYx+DrAewTk10=
 			</data>
 		</dict>
 		<key>Headers/UFKit.h</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			e6gC3G/4egHnyMJPcX17ZFHbxFE=
+			Qmrl29PBNt/bmFhEwQUfEh6InFg=
 			</data>
 			<key>hash2</key>
 			<data>
-			yDzaA5gKtFQTeQZ7cTHKLXebtHyMuYpHRjIAeZ7dKoo=
+			ANYTg/2BsshS0B8K1n9Cf0a7ysadIyahQXR/N1E6wzY=
 			</data>
 		</dict>
 		<key>Headers/UFMobileCodeRow.h</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			tcYcCGlvKJCP9LtjivMLHBecYkg=
+			u6lJWF72ijZMLNImYhp/riDa+Hc=
 			</data>
 			<key>hash2</key>
 			<data>
-			pkor2yaQKulGjSTThOBGQx3SEaDxmT9udNGorQepfzQ=
+			MhWXh5/uFgOjBso/jxkHywRdmgnyQhQNejnYuFnmvKk=
 			</data>
 		</dict>
 		<key>Headers/UFMobileCodeStyle.h</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			tdPT4CKwQx596RfTw6M3Ne/3flw=
+			zzvzu01Ks0WajEUs5ASbl5ieI9g=
 			</data>
 			<key>hash2</key>
 			<data>
-			HhcICwn9LSM3ES9a06uFObdH986ataQ50QxDaiuxPvQ=
+			cZNoTAuzADrJlWoMjSse+Tkz8ElejJfWKIIh0lqAzY0=
 			</data>
 		</dict>
 		<key>Headers/UFMultiplePickerViewRow.h</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			wCqafv5TmOLoaYZb/5iYosL04yU=
+			JqRCB+8EdhJaFCcBIEAL2jPQ+Cw=
 			</data>
 			<key>hash2</key>
 			<data>
-			RQGCINfpmwieYxQglZpvO7rHRsUBnP4uw9vPLcECLHE=
+			WBiaSv45Zd4/6MKPXcqxNY19Yzulqf+snwD86gMZ7uQ=
 			</data>
 		</dict>
 		<key>Headers/UFPickerViewRow.h</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			sxZw2Jt5EvwZCahROP71OdVOm2M=
+			osk3zQG6I0Q9M6ca+a2fsw2EpVo=
 			</data>
 			<key>hash2</key>
 			<data>
-			HvspCfuVJ7HzOuIbZyrGvkCe0nzsYyZFVjKwRg9yUjA=
+			JqJfn1OV1jeQByDu9SY4R+tfmqhzxUwl5LHSlUQyhdk=
 			</data>
 		</dict>
 		<key>Headers/UFPlateNumberRow.h</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			St1Cwx06qLmUMGuPu3Ux9AMtDCE=
+			jKTFuyqdTO6GrzS6rWoDKb7pKYI=
 			</data>
 			<key>hash2</key>
 			<data>
-			faiqiJ3gMHA+gUIwB4jVEw1wjnLijegp8+XYCKwYtFw=
+			9APOoMfnRmLsrBGub/8e1ACQqxb5j04Q5TA9B1QWmTY=
 			</data>
 		</dict>
 		<key>Headers/UFRadioGroupRow.h</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			MbmyypOF6D6Llmo8fCe+d9FH7EE=
+			ZO1QJ1NFRDbGGhV4ndFgXJxWiyU=
 			</data>
 			<key>hash2</key>
 			<data>
-			eLRDHgQuSsW/O7c8mPIJo7hRRTx0ScJr8hhEM/Bk7oc=
+			soDtVXbA14va6fFMLcfw4LpR59aHCwuz8fT4ObxUkhA=
 			</data>
 		</dict>
 		<key>Headers/UFRadioGroupStyle.h</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			Y1XyzS+CUkrzn7W7l9eYSCRff9M=
+			oX5pPRjB7uZUtwn+nGi4F6GLO5E=
 			</data>
 			<key>hash2</key>
 			<data>
-			Qgt286jXjAwjeVQ+QKWw5jiupUYy5OpphB7Y7LUJmPQ=
+			rDS1PrHmrHapgINZIVh8LJkfBOaIMZmJ/DbemKl6W9I=
 			</data>
 		</dict>
 		<key>Headers/UFRow.h</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			v3cVrO5HtA4M1DsCzM2qVMDVnxo=
+			zjmNzHNYZmyr/vrxhWYo/yBoLw4=
 			</data>
 			<key>hash2</key>
 			<data>
-			NopuoryUHJhuPWHOnr7gjsmgCwY0ngeVSiwZmgxEyEY=
+			p6OxG1EFiewOkl1QMrhW+OtBhfrxI7gWyI0U18FQ18g=
+			</data>
+		</dict>
+		<key>Headers/UFRowCell.h</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			xmhBDLANlorohnOAUo1hlExRAAk=
+			</data>
+			<key>hash2</key>
+			<data>
+			C42DG4iP73d87x9YtE8cNRCtlWIycdFpbWAu7giETXo=
 			</data>
 		</dict>
 		<key>Headers/UFRowInput.h</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			leRJuyxmUYu5F3Czdc7nch3+nhk=
+			QDIPWwRpYJxaMAd7YN5i9DTDhY0=
 			</data>
 			<key>hash2</key>
 			<data>
-			1kACPA2cR57gD/LWqQFZHgzU5yfSjVF/qOunSd/8nA8=
+			sd0P690W3aqOIf26IlWgk4WiU3vkaEQOvuSa6/aVeqw=
 			</data>
 		</dict>
 		<key>Headers/UFRowTitleStyle.h</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			AMW3LLF2eL70H8j7yRxUf0PO5Tg=
+			5hXTDi9BTDtsAO0VtO18qzbxwgA=
 			</data>
 			<key>hash2</key>
 			<data>
-			5xRtDYKNtgd+QpLnMmWzSVQ2wK/NUaiUtZ2GoR+JjYs=
+			5bmmdbDWO2OW9HzhPEvriitbNiCse1BEZjFxHU/87Pc=
 			</data>
 		</dict>
 		<key>Headers/UFRowValue.h</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			5vspilVH8Shj7hs065J4bd2GDrY=
+			Xt2oLR+ae9a7145jn1EcNgwVnWU=
 			</data>
 			<key>hash2</key>
 			<data>
-			QFnx+5H5hmBCL55uRocM3y1V5l6c3nM9jtRgkyoAiVA=
+			yHZ4OFrgAkFP4agOD3ifxz/yF1TsmQww3kknJt2HoHU=
 			</data>
 		</dict>
 		<key>Headers/UFSection.h</key>
@@ -362,77 +377,77 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			fnII1ci5OLVUBNjZIYxI8PG7+8M=
+			C0da6Py2RTf7OsXW7CZk1ywCsY8=
 			</data>
 			<key>hash2</key>
 			<data>
-			VzAnZvobY4z0/D8S/OTBAFbT8Org2ecBV9fed5HvdQs=
+			eSy/3GYPLosJKYkQrzxEwXXAw/HIj6qWnJPMiiNDNho=
 			</data>
 		</dict>
 		<key>Headers/UFSwitchRow.h</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			dtjjROk/5RXBBb3VRuYLQfGIWLk=
+			h/hn3yCEfczvjTznhS+G6sCzE9M=
 			</data>
 			<key>hash2</key>
 			<data>
-			K0Sho7o8MMUgMlPP2dNTO4q5uHK7WZrJ/onGmPRdvIo=
+			odHjYzwSbOvp65FrV9UPkx9PlttaPw3D9HkzUYRDJh8=
 			</data>
 		</dict>
 		<key>Headers/UFTextFieldRow.h</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			Qg7LnsAfs746erXxwpPVB6CyTjA=
+			GqAZwLqKyLlRl8zWN2ita3phyXc=
 			</data>
 			<key>hash2</key>
 			<data>
-			4sW8sJNc86NwKcodTc7pFD4/YVLehpEaW+qEz+GVs7U=
+			7tUy7fPN0fTiNBBCzb0tfEtKwSJBQse9nsbozzHDW2M=
 			</data>
 		</dict>
 		<key>Headers/UFTextStyle.h</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			geHjgmrwnhdOXmcKRzE/faRpU1M=
+			6gCr2u9gdX4SZcappaJvd+weCIo=
 			</data>
 			<key>hash2</key>
 			<data>
-			aFZ18TekivFFaQnF2ipNTuitQvAksx+QsPtJPB/Q7TY=
+			gfUWiG8WzzyHI+iF6lFmyG169sbWU87cFx3bqsO1w/o=
 			</data>
 		</dict>
 		<key>Headers/UFTextViewRow.h</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			rvT/tc7HKSEFnEBSgZz5tIPqVzw=
+			IpnMJNjgklVdjCEmeBuVuqRd0GM=
 			</data>
 			<key>hash2</key>
 			<data>
-			8cahOMBEBb5jZUTS60fnTWjedt5L8Gf9qle/nlQLYA4=
+			GsOswHoZljVpKKMF/n+iAhFysdEp9VZHzrv4wLyD5tM=
 			</data>
 		</dict>
 		<key>Headers/UIButton+UFKit.h</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			pwf9h/okZZgfPJi/18xKFy9qasU=
+			zGN+aGz1bVpP0wM7FjmIGtk6LR8=
 			</data>
 			<key>hash2</key>
 			<data>
-			EivoNcUy+y9yHY+hV/032USVAwpiKx98GFUsuHLGgiw=
+			OorY8OkLbGTpEXOPhaYVxkPdiQHOlRjNnMVprRlwB1w=
 			</data>
 		</dict>
 		<key>Headers/UIViewController+UFKit.h</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			jNO3SHt/EanvGh0GDveK+PtMKqU=
+			hZtu5mDMHEFLuh1/ZbjTxgiXh5w=
 			</data>
 			<key>hash2</key>
 			<data>
-			uhgd169TjL7Ff/ZPAE95zAv111xi8xywco8uVoeFBsE=
+			aixgaNQ/YYGY7UbwrEgvEWl7YbSJSTeeAPrMng2KbGI=
 			</data>
 		</dict>
 		<key>Modules/module.modulemap</key>

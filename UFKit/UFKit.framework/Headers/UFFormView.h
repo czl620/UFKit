@@ -100,6 +100,15 @@ typedef void(^UFActionsDidClicked)(UIButton *button, NSInteger index);
  */
 @property (nonatomic, strong) UFTextStyle *valueStyle;
 
+
+/**
+ 注册自定义行
+
+@param rowClass 行(UFRow及其子类)
+ @param cellClass 单元格(UFRowCell及其子类)
+ */
+- (void)registerRow:(Class)rowClass byCell:(Class)cellClass;
+
 /**
  创建表单
 
@@ -134,6 +143,7 @@ typedef void(^UFActionsDidClicked)(UIButton *button, NSInteger index);
 
 @property (nonatomic, copy, readonly) UFFormViewMaker *(^scrollEnabled)(BOOL scrollEnabled);
 
+@property (nonatomic, copy, readonly) UFFormViewMaker *(^registerRow)(Class rowClass, Class cellClass);
 
 @end
 

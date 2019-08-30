@@ -21,6 +21,7 @@
 #import <UIKit/UIKit.h>
 #import <UFKit/UFFormView.h>
 #import <UFKit/UFSection.h>
+#import <UFKit/UFRowCell.h>
 #import <UFKit/UFRow.h>
 #import <UFKit/UFSubtitleRow.h>
 #import <UFKit/UFTextFieldRow.h>
