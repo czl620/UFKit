@@ -270,8 +270,8 @@
 ##### 3、添加组到表单
 
 ```objective-c
-		UFFormView *formView = [UFFormView makeFormView:^(UFFormViewMaker * _Nonnull make) {
-        make
+	UFFormView *formView = [UFFormView makeFormView:^(UFFormViewMaker * _Nonnull make) {
+       	 make
         .addSection([UFSection makeSection:^(UFSectionMaker * _Nonnull make) {
             // TODO:设置组样式
         };
@@ -281,7 +281,7 @@
 或
 
 ```objective-c
-		[formView addSection:section];
+	[formView addSection:section];
 ```
 
 #### 4、行UFRow
