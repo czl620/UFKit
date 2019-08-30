@@ -684,7 +684,7 @@ UFSection *section = [UFSection makeSection:^(UFSectionMaker * _Nonnull make) {
 
 pod 'UFKit'
 
-## [github](https://github.com/czl620/UFKit)
+
 
 
 
