@@ -1,11 +1,9 @@
+![在这里插入图片描述](https://img-blog.csdnimg.cn/2019083014482930.gif)
 
-![](https://user-gold-cdn.xitu.io/2019/8/30/16ce13696abe2347?w=600&h=1068&f=gif&s=1118139)
-
-![](https://user-gold-cdn.xitu.io/2019/8/30/16ce136c93a89597?w=1242&h=2688&f=png&s=271548)
-
+![在这里插入图片描述](https://img-blog.csdnimg.cn/20190830144851364.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3UwMTQ3MzAyNDU=,size_16,color_FFFFFF,t_70)
 #### 1、表单UFFormView
 
-``` objective-c
+```objective-c
     UFFormView *formView = [UFFormView makeFormView:^(UFFormViewMaker * _Nonnull make) {
       // TODO:设置表单样式        
     }];
@@ -308,9 +306,7 @@
 ##### 2、如何创建行？（常规写法不再赘述）
 
 **（1）UFRow**
-
-![](https://user-gold-cdn.xitu.io/2019/8/30/16ce137def711b6f?w=576&h=84&f=png&s=9445)
-
+![在这里插入图片描述](https://img-blog.csdnimg.cn/20190830145004771.png)
 ```objective-c
     UFRow *row = [UFRow makeRow:^(UFRowMaker * _Nonnull make) {
         make
@@ -346,9 +342,7 @@
 ***注***：为使行的右端对齐，你可使用**UFRowAccessorySpace**进行占位。
 
 **（2）UFSubtitleRow**
-
-![](https://user-gold-cdn.xitu.io/2019/8/30/16ce1386d9c16fc2?w=584&h=122&f=png&s=15756)
-
+![在这里插入图片描述](https://img-blog.csdnimg.cn/20190830145022643.png)
 ```objective-c
 UFSubtitleRow *subtitleRow = [UFSubtitleRow makeSubtitleRow:^(UFSubtitleRowMaker * _Nonnull make) {
        make
@@ -371,9 +365,7 @@ UFSubtitleRow *subtitleRow = [UFSubtitleRow makeSubtitleRow:^(UFSubtitleRowMaker
 ```
 
 **（3）UFAvatarRow**
-
-![](https://user-gold-cdn.xitu.io/2019/8/30/16ce138b39452f19?w=598&h=122&f=png&s=11432)
-
+![在这里插入图片描述](https://img-blog.csdnimg.cn/2019083014503593.png)
 ```objective-c
 UFAvatarRow *avatarRow = [UFAvatarRow makeAvatarRow:^(UFAvatarRowMaker * _Nonnull make) {
         make
@@ -400,9 +392,7 @@ UFAvatarRow *avatarRow = [UFAvatarRow makeAvatarRow:^(UFAvatarRowMaker * _Nonnul
 ```
 
 **（4）UFRadioGroupRow**
-
-![](https://user-gold-cdn.xitu.io/2019/8/30/16ce138f79b947e1?w=560&h=78&f=png&s=10618)
-
+![在这里插入图片描述](https://img-blog.csdnimg.cn/20190830145143477.png)
 ```objective-c
  UFRadioGroupRow *radioGroupRow  = [UFRadioGroupRow makeRadioGroupRow:^(UFRadioGroupRowMaker * _Nonnull make) {
         make
@@ -423,9 +413,7 @@ UFAvatarRow *avatarRow = [UFAvatarRow makeAvatarRow:^(UFAvatarRowMaker * _Nonnul
 ```
 
 **（5）UFTextFieldRow**
-
-![](https://user-gold-cdn.xitu.io/2019/8/30/16ce139398acef83?w=706&h=534&f=png&s=101838)
-
+![在这里插入图片描述](https://img-blog.csdnimg.cn/20190830145203625.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3UwMTQ3MzAyNDU=,size_16,color_FFFFFF,t_70)
 ```objective-c
 UFTextFieldRow *textFieldRow = [UFTextFieldRow makeTextFieldRow:^(UFTextFieldRowMaker * _Nonnull make) {
         make
@@ -463,9 +451,7 @@ typedef NS_ENUM(NSUInteger, UFInputLimitType) {
 ```
 
 **（5）UFMobileCodeRow**
-
-![](https://user-gold-cdn.xitu.io/2019/8/30/16ce1397ab2c0035?w=540&h=76&f=png&s=16231)
-
+![在这里插入图片描述](https://img-blog.csdnimg.cn/20190830145220756.png)
 ```objective-c
     UFMobileCodeRow *mobileCodeRow = [UFMobileCodeRow makeCodeRow:^(UFCodeRowMaker * _Nonnull make) {
             make
@@ -496,9 +482,7 @@ typedef NS_ENUM(NSUInteger, UFInputLimitType) {
 ```
 
 **（6）UFPickerViewRow**
-
-![](https://user-gold-cdn.xitu.io/2019/8/30/16ce13a6477145fa?w=704&h=528&f=png&s=120331)
-
+![在这里插入图片描述](https://img-blog.csdnimg.cn/20190830145244893.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3UwMTQ3MzAyNDU=,size_16,color_FFFFFF,t_70)
 ```objective-c
     UFPickerViewRow *pickerViewRow = [UFPickerViewRow makePickerViewRow:^(UFPickerViewRowMaker * _Nonnull make) {
             make
@@ -513,9 +497,7 @@ typedef NS_ENUM(NSUInteger, UFInputLimitType) {
 ```
 
 **（7）UFAreaPickerRow**
-
-![](https://user-gold-cdn.xitu.io/2019/8/30/16ce13a94d1fd83e?w=700&h=532&f=png&s=165834)
-
+![在这里插入图片描述](https://img-blog.csdnimg.cn/20190830145302242.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3UwMTQ3MzAyNDU=,size_16,color_FFFFFF,t_70)
 ```objective-c
     UFAreaPickerRow *areaPickerRow = [UFAreaPickerRow makeAreaPickerRow:^(UFAreaPickerRowMaker * _Nonnull make) {
             make
@@ -529,9 +511,7 @@ typedef NS_ENUM(NSUInteger, UFInputLimitType) {
 ```
 
 **（8）UFCustomPickerViewRow**
-
-![](https://user-gold-cdn.xitu.io/2019/8/30/16ce13acf54ab1bd?w=694&h=514&f=png&s=108835)
-
+![在这里插入图片描述](https://img-blog.csdnimg.cn/20190830145322425.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3UwMTQ3MzAyNDU=,size_16,color_FFFFFF,t_70)
 ```objective-c
       UFCustomPickerViewRow *customPickerRow = [UFCustomPickerViewRow makeCustomPickerViewRow:^(UFCustomPickerViewRowMaker * _Nonnull make) {
               make.
@@ -559,9 +539,7 @@ typedef NS_ENUM(NSUInteger, UFInputLimitType) {
 ```
 
 **（9）UFMultiplePickerViewRow**
-
-![](https://user-gold-cdn.xitu.io/2019/8/30/16ce13b0d0df7a9e?w=700&h=542&f=png&s=54158)
-
+![在这里插入图片描述](https://img-blog.csdnimg.cn/20190830145343479.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3UwMTQ3MzAyNDU=,size_16,color_FFFFFF,t_70)
 ```objective-c
 UFMultiplePickerViewRow *multiplePickerViewRow = [UFMultiplePickerViewRow makeMultiplePickerViewRow:^(UFMultiplePickerViewRowMaker * _Nonnull make) {
         make
@@ -576,9 +554,7 @@ UFMultiplePickerViewRow *multiplePickerViewRow = [UFMultiplePickerViewRow makeMu
 ```
 
 **（10）UFDatePickerRow**
-
-![](https://user-gold-cdn.xitu.io/2019/8/30/16ce13b422482291?w=702&h=532&f=png&s=155541)
-
+![在这里插入图片描述](https://img-blog.csdnimg.cn/20190830145359629.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3UwMTQ3MzAyNDU=,size_16,color_FFFFFF,t_70)
 ```objective-c
     UFDatePickerRow *datePickerRow = [UFDatePickerRow makeDatePickerRow:^(UFDatePickerRowMaker * _Nonnull make) {
             make
@@ -596,9 +572,7 @@ UFMultiplePickerViewRow *multiplePickerViewRow = [UFMultiplePickerViewRow makeMu
 ```
 
 **（11）UFPlateNumberRow**
-
-![](https://user-gold-cdn.xitu.io/2019/8/30/16ce13b757dc4408?w=704&h=538&f=png&s=134589)
-
+![在这里插入图片描述](https://img-blog.csdnimg.cn/20190830145417135.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3UwMTQ3MzAyNDU=,size_16,color_FFFFFF,t_70)
 ```objective-c
     UFPlateNumberRow *plateNumberRow = [UFPlateNumberRow makePlateNumberRow:^(UFPlateNumberRowMaker * _Nonnull make) {
             make
@@ -612,9 +586,7 @@ UFMultiplePickerViewRow *multiplePickerViewRow = [UFMultiplePickerViewRow makeMu
 ```
 
 **（12）UFTextViewRow**
-
-![](https://user-gold-cdn.xitu.io/2019/8/30/16ce13ba27861661?w=708&h=742&f=png&s=215075)
-
+![在这里插入图片描述](https://img-blog.csdnimg.cn/2019083014550629.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3UwMTQ3MzAyNDU=,size_16,color_FFFFFF,t_70)
 ```objective-c
     UFTextViewRow *textViewRow = [UFTextViewRow makeTextViewRow:^(UFTextViewRowMaker * _Nonnull make) {
             make
@@ -626,9 +598,7 @@ UFMultiplePickerViewRow *multiplePickerViewRow = [UFMultiplePickerViewRow makeMu
 ```
 
 **（13）UFSwitchRow**
-
-![](https://user-gold-cdn.xitu.io/2019/8/30/16ce13be3b2a25e5?w=544&h=74&f=png&s=10850)
-
+![在这里插入图片描述](https://img-blog.csdnimg.cn/20190830145532511.png)
 ```objective-c
   UFSwitchRow *switchRow = [UFSwitchRow makeSwitchRow:^(UFSwitchRowMaker * _Nonnull make) {
           make
@@ -672,11 +642,7 @@ UFSection *section = [UFSection makeSection:^(UFSectionMaker * _Nonnull make) {
 #### 5、提交
 
 1、添加提交按钮
-
-![](https://user-gold-cdn.xitu.io/2019/8/30/16ce13df5f32da4c?w=580&h=302&f=png&s=45570)
-
-![](https://user-gold-cdn.xitu.io/2019/8/30/16ce13e1cb35b14d?w=592&h=294&f=png&s=49702)
-
+![在这里插入图片描述](https://img-blog.csdnimg.cn/20190830145557132.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3UwMTQ3MzAyNDU=,size_16,color_FFFFFF,t_70)![在这里插入图片描述](https://img-blog.csdnimg.cn/20190830145608161.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3UwMTQ3MzAyNDU=,size_16,color_FFFFFF,t_70)
 ```objective-c
     UFActionButton *submitButton = [UFActionButton makeActionButton:^(UFActionButtonMaker * _Nonnull make) {
             make
@@ -717,6 +683,7 @@ UFSection *section = [UFSection makeSection:^(UFSectionMaker * _Nonnull make) {
 pod 'UFKit'
 
 ## [github](https://github.com/czl620/UFKit)
+
 
 
 
