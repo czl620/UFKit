@@ -9,7 +9,7 @@ UFFormView *formView = [UFFormView makeFormView:^(UFFormViewMaker * _Nonnull mak
     }];
 ```
 
-或者
+或
 
 ```objective-c
 UFFormView *formView = [[UFFormView alloc] init];
@@ -35,7 +35,7 @@ UFTextStyle *textStyle = [UFTextStyle makeTextStyle:^(UFRowTextStyleMaker * _Non
     }];     
 ```
 
-或者
+或
 
 ```objective-c
 UFTextStyle *textStyle = [[UFTextStyle alloc] init];
@@ -310,7 +310,35 @@ UFPlateNumberRow                     // 车牌号码
 ![在这里插入图片描述](https://img-blog.csdnimg.cn/20190830145004771.png)
 
 ```objective-c
-
+UFRow *row = [UFRow makeRow:^(UFRowMaker * _Nonnull make) {
+        make
+        .height(50)                                  // 设置行高
+        .image([UIImage imageNamed:@"icon"])         // 设置图标
+        .title(@"姓名")                               // 设置标题
+        .titleStyle([UFRowTitleStyle makeTitleStyle:^(UFRowTitleStyleMaker * _Nonnull make) {
+            make
+            .width(100)                              // 设置标题宽度，为了对齐表单
+            .color([UIColor blackColor])             // 设置标题颜色
+            .font([UIFont systemFontOfSize:15])      // 设置标题字体
+            .textAlignment(NSTextAlignmentLeft);     // 设置标题对齐方式
+        }])                                          // 设置标题样式
+        .value(@"陈张利")                             // 设置默认值
+        .valueStyle([UFTextStyle makeTextStyle:^(UFRowTextStyleMaker * _Nonnull make) {
+            make
+            .color([UIColor blackColor])             // 设置值颜色
+            .font([UIFont systemFontOfSize:15])      // 设置值字体
+            .textAlignment(NSTextAlignmentRight);    // 设置值对齐方式
+        }])                                          // 设置值样式
+        .valueDidChanged(^(__kindof UFRow * _Nonnull row, NSString * _Nonnull value) {
+            // 监听值得变化
+        })
+        .accessoryType(UFRowAccessoryDisclosureIndicator) // 设置行后的附件样式，如箭头、对号
+        .accessoryImage([UIImage imageNamed:@"arrow"])    // 自定义行后的附件图片，如箭头、对号
+        .rowDidSelected(^(__kindof UFRow * _Nonnull row) {
+            // 点击行事件
+        })
+        .name(@"name");                                   // 行的名称,可看做时字段的key，唯一值
+    }];
 ```
 
 ***注***：为使行的右端对齐，你可使用**UFRowAccessorySpace**进行占位。
