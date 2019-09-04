@@ -26,6 +26,12 @@
 
     NSLog(@"版本：%@",UFKIT_VERSION);
 
+    [UFFormView makeFormView:^(UFFormViewMaker * _Nonnull make) {
+        make
+        .titleStyle([UFRowTitleStyle makeTitleStyle:^(UFRowTitleStyleMaker * _Nonnull make) {                                // TODO:设置标题样式（参考如何创建标题样式）
+        }]);
+    }];
+
     _customArray = @[@{@"title":@"A",
                        @"children":@[@"a1",
                                      @"a2",
