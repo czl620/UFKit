@@ -667,8 +667,17 @@ UFFormView *formView = [UFFormView makeFormView:^(UFFormViewMaker * _Nonnull mak
             .registerRow([CustomRow class], [CustomRowCell class])；
             }];
 ```
+##### 4、如何查找行？
+```objective-c
 
-##### 4、添加行到组
+// 根据名称查找
+UFRow *row = [formView findRowByName:@"name"];
+
+// 根据位置查找，如第1组第4行
+UFRow *row = [formView findRowInRange:UFMakeRange(0, 3)];
+```
+
+##### 5、添加行到组
 
 ```objective-c
 UFSection *section = [UFSection makeSection:^(UFSectionMaker * _Nonnull make) {
