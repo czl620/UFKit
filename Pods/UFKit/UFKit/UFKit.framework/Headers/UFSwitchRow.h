@@ -12,11 +12,12 @@
 //     \ _ _ _ _ /  /__/        /__/     \__\  /__/        /__/
 
 #import "UFRow.h"
+#import "UFKitDefines.h"
 
 NS_ASSUME_NONNULL_BEGIN
 
-UIKIT_EXTERN NSString * const SWITCH_ON;
-UIKIT_EXTERN NSString * const SWITCH_OFF;
+UFKIT_EXTERN NSString * const SWITCH_ON;
+UFKIT_EXTERN NSString * const SWITCH_OFF;
 
 @class UFSwitchRowMaker;
 @interface UFSwitchRow : UFRow

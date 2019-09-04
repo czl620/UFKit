@@ -108,6 +108,7 @@
             .addRow([UFTextFieldRow makeTextFieldRow:^(UFTextFieldRowMaker * _Nonnull make) {
                 make
                 .limitType(UFInputLimitTypeMobile)
+                .isRequired(YES)
                 .title(@"联系方式")
                 .name(@"mobile")
                 .accessoryType(UFRowAccessorySpace);
@@ -244,7 +245,7 @@
 
     // 查找某一行
 //    UFRow *row_range = [formView findRowInRange:UFMakeRange(0, 9)];
-//    UFRow *row_name = [formView findRowByName:@"name"];
+    UFRow *row_name = [formView findRowByName:@"name"];
 
 
 }

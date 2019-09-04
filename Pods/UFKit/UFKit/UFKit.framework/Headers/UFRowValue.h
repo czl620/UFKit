@@ -18,7 +18,8 @@ NS_ASSUME_NONNULL_BEGIN
 @interface NSString (rowValue)
 
 // 扩展字段
-@property (nonatomic, strong) id ext;
+@property (nonatomic, strong) id ufk_ext;
+@property (nonatomic, strong) id ext __attribute__((deprecated("已过期, 建议使用ufk_ext")));
 
 @end
 

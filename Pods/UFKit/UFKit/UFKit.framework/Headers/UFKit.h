@@ -12,13 +12,8 @@
 //     \ _ _ _ _ /  /__/        /__/     \__\  /__/        /__/
 
 
-#ifdef __cplusplus
-#define UFKIT_EXTERN        extern "C" __attribute__((visibility ("default")))
-#else
-#define UFKIT_EXTERN        extern __attribute__((visibility ("default")))
-#endif
-
 #import <UIKit/UIKit.h>
+#import <UFKit/UFKitDefines.h>
 #import <UFKit/UFFormView.h>
 #import <UFKit/UFSection.h>
 #import <UFKit/UFRowCell.h>

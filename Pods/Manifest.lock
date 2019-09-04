@@ -4,13 +4,13 @@ PODS:
   - SDWebImage (5.0.6):
     - SDWebImage/Core (= 5.0.6)
   - SDWebImage/Core (5.0.6)
-  - UFKit (1.1.0):
+  - UFKit (1.1.1):
     - IQKeyboardManager (~> 6.3.0)
     - Masonry (~> 1.1.0)
     - SDWebImage (~> 5.0.6)
 
 DEPENDENCIES:
-  - UFKit (~> 1.1.0)
+  - UFKit (~> 1.1.1)
 
 SPEC REPOS:
   https://github.com/cocoapods/specs.git:
@@ -23,8 +23,8 @@ SPEC CHECKSUMS:
   IQKeyboardManager: 2ca9d64893247556f53523dcd8d78641f0ba7c23
   Masonry: 678fab65091a9290e40e2832a55e7ab731aad201
   SDWebImage: 920f1a2ff1ca8296ad34f6e0510a1ef1d70ac965
-  UFKit: 564369794ef1eec60c1f76f3f9ddecb29d64a634
+  UFKit: 30197038649de38e0e40bf8c912c6cde49e19f71
 
-PODFILE CHECKSUM: 8e686b40ac8474771cee46144dfad324f7448333
+PODFILE CHECKSUM: 20940141fe442188da3262d687133d6587777a1e
 
 COCOAPODS: 1.7.5
