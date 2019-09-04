@@ -18,6 +18,7 @@ NS_ASSUME_NONNULL_BEGIN
 @class UFPlateNumberRowMaker;
 @interface UFPlateNumberRow : UFTextFieldRow
 
+// 省份简写的字体颜色
 @property (nonatomic, strong) UIColor *color;
 
 + (UFPlateNumberRow *)makePlateNumberRow:(NS_NOESCAPE void(^)(UFPlateNumberRowMaker *make))block;

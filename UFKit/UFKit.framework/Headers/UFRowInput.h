@@ -12,11 +12,12 @@
 //     \ _ _ _ _ /  /__/        /__/     \__\  /__/        /__/
 
 #import <UIKit/UIKit.h>
+#import "UFKitDefines.h"
 #import "UFRow.h"
 
 NS_ASSUME_NONNULL_BEGIN
 
-UIKIT_EXTERN NSString * const UFKeyboardDidDoneNotification;
+UFKIT_EXTERN NSString * const UFKeyboardDidDoneNotification;
 
 /**
  限制输入样式

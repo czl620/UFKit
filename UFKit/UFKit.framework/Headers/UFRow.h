@@ -43,6 +43,8 @@ typedef void(^UFRowDidSelected)(__kindof UFRow *row);
 @property (nonatomic, copy, nullable) NSString *title;
 // 标题样式
 @property (nonatomic, strong, nullable) UFRowTitleStyle *titleStyle;
+// 富文本标题
+@property (nonatomic, copy, nullable) NSAttributedString *attributedTitle;
 
 // 值
 @property (nonatomic, copy, nullable) NSString *value;
@@ -54,13 +56,17 @@ typedef void(^UFRowDidSelected)(__kindof UFRow *row);
 @property (nonatomic, strong) UIColor *seperatorColor;
 
 @property (nonatomic, assign) UFRowAccessoryType accessoryType;
+@property (nonatomic, strong) UIImage *accessoryImage;
+
+// 必填项，标题前加红色*，你也可以使用attributedTitle自定义
+@property (nonatomic, assign) BOOL isRequired;
 
 // 值发生改变时回调
 @property (nonatomic, copy) UFValueDidChanged valueDidChanged;
 // 行点击时回调
 @property (nonatomic, copy) UFRowDidSelected rowDidSelected;
 
-@property (nonatomic, strong) UIImage *accessoryImage;
+
 
 + (UFRow *)makeRow:(NS_NOESCAPE void(^)(UFRowMaker *make))block;
 
@@ -80,6 +86,7 @@ typedef void(^UFRowDidSelected)(__kindof UFRow *row);
 
 @property (nonatomic, copy, readonly) UFRowMaker *(^title)(NSString * _Nullable title);
 @property (nonatomic, copy, readonly) UFRowMaker *(^titleStyle)(UFRowTitleStyle *titleStyle);
+@property (nonatomic, copy, readonly) UFRowMaker *(^attributedTitle)(NSAttributedString * _Nullable attributedTitle);
 
 @property (nonatomic, copy, readonly) UFRowMaker *(^value)(NSString * _Nullable value);
 @property (nonatomic, copy, readonly) UFRowMaker *(^valueStyle)(UFTextStyle *valueStyle);
@@ -89,6 +96,8 @@ typedef void(^UFRowDidSelected)(__kindof UFRow *row);
 
 @property (nonatomic, copy, readonly) UFRowMaker *(^accessoryType)(UFRowAccessoryType accessoryType);
 @property (nonatomic, copy, readonly) UFRowMaker *(^accessoryImage)(UIImage *accessoryImage);
+
+@property (nonatomic, copy, readonly) UFRowMaker *(^isRequired)(BOOL isRequired);
 
 @property (nonatomic, copy, readonly) UFRowMaker *(^valueDidChanged)(UFValueDidChanged valueDidChanged);
 @property (nonatomic, copy, readonly) UFRowMaker *(^rowDidSelected)(UFRowDidSelected rowDidSelected);

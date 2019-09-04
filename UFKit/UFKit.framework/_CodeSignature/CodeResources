@@ -34,7 +34,11 @@
 		</data>
 		<key>Headers/UFKit.h</key>
 		<data>
-		Qmrl29PBNt/bmFhEwQUfEh6InFg=
+		pT1VxIrQ1uhpahNZ9PoDjN3fkkA=
+		</data>
+		<key>Headers/UFKitDefines.h</key>
+		<data>
+		r7M5KSdwbxuVZXPLMUv8b6a1r1w=
 		</data>
 		<key>Headers/UFMobileCodeRow.h</key>
 		<data>
@@ -54,7 +58,7 @@
 		</data>
 		<key>Headers/UFPlateNumberRow.h</key>
 		<data>
-		jKTFuyqdTO6GrzS6rWoDKb7pKYI=
+		62OHknStQflFka8Fa0UrAAvVuEQ=
 		</data>
 		<key>Headers/UFRadioGroupRow.h</key>
 		<data>
@@ -66,15 +70,15 @@
 		</data>
 		<key>Headers/UFRow.h</key>
 		<data>
-		zjmNzHNYZmyr/vrxhWYo/yBoLw4=
+		CCzNqRFGojRHyI9ffFbwgIcofE8=
 		</data>
 		<key>Headers/UFRowCell.h</key>
 		<data>
-		xmhBDLANlorohnOAUo1hlExRAAk=
+		A9wp194XQFvPhXlt3xzn6EvL3w0=
 		</data>
 		<key>Headers/UFRowInput.h</key>
 		<data>
-		QDIPWwRpYJxaMAd7YN5i9DTDhY0=
+		Z+U1stRSI/J42wzto8ssFPJOlVg=
 		</data>
 		<key>Headers/UFRowTitleStyle.h</key>
 		<data>
@@ -82,7 +86,7 @@
 		</data>
 		<key>Headers/UFRowValue.h</key>
 		<data>
-		Xt2oLR+ae9a7145jn1EcNgwVnWU=
+		rGas1V/Zpc0o/nIXVCw+cfLThWE=
 		</data>
 		<key>Headers/UFSection.h</key>
 		<data>
@@ -98,7 +102,7 @@
 		</data>
 		<key>Headers/UFSwitchRow.h</key>
 		<data>
-		h/hn3yCEfczvjTznhS+G6sCzE9M=
+		JGaiZQNBQ1ggVSy8GOv1CRC2IpU=
 		</data>
 		<key>Headers/UFTextFieldRow.h</key>
 		<data>
@@ -122,7 +126,7 @@
 		</data>
 		<key>Info.plist</key>
 		<data>
-		oV8h9EomELRAZdTY3HXdJDeYFQQ=
+		6xj7q4WqYWZssCkzrIgisC7zjSc=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -212,11 +216,22 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			Qmrl29PBNt/bmFhEwQUfEh6InFg=
+			pT1VxIrQ1uhpahNZ9PoDjN3fkkA=
 			</data>
 			<key>hash2</key>
 			<data>
-			ANYTg/2BsshS0B8K1n9Cf0a7ysadIyahQXR/N1E6wzY=
+			By1W3khUcBUafUYhMhmV0ydkrMKfvl3TKhzLCRsFU0E=
+			</data>
+		</dict>
+		<key>Headers/UFKitDefines.h</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			r7M5KSdwbxuVZXPLMUv8b6a1r1w=
+			</data>
+			<key>hash2</key>
+			<data>
+			hvlb3Qs7GHxq5FcxGPhJh5YVB8iRmWLpICrxn/Defx8=
 			</data>
 		</dict>
 		<key>Headers/UFMobileCodeRow.h</key>
@@ -267,11 +282,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			jKTFuyqdTO6GrzS6rWoDKb7pKYI=
+			62OHknStQflFka8Fa0UrAAvVuEQ=
 			</data>
 			<key>hash2</key>
 			<data>
-			9APOoMfnRmLsrBGub/8e1ACQqxb5j04Q5TA9B1QWmTY=
+			2s1dRwOAwcCYgN/PDfatQXKe5Rahku4/zOZqeawfTCg=
 			</data>
 		</dict>
 		<key>Headers/UFRadioGroupRow.h</key>
@@ -300,33 +315,33 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			zjmNzHNYZmyr/vrxhWYo/yBoLw4=
+			CCzNqRFGojRHyI9ffFbwgIcofE8=
 			</data>
 			<key>hash2</key>
 			<data>
-			p6OxG1EFiewOkl1QMrhW+OtBhfrxI7gWyI0U18FQ18g=
+			fN04IK4Slu392ORSBAf7uArQvNqc3ZtRKmpgeiQZryY=
 			</data>
 		</dict>
 		<key>Headers/UFRowCell.h</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			xmhBDLANlorohnOAUo1hlExRAAk=
+			A9wp194XQFvPhXlt3xzn6EvL3w0=
 			</data>
 			<key>hash2</key>
 			<data>
-			C42DG4iP73d87x9YtE8cNRCtlWIycdFpbWAu7giETXo=
+			1IZTxIP6pSCYNOQpOUphYOhOnPX9gYYJepHsa78J6n8=
 			</data>
 		</dict>
 		<key>Headers/UFRowInput.h</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			QDIPWwRpYJxaMAd7YN5i9DTDhY0=
+			Z+U1stRSI/J42wzto8ssFPJOlVg=
 			</data>
 			<key>hash2</key>
 			<data>
-			sd0P690W3aqOIf26IlWgk4WiU3vkaEQOvuSa6/aVeqw=
+			HsbP/BqwlvhCeYcvCPLmtA0gw0a8M8PhRi7n06QiFlQ=
 			</data>
 		</dict>
 		<key>Headers/UFRowTitleStyle.h</key>
@@ -344,11 +359,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			Xt2oLR+ae9a7145jn1EcNgwVnWU=
+			rGas1V/Zpc0o/nIXVCw+cfLThWE=
 			</data>
 			<key>hash2</key>
 			<data>
-			yHZ4OFrgAkFP4agOD3ifxz/yF1TsmQww3kknJt2HoHU=
+			nVvp9MAtk9zMEdO7PNxX6vmZNLGQsmiXHDrAbmbOyYg=
 			</data>
 		</dict>
 		<key>Headers/UFSection.h</key>
@@ -388,11 +403,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			h/hn3yCEfczvjTznhS+G6sCzE9M=
+			JGaiZQNBQ1ggVSy8GOv1CRC2IpU=
 			</data>
 			<key>hash2</key>
 			<data>
-			odHjYzwSbOvp65FrV9UPkx9PlttaPw3D9HkzUYRDJh8=
+			TT8z0Mb2IMt5dsDUDpheVZmI8Exkv/JEbG39KxDY8Zs=
 			</data>
 		</dict>
 		<key>Headers/UFTextFieldRow.h</key>
