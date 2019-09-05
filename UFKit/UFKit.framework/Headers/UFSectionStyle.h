@@ -32,9 +32,10 @@ NS_ASSUME_NONNULL_BEGIN
 @end
 
 
-@interface UFSectionStyleMaker : NSObject
+@interface UFSectionStyleMaker : UFRowTextStyleMaker
 
 - (instancetype)init NS_UNAVAILABLE;
+- (instancetype)initWithTextStyle:(UFTextStyle *)titleStyle NS_UNAVAILABLE;
 - (instancetype)initWithSectionStyle:(UFSectionStyle *)sectionStyle NS_DESIGNATED_INITIALIZER;
 
 @property (nonatomic, strong, readonly) UFSectionStyle *sectionStyle;
