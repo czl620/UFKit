@@ -11,23 +11,21 @@
 //     /  /_ __/  /  /  /        /  /   \  \    /  /        /  /
 //     \ _ _ _ _ /  /__/        /__/     \__\  /__/        /__/
 
-#import <UIKit/UIKit.h>
+#import "UFTextStyle.h"
 
 NS_ASSUME_NONNULL_BEGIN
 
 @class UFSectionStyleMaker;
-@interface UFSectionStyle : NSObject
+@interface UFSectionStyle : UFTextStyle
 
 // 分组高度
 @property (nonatomic, assign) CGFloat height;
 // 文本内容
 @property (nonatomic, copy) NSString *text;
+// 富文本内容
+@property (nonatomic, copy) NSAttributedString *attributedText;
 // 行数
 @property (nonatomic, assign) NSInteger numberOfLines;
-// 字体
-@property (nonatomic, strong) UIFont *font;
-// 文本颜色
-@property (nonatomic, strong) UIColor *color;
 
 + (UFSectionStyle *)makeSectionStyle:(NS_NOESCAPE void(^)(UFSectionStyleMaker *make))block;
 
@@ -43,8 +41,7 @@ NS_ASSUME_NONNULL_BEGIN
 
 @property (nonatomic, copy, readonly) UFSectionStyleMaker *(^height)(CGFloat height);
 @property (nonatomic, copy, readonly) UFSectionStyleMaker *(^text)(NSString *text);
-@property (nonatomic, copy, readonly) UFSectionStyleMaker *(^font)(UIFont *font);
-@property (nonatomic, copy, readonly) UFSectionStyleMaker *(^color)(UIColor *color);
+@property (nonatomic, copy, readonly) UFSectionStyleMaker *(^attributedText)(NSAttributedString *attributedText);
 @property (nonatomic, copy, readonly) UFSectionStyleMaker *(^numberOfLines)(NSInteger numberOfLines);
 
 @end
