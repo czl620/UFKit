@@ -4,7 +4,7 @@ Pod::Spec.new do |s|
 s.name         = 'UFKit'
 
 #版本号
-s.version      = '1.1.4'
+s.version      = '1.1.5'
 
 #许可证
 s.license      = { :type => 'MIT' }
@@ -39,8 +39,8 @@ s.resources          = "UFKit/UFKit.bundle"
 #依赖库
 s.frameworks   = 'UIKit','Foundation'
 
-s.dependency  'Masonry', '~> 1.1.0'
-s.dependency  'SDWebImage', '~> 5.0.6'
-s.dependency  'IQKeyboardManager', '~> 6.3.0'
+s.dependency  'Masonry', '>= 1.1.0'
+s.dependency  'SDWebImage', '>= 5.0.6'
+s.dependency  'IQKeyboardManager', '>= 6.3.0'
 
 end
