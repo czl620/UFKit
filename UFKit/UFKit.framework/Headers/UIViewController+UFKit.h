@@ -22,7 +22,8 @@ NS_ASSUME_NONNULL_BEGIN
 
  @param completion 回调选择的图片
  */
-- (void)ufk_pickerImageForResult:(void (^)(UIImage *image))completion;
+- (void)ufk_pickerImageForResult:(void (^)(UIImage *image))completion __attribute__((deprecated("已过期, 建议使用ufk_pickerImageFromView:forResult:")));
+- (void)ufk_pickerImageFromView:(UIView *)sourceView forResult:(void (^)(UIImage *image))completion;
 
 @end
 

@@ -21,6 +21,8 @@ NS_ASSUME_NONNULL_BEGIN
 // 省份简写的字体颜色
 @property (nonatomic, strong) UIColor *color;
 
+@property (nonatomic, assign) CGFloat inputWidth;
+
 + (UFPlateNumberRow *)makePlateNumberRow:(NS_NOESCAPE void(^)(UFPlateNumberRowMaker *make))block;
 
 @end
@@ -35,6 +37,7 @@ NS_ASSUME_NONNULL_BEGIN
 @property (nonatomic, strong, readonly) UFPlateNumberRow *plateNumberRow;
 
 @property (nonatomic, copy, readonly) UFPlateNumberRowMaker *(^color)(UIColor *color);
+@property (nonatomic, copy, readonly) UFPlateNumberRowMaker *(^inputWidth)(CGFloat inputWidth);
 
 @end
 
