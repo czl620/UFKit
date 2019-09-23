@@ -29,6 +29,7 @@ typedef NS_ENUM(NSInteger, UFRowAccessoryType) {
 @class UFRow;
 typedef void(^UFValueDidChanged)(__kindof UFRow *row, NSString *value);
 typedef void(^UFRowDidSelected)(__kindof UFRow *row);
+typedef void(^UFRowAccessoryDidSelected)(__kindof UFRow *row, UIView *accessoryView);
 
 @class UFRowMaker;
 @interface UFRow : NSObject
@@ -66,6 +67,7 @@ typedef void(^UFRowDidSelected)(__kindof UFRow *row);
 // 行点击时回调
 @property (nonatomic, copy) UFRowDidSelected rowDidSelected;
 
+@property (nonatomic, copy) UFRowAccessoryDidSelected accessoryDidSelected;
 
 
 + (UFRow *)makeRow:(NS_NOESCAPE void(^)(UFRowMaker *make))block;
@@ -101,6 +103,7 @@ typedef void(^UFRowDidSelected)(__kindof UFRow *row);
 
 @property (nonatomic, copy, readonly) UFRowMaker *(^valueDidChanged)(UFValueDidChanged valueDidChanged);
 @property (nonatomic, copy, readonly) UFRowMaker *(^rowDidSelected)(UFRowDidSelected rowDidSelected);
+@property (nonatomic, copy, readonly) UFRowMaker *(^accessoryDidSelected)(UFRowAccessoryDidSelected accessoryDidSelected);
 
 @end
 
