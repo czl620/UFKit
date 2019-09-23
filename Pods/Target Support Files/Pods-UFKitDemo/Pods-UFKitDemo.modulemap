@@ -1,0 +1,6 @@
+framework module Pods_UFKitDemo {
+  umbrella header "Pods-UFKitDemo-umbrella.h"
+
+  export *
+  module * { export * }
+}

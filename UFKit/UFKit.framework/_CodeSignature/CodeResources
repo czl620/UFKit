@@ -46,7 +46,7 @@
 		</data>
 		<key>Headers/UFMobileCodeStyle.h</key>
 		<data>
-		zzvzu01Ks0WajEUs5ASbl5ieI9g=
+		9ZgzJmuWia4inc3PAAvJHwzZAtQ=
 		</data>
 		<key>Headers/UFMultiplePickerViewRow.h</key>
 		<data>
@@ -70,7 +70,7 @@
 		</data>
 		<key>Headers/UFRow.h</key>
 		<data>
-		CCzNqRFGojRHyI9ffFbwgIcofE8=
+		fpKG8uUtnBDZsMGZSqErQqnQyfI=
 		</data>
 		<key>Headers/UFRowCell.h</key>
 		<data>
@@ -126,7 +126,7 @@
 		</data>
 		<key>Info.plist</key>
 		<data>
-		R1oVQf8I5BYa9gTjxZKISixsspc=
+		hFn9wkKluGXyJZFbTEhPW3FJql0=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -249,11 +249,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			zzvzu01Ks0WajEUs5ASbl5ieI9g=
+			9ZgzJmuWia4inc3PAAvJHwzZAtQ=
 			</data>
 			<key>hash2</key>
 			<data>
-			cZNoTAuzADrJlWoMjSse+Tkz8ElejJfWKIIh0lqAzY0=
+			8/fJ25IUSDPj5kNFJzqusLfRgDuJugxaUMwbMzbxe5c=
 			</data>
 		</dict>
 		<key>Headers/UFMultiplePickerViewRow.h</key>
@@ -315,11 +315,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			CCzNqRFGojRHyI9ffFbwgIcofE8=
+			fpKG8uUtnBDZsMGZSqErQqnQyfI=
 			</data>
 			<key>hash2</key>
 			<data>
-			fN04IK4Slu392ORSBAf7uArQvNqc3ZtRKmpgeiQZryY=
+			cdVoWlnORDbH7Jn6SIChXfq5GKiLpYkVzTyudmPZ310=
 			</data>
 		</dict>
 		<key>Headers/UFRowCell.h</key>

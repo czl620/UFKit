@@ -29,12 +29,6 @@
 #import <UIKit/UIAccessibility.h>
 #import <UIKit/UIViewController.h>
 
-@interface IQTitleBarButtonItem (PrivateAccessor)
-
-@property(nonnull, nonatomic, strong) UIButton *titleButton;
-
-@end
-
 @implementation IQToolbar
 @synthesize previousBarButton = _previousBarButton;
 @synthesize nextBarButton = _nextBarButton;
@@ -140,18 +134,14 @@
     if (_fixedSpaceBarButton == nil)
     {
         _fixedSpaceBarButton = [[IQBarButtonItem alloc] initWithBarButtonSystemItem:UIBarButtonSystemItemFixedSpace target:nil action:nil];
-#ifdef __IPHONE_11_0
         if (@available(iOS 10.0, *))
-#else
-            if (IQ_IS_IOS10_OR_GREATER)
-#endif
-            {
-                [_fixedSpaceBarButton setWidth:6];
-            }
-            else
-            {
-                [_fixedSpaceBarButton setWidth:20];
-            }
+        {
+            [_fixedSpaceBarButton setWidth:6];
+        }
+        else
+        {
+            [_fixedSpaceBarButton setWidth:20];
+        }
     }
     
     return _fixedSpaceBarButton;
@@ -164,23 +154,6 @@
     sizeThatFit.height = 44;
     
     return sizeThatFit;
-}
-
--(void)setBarStyle:(UIBarStyle)barStyle
-{
-    [super setBarStyle:barStyle];
-    
-    if (self.titleBarButton.selectableTitleColor == nil)
-    {
-        if (barStyle == UIBarStyleDefault)
-        {
-            [self.titleBarButton.titleButton setTitleColor:[UIColor colorWithRed:0.0 green:0.5 blue:1.0 alpha:1.0] forState:UIControlStateNormal];
-        }
-        else
-        {
-            [self.titleBarButton.titleButton setTitleColor:[UIColor yellowColor] forState:UIControlStateNormal];
-        }
-    }
 }
 
 -(void)setTintColor:(UIColor *)tintColor
@@ -197,12 +170,8 @@
 {
     [super layoutSubviews];
 
-    //If running on Xcode9 (iOS11) only then we'll validate for iOS version, otherwise for older versions of Xcode (iOS10 and below) we'll just execute the tweak
-#ifdef __IPHONE_11_0
     if (@available(iOS 11.0, *)) {}
-    else
-#endif
-    {
+    else {
         CGRect leftRect = CGRectNull;
         CGRect rightRect = CGRectNull;
         

@@ -7,16 +7,22 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		13AA58A608F4D1DFF2BB0E13 /* libPods-UFKitDemo.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 60E42D064419BDC79FF6E2E1 /* libPods-UFKitDemo.a */; };
+		4C58E06723386DE200DACFC3 /* MyRow.m in Sources */ = {isa = PBXBuildFile; fileRef = 4C58E06623386DE200DACFC3 /* MyRow.m */; };
+		4C58E06A23386DF900DACFC3 /* MyRowCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 4C58E06923386DF900DACFC3 /* MyRowCell.m */; };
 		4CA0CD0622C4B0ED00EAB6DE /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 4CA0CD0522C4B0ED00EAB6DE /* AppDelegate.m */; };
 		4CA0CD0922C4B0ED00EAB6DE /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4CA0CD0822C4B0ED00EAB6DE /* ViewController.m */; };
 		4CA0CD0C22C4B0ED00EAB6DE /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4CA0CD0A22C4B0ED00EAB6DE /* Main.storyboard */; };
 		4CA0CD0E22C4B0EE00EAB6DE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4CA0CD0D22C4B0EE00EAB6DE /* Assets.xcassets */; };
 		4CA0CD1122C4B0EE00EAB6DE /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4CA0CD0F22C4B0EE00EAB6DE /* LaunchScreen.storyboard */; };
 		4CA0CD1422C4B0EE00EAB6DE /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 4CA0CD1322C4B0EE00EAB6DE /* main.m */; };
-		DB14E4BBA39C430E49B1BB73 /* libPods-UFKitDemo.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 624AD55701ED1492427104A0 /* libPods-UFKitDemo.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		4C58E06523386DE200DACFC3 /* MyRow.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MyRow.h; sourceTree = "<group>"; };
+		4C58E06623386DE200DACFC3 /* MyRow.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MyRow.m; sourceTree = "<group>"; };
+		4C58E06823386DF900DACFC3 /* MyRowCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MyRowCell.h; sourceTree = "<group>"; };
+		4C58E06923386DF900DACFC3 /* MyRowCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MyRowCell.m; sourceTree = "<group>"; };
 		4CA0CD0122C4B0ED00EAB6DE /* UFKitDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = UFKitDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		4CA0CD0422C4B0ED00EAB6DE /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		4CA0CD0522C4B0ED00EAB6DE /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -27,7 +33,7 @@
 		4CA0CD1022C4B0EE00EAB6DE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		4CA0CD1222C4B0EE00EAB6DE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		4CA0CD1322C4B0EE00EAB6DE /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		624AD55701ED1492427104A0 /* libPods-UFKitDemo.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-UFKitDemo.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		60E42D064419BDC79FF6E2E1 /* libPods-UFKitDemo.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-UFKitDemo.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		7023B363C5240B097E6B40A9 /* Pods-UFKitDemo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-UFKitDemo.release.xcconfig"; path = "Target Support Files/Pods-UFKitDemo/Pods-UFKitDemo.release.xcconfig"; sourceTree = "<group>"; };
 		7CCC83EC02D125822D5C34CA /* Pods-UFKitDemo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-UFKitDemo.debug.xcconfig"; path = "Target Support Files/Pods-UFKitDemo/Pods-UFKitDemo.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -37,7 +43,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				DB14E4BBA39C430E49B1BB73 /* libPods-UFKitDemo.a in Frameworks */,
+				13AA58A608F4D1DFF2BB0E13 /* libPods-UFKitDemo.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -69,6 +75,10 @@
 				4CA0CD0522C4B0ED00EAB6DE /* AppDelegate.m */,
 				4CA0CD0722C4B0ED00EAB6DE /* ViewController.h */,
 				4CA0CD0822C4B0ED00EAB6DE /* ViewController.m */,
+				4C58E06523386DE200DACFC3 /* MyRow.h */,
+				4C58E06623386DE200DACFC3 /* MyRow.m */,
+				4C58E06823386DF900DACFC3 /* MyRowCell.h */,
+				4C58E06923386DF900DACFC3 /* MyRowCell.m */,
 				4CA0CD0A22C4B0ED00EAB6DE /* Main.storyboard */,
 				4CA0CD0D22C4B0EE00EAB6DE /* Assets.xcassets */,
 				4CA0CD0F22C4B0EE00EAB6DE /* LaunchScreen.storyboard */,
@@ -81,7 +91,7 @@
 		6B7CFF22B6300E212B15B1F0 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				624AD55701ED1492427104A0 /* libPods-UFKitDemo.a */,
+				60E42D064419BDC79FF6E2E1 /* libPods-UFKitDemo.a */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -209,6 +219,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4C58E06723386DE200DACFC3 /* MyRow.m in Sources */,
+				4C58E06A23386DF900DACFC3 /* MyRowCell.m in Sources */,
 				4CA0CD0922C4B0ED00EAB6DE /* ViewController.m in Sources */,
 				4CA0CD1422C4B0EE00EAB6DE /* main.m in Sources */,
 				4CA0CD0622C4B0ED00EAB6DE /* AppDelegate.m in Sources */,

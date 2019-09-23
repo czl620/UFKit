@@ -3,8 +3,8 @@ platform :ios, '8.0'
 inhibit_all_warnings!
 
 target 'UFKitDemo' do
-  
-    pod 'UFKit', '~> 1.1.1'
+    use_frameworks!
+    pod 'UFKit', '~> 1.1.6'
 
 end
 
