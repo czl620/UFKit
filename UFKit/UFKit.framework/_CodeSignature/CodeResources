@@ -70,7 +70,7 @@
 		</data>
 		<key>Headers/UFRow.h</key>
 		<data>
-		fpKG8uUtnBDZsMGZSqErQqnQyfI=
+		OypQ+JXvx9gJ0QZ/Goy46nDOVBU=
 		</data>
 		<key>Headers/UFRowCell.h</key>
 		<data>
@@ -126,7 +126,7 @@
 		</data>
 		<key>Info.plist</key>
 		<data>
-		hFn9wkKluGXyJZFbTEhPW3FJql0=
+		qMmD5AEaCLu0GfbhxHGL++znCRA=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -315,11 +315,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			fpKG8uUtnBDZsMGZSqErQqnQyfI=
+			OypQ+JXvx9gJ0QZ/Goy46nDOVBU=
 			</data>
 			<key>hash2</key>
 			<data>
-			cdVoWlnORDbH7Jn6SIChXfq5GKiLpYkVzTyudmPZ310=
+			sw/jlUhs8vDeGzvRIoCcBXPXzVyCIB7MLfw9DN7n+jc=
 			</data>
 		</dict>
 		<key>Headers/UFRowCell.h</key>

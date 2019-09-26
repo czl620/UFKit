@@ -38,7 +38,9 @@ typedef void(^UFRowAccessoryDidSelected)(__kindof UFRow *row, UIView *accessoryV
 @property (nonatomic, copy, nullable) NSString *name;
 
 // 图标
-@property (nonatomic, strong, nullable) UIImage *image;
+@property (nonatomic, strong, nullable) id image;
+@property (nonatomic, strong, nullable) UIImage *placeholderImage;
+@property (nonatomic, assign) CGSize imageSize;
 
 // 标题
 @property (nonatomic, copy, nullable) NSString *title;
@@ -82,7 +84,9 @@ typedef void(^UFRowAccessoryDidSelected)(__kindof UFRow *row, UIView *accessoryV
 
 @property (nonatomic, strong, readonly) UFRow *row;
 
-@property (nonatomic, copy, readonly) UFRowMaker *(^image)(UIImage *image);
+@property (nonatomic, copy, readonly) UFRowMaker *(^image)(id image);
+@property (nonatomic, copy, readonly) UFRowMaker *(^placeholderImage)(UIImage *placeholderImage);
+@property (nonatomic, copy, readonly) UFRowMaker *(^imageSize)(CGSize imageSize);
 
 @property (nonatomic, copy, readonly) UFRowMaker *(^name)(NSString *name);
 
