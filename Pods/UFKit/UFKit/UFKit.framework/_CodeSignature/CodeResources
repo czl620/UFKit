@@ -32,9 +32,13 @@
 		<data>
 		S2o5445Y7LoGeN177XDblgYQJ0s=
 		</data>
+		<key>Headers/UFImageStyle.h</key>
+		<data>
+		73Qgh2XQVgqibVPQaJXwwiHAZwc=
+		</data>
 		<key>Headers/UFKit.h</key>
 		<data>
-		pT1VxIrQ1uhpahNZ9PoDjN3fkkA=
+		oQ7/jyyO8GDbuhIrpMLSqufaUhI=
 		</data>
 		<key>Headers/UFKitDefines.h</key>
 		<data>
@@ -46,7 +50,7 @@
 		</data>
 		<key>Headers/UFMobileCodeStyle.h</key>
 		<data>
-		9ZgzJmuWia4inc3PAAvJHwzZAtQ=
+		CVlBv/37uqdEzsxy90ykzg0BVSY=
 		</data>
 		<key>Headers/UFMultiplePickerViewRow.h</key>
 		<data>
@@ -70,7 +74,7 @@
 		</data>
 		<key>Headers/UFRow.h</key>
 		<data>
-		fpKG8uUtnBDZsMGZSqErQqnQyfI=
+		P7cTnFQOEKUEk0+4M6ld9Tcw1fI=
 		</data>
 		<key>Headers/UFRowCell.h</key>
 		<data>
@@ -126,7 +130,7 @@
 		</data>
 		<key>Info.plist</key>
 		<data>
-		hFn9wkKluGXyJZFbTEhPW3FJql0=
+		m9jW4LzjmfUvbXDi5RYBmAcexmY=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -212,15 +216,26 @@
 			n76eo55ZDmRXZl/DVgC3Utml7UYXD7nYx+DrAewTk10=
 			</data>
 		</dict>
+		<key>Headers/UFImageStyle.h</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			73Qgh2XQVgqibVPQaJXwwiHAZwc=
+			</data>
+			<key>hash2</key>
+			<data>
+			PCw6bYu+aZ4ndZCsxjMlT5hPPT8TdyPnVznua0/ffSY=
+			</data>
+		</dict>
 		<key>Headers/UFKit.h</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			pT1VxIrQ1uhpahNZ9PoDjN3fkkA=
+			oQ7/jyyO8GDbuhIrpMLSqufaUhI=
 			</data>
 			<key>hash2</key>
 			<data>
-			By1W3khUcBUafUYhMhmV0ydkrMKfvl3TKhzLCRsFU0E=
+			rQv3xougDmuGFaepXag4itojSnN6MtwLPL7jljjNgtk=
 			</data>
 		</dict>
 		<key>Headers/UFKitDefines.h</key>
@@ -249,11 +264,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			9ZgzJmuWia4inc3PAAvJHwzZAtQ=
+			CVlBv/37uqdEzsxy90ykzg0BVSY=
 			</data>
 			<key>hash2</key>
 			<data>
-			8/fJ25IUSDPj5kNFJzqusLfRgDuJugxaUMwbMzbxe5c=
+			ZI4uxfc7/AElYsodpQxlgK9txH55L2tfG40i02xGvAE=
 			</data>
 		</dict>
 		<key>Headers/UFMultiplePickerViewRow.h</key>
@@ -315,11 +330,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			fpKG8uUtnBDZsMGZSqErQqnQyfI=
+			P7cTnFQOEKUEk0+4M6ld9Tcw1fI=
 			</data>
 			<key>hash2</key>
 			<data>
-			cdVoWlnORDbH7Jn6SIChXfq5GKiLpYkVzTyudmPZ310=
+			5HJYIBfK0KOTmMLkn961felj0JH/T6wOloC7MuLeav4=
 			</data>
 		</dict>
 		<key>Headers/UFRowCell.h</key>

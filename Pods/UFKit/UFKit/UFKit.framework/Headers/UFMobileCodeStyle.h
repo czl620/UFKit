@@ -26,6 +26,8 @@ NS_ASSUME_NONNULL_BEGIN
 @property (nonatomic, assign) CGFloat borderWidth;
 // 倒计时按钮边框颜色
 @property (nonatomic, strong) UIColor *borderColor;
+// 倒计时按钮尺寸
+@property (nonatomic, assign) CGSize size;
 
 // 倒计时按钮与输入框之间分割线的颜色
 @property (nonatomic, strong) UIColor *separatorColor;
@@ -46,6 +48,7 @@ NS_ASSUME_NONNULL_BEGIN
 @property (nonatomic, copy, readonly) UFMobileCodeStyleMaker *(^cornerRadius)(CGFloat cornerRadius);
 @property (nonatomic, copy, readonly) UFMobileCodeStyleMaker *(^borderWidth)(CGFloat borderWidth);
 @property (nonatomic, copy, readonly) UFMobileCodeStyleMaker *(^borderColor)(UIColor *borderColor);
+@property (nonatomic, copy, readonly) UFMobileCodeStyleMaker *(^size)(CGSize size);
 
 @property (nonatomic, copy, readonly) UFMobileCodeStyleMaker *(^separatorColor)(UIColor *separatorColor);
 

@@ -126,8 +126,6 @@ NSInteger const kIQPreviousNextButtonToolbarTag     =   -1005;
 
 /*******************************************/
 
-@property(nonatomic, strong, nonnull, readwrite) NSMutableSet<Class> *registeredClasses;
-
 @property(nonatomic, strong, nonnull, readwrite) NSMutableSet<Class> *disabledDistanceHandlingClasses;
 @property(nonatomic, strong, nonnull, readwrite) NSMutableSet<Class> *enabledDistanceHandlingClasses;
 
@@ -191,12 +189,19 @@ NSInteger const kIQPreviousNextButtonToolbarTag     =   -1005;
 
 #pragma mark - Initializing functions
 
-/** Override +load method to enable KeyboardManager when class loader load IQKeyboardManager. Enabling when app starts (No need to write any code) */
+/**
+ Override +load method to enable KeyboardManager when class loader load IQKeyboardManager. Enabling when app starts (No need to write any code)
+ 
+ @Note: If you want to disable `+ (void)load` method, you can add build setting in configurations. Like that:
+       `{ 'GCC_PREPROCESSOR_DEFINITIONS' => '$(inherited) IQ_KEYBOARD_MANAGER_LOAD_METHOD_DISABLE=1' }`
+ */
+#if !IQ_KEYBOARD_MANAGER_LOAD_METHOD_DISABLE
 +(void)load
 {
     //Enabling IQKeyboardManager. Loading asynchronous on main thread
     [self performSelectorOnMainThread:@selector(sharedManager) withObject:nil waitUntilDone:NO];
 }
+#endif
 
 /*  Singleton Object Initialization. */
 -(instancetype)init
@@ -209,9 +214,7 @@ NSInteger const kIQPreviousNextButtonToolbarTag     =   -1005;
         dispatch_once(&onceToken, ^{
             
             __strong __typeof__(self) strongSelf = weakSelf;
-
-            strongSelf.registeredClasses = [[NSMutableSet alloc] init];
-
+            
             [strongSelf registerAllNotifications];
 
             //Creating gesture for @shouldResignOnTouchOutside. (Enhancement ID: #14)
@@ -348,6 +351,15 @@ NSInteger const kIQPreviousNextButtonToolbarTag     =   -1005;
         
         if (textFieldViewController)
         {
+            //If it is searchBar textField embedded in Navigation Bar
+            if ([_textFieldView textFieldSearchBar] != nil && [textFieldViewController isKindOfClass:[UINavigationController class]]) {
+                
+                UINavigationController *navController = (UINavigationController*)textFieldViewController;
+                if (navController.topViewController) {
+                    textFieldViewController = navController.topViewController;
+                }
+            }
+
             if (enable == NO)
             {
                 //If viewController is kind of enable viewController class, then assuming it's enabled.
@@ -432,6 +444,15 @@ NSInteger const kIQPreviousNextButtonToolbarTag     =   -1005;
         
         if (textFieldViewController)
         {
+            //If it is searchBar textField embedded in Navigation Bar
+            if ([_textFieldView textFieldSearchBar] != nil && [textFieldViewController isKindOfClass:[UINavigationController class]]) {
+                
+                UINavigationController *navController = (UINavigationController*)textFieldViewController;
+                if (navController.topViewController) {
+                    textFieldViewController = navController.topViewController;
+                }
+            }
+
             if (shouldResignOnTouchOutside == NO)
             {
                 //If viewController is kind of enable viewController class, then assuming shouldResignOnTouchOutside is enabled.
@@ -502,6 +523,15 @@ NSInteger const kIQPreviousNextButtonToolbarTag     =   -1005;
     
     if (textFieldViewController)
     {
+        //If it is searchBar textField embedded in Navigation Bar
+        if ([_textFieldView textFieldSearchBar] != nil && [textFieldViewController isKindOfClass:[UINavigationController class]]) {
+            
+            UINavigationController *navController = (UINavigationController*)textFieldViewController;
+            if (navController.topViewController) {
+                textFieldViewController = navController.topViewController;
+            }
+        }
+
         if (enableAutoToolbar == NO)
         {
             //If found any toolbar enabled classes then return.
@@ -672,7 +702,7 @@ NSInteger const kIQPreviousNextButtonToolbarTag     =   -1005;
     CGFloat layoutAreaHeight = rootController.view.layoutMargins.top;
     
     CGFloat topLayoutGuide = MAX(navigationBarAreaHeight, layoutAreaHeight) + 5;
-    CGFloat bottomLayoutGuide = [textFieldView isKindOfClass:[UITextView class]] ? 0 : rootController.view.layoutMargins.bottom; //Validation of textView for case where there is a tab bar at the bottom or running on iPhone X and textView is at the bottom.
+    CGFloat bottomLayoutGuide = ([textFieldView respondsToSelector:@selector(isEditable)] && [textFieldView isKindOfClass:[UIScrollView class]]) ? 0 : rootController.view.layoutMargins.bottom; //Validation of textView for case where there is a tab bar at the bottom or running on iPhone X and textView is at the bottom.
 
     //  +Move positive = textField is hidden.
     //  -Move negative = textField is showing.
@@ -937,7 +967,7 @@ NSInteger const kIQPreviousNextButtonToolbarTag     =   -1005;
                 //[textFieldView isKindOfClass:[UITextView class]] If is a UITextView type
                 //[superScrollView superviewOfClassType:[UIScrollView class]] == nil    If processing scrollView is last scrollView in upper hierarchy (there is no other scrollView upper hierarchy.)
                 //shouldOffsetY >= 0     shouldOffsetY must be greater than in order to keep distance from navigationBar (Bug ID: #92)
-                if ([textFieldView isKindOfClass:[UITextView class]] &&
+                if ([textFieldView respondsToSelector:@selector(isEditable)]  && [textFieldView isKindOfClass:[UIScrollView class]] &&
                     nextScrollView == nil &&
                     (shouldOffsetY >= 0))
                 {
@@ -1010,10 +1040,15 @@ NSInteger const kIQPreviousNextButtonToolbarTag     =   -1005;
                 CGFloat bottom = (kbSize.height-keyboardDistanceFromTextField)-(CGRectGetHeight(keyWindow.frame)-CGRectGetMaxY(lastScrollViewRect));
 
                 // Update the insets so that the scroll vew doesn't shift incorrectly when the offset is near the bottom of the scroll view.
-                UIEdgeInsets movedInsets = strongLastScrollView.contentInset;
+                CGFloat bottomInset = MAX(_startingContentInsets.bottom, bottom);
 
-                movedInsets.bottom = MAX(_startingContentInsets.bottom, bottom);
-                
+                if (@available(iOS 11, *)) {
+                    bottomInset -= strongLastScrollView.safeAreaInsets.bottom;
+                }
+
+                UIEdgeInsets movedInsets = strongLastScrollView.contentInset;
+                movedInsets.bottom = bottomInset;
+
                 if (UIEdgeInsetsEqualToEdgeInsets(strongLastScrollView.contentInset, movedInsets) == NO)
                 {
                     [self showLog:[NSString stringWithFormat:@"old ContentInset : %@ new ContentInset : %@", NSStringFromUIEdgeInsets(strongLastScrollView.contentInset), NSStringFromUIEdgeInsets(movedInsets)]];
@@ -1047,9 +1082,9 @@ NSInteger const kIQPreviousNextButtonToolbarTag     =   -1005;
         //Special case for UITextView(Readjusting textView.contentInset when textView hight is too big to fit on screen)
         //_lastScrollView       If not having inside any scrollView, (now contentInset manages the full screen textView.
         //[textFieldView isKindOfClass:[UITextView class]] If is a UITextView type
-        if ([textFieldView isKindOfClass:[UITextView class]])
+        if ([textFieldView respondsToSelector:@selector(isEditable)] && [textFieldView isKindOfClass:[UIScrollView class]])
         {
-            UITextView *textView = (UITextView*)textFieldView;
+            UIScrollView *textView = (UIScrollView*)textFieldView;
 
             CGFloat keyboardYPosition = CGRectGetHeight(keyWindow.frame)-(kbSize.height-keyboardDistanceFromTextField);
 
@@ -1078,8 +1113,15 @@ NSInteger const kIQPreviousNextButtonToolbarTag     =   -1005;
                     }
                 }
 
+                CGFloat bottomInset = self.textFieldView.frame.size.height-textViewHeight;
+
+                if (@available(iOS 11, *)) {
+                    bottomInset -= self.textFieldView.safeAreaInsets.bottom;
+                }
+
                 UIEdgeInsets newContentInset = textView.contentInset;
-                newContentInset.bottom = self.textFieldView.frame.size.height-textViewHeight;
+                newContentInset.bottom = bottomInset;
+
                 self.isTextViewContentInsetChanged = YES;
 
                 if (UIEdgeInsetsEqualToEdgeInsets(textView.contentInset, newContentInset) == NO)
@@ -1498,7 +1540,7 @@ NSInteger const kIQPreviousNextButtonToolbarTag     =   -1005;
 	if ([self privateIsEnableAutoToolbar])
     {
         //UITextView special case. Keyboard Notification is firing before textView notification so we need to reload it's inputViews.
-        if ([textFieldView isKindOfClass:[UITextView class]] &&
+        if ([textFieldView respondsToSelector:@selector(isEditable)] && [textFieldView isKindOfClass:[UIScrollView class]] &&
             textFieldView.inputAccessoryView == nil)
         {
             __weak __typeof__(self) weakSelf = self;
@@ -1592,9 +1634,9 @@ NSInteger const kIQPreviousNextButtonToolbarTag     =   -1005;
 
     // We check if there's a change in original frame or not.
     if(_isTextViewContentInsetChanged == YES &&
-       [textFieldView isKindOfClass:[UITextView class]])
+       [textFieldView respondsToSelector:@selector(isEditable)] && [textFieldView isKindOfClass:[UIScrollView class]])
     {
-        UITextView *textView = (UITextView*)textFieldView;
+        UIScrollView *textView = (UIScrollView*)textFieldView;
         self.isTextViewContentInsetChanged = NO;
         if (UIEdgeInsetsEqualToEdgeInsets(textView.contentInset, self.startingTextViewContentInsets) == NO)
         {
@@ -1657,9 +1699,9 @@ NSInteger const kIQPreviousNextButtonToolbarTag     =   -1005;
 
     //If textViewContentInsetChanged is changed then restore it.
     if (_isTextViewContentInsetChanged == YES &&
-        [_textFieldView isKindOfClass:[UITextView class]])
+        [_textFieldView respondsToSelector:@selector(isEditable)] && [_textFieldView isKindOfClass:[UIScrollView class]])
     {
-        UITextView *textView = (UITextView*)_textFieldView;
+        UIScrollView *textView = (UIScrollView*)_textFieldView;
         self.isTextViewContentInsetChanged = NO;
         if (UIEdgeInsetsEqualToEdgeInsets(textView.contentInset, self.startingTextViewContentInsets) == NO)
         {
@@ -1957,14 +1999,14 @@ NSInteger const kIQPreviousNextButtonToolbarTag     =   -1005;
             }
 
             //    If only one object is found, then adding only Done button.
-            if ((siblings.count==1 && self.previousNextDisplayMode == IQPreviousNextDisplayModeDefault) || self.previousNextDisplayMode == IQPreviousNextDisplayModeAlwaysHide)
+            if ((siblings.count <= 1 && self.previousNextDisplayMode == IQPreviousNextDisplayModeDefault) || self.previousNextDisplayMode == IQPreviousNextDisplayModeAlwaysHide)
             {
                 [textField addKeyboardToolbarWithTarget:self titleText:(_shouldShowToolbarPlaceholder ? textField.drawingToolbarPlaceholder : nil) rightBarButtonConfiguration:rightConfiguration previousBarButtonConfiguration:nil nextBarButtonConfiguration:nil];
 
                 textField.inputAccessoryView.tag = kIQDoneButtonToolbarTag; //  (Bug ID: #78)
             }
             //If there is multiple siblings of textField
-            else if ((siblings.count && self.previousNextDisplayMode == IQPreviousNextDisplayModeDefault) || self.previousNextDisplayMode == IQPreviousNextDisplayModeAlwaysShow)
+            else if ((self.previousNextDisplayMode == IQPreviousNextDisplayModeDefault) || self.previousNextDisplayMode == IQPreviousNextDisplayModeAlwaysShow)
             {
                 IQBarButtonItemConfiguration *prevConfiguration = nil;
                 
@@ -2010,12 +2052,25 @@ NSInteger const kIQPreviousNextButtonToolbarTag     =   -1005;
             //Bar style according to keyboard appearance
             if ([textField respondsToSelector:@selector(keyboardAppearance)])
             {
+                //Setting toolbar tintColor //  (Enhancement ID: #30)
+                if (_shouldToolbarUsesTextFieldTintColor)
+                {
+                    toolbar.tintColor = [textField tintColor];
+                }
+                else if (_toolbarTintColor)
+                {
+                    toolbar.tintColor = _toolbarTintColor;
+                }
+                else
+                {
+                    toolbar.tintColor = nil;
+                }
+
                 switch ([textField keyboardAppearance])
                 {
                     case UIKeyboardAppearanceDark:
                     {
                         toolbar.barStyle = UIBarStyleBlack;
-                        [toolbar setTintColor:nil];
                         [toolbar setBarTintColor:nil];
                     }
                         break;
@@ -2023,20 +2078,6 @@ NSInteger const kIQPreviousNextButtonToolbarTag     =   -1005;
                     {
                         toolbar.barStyle = UIBarStyleDefault;
                         toolbar.barTintColor = _toolbarBarTintColor;
-
-                        //Setting toolbar tintColor //  (Enhancement ID: #30)
-                        if (_shouldToolbarUsesTextFieldTintColor)
-                        {
-                            toolbar.tintColor = [textField tintColor];
-                        }
-                        else if (_toolbarTintColor)
-                        {
-                            toolbar.tintColor = _toolbarTintColor;
-                        }
-                        else
-                        {
-                            toolbar.tintColor = nil;
-                        }
                     }
                         break;
                 }
@@ -2282,8 +2323,6 @@ NSInteger const kIQPreviousNextButtonToolbarTag     =   -1005;
   didBeginEditingNotificationName:(nonnull NSString *)didBeginEditingNotificationName
     didEndEditingNotificationName:(nonnull NSString *)didEndEditingNotificationName
 {
-    [_registeredClasses addObject:aClass];
-    
     [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(textFieldViewDidBeginEditing:) name:didBeginEditingNotificationName object:nil];
     [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(textFieldViewDidEndEditing:) name:didEndEditingNotificationName object:nil];
 }
@@ -2295,8 +2334,6 @@ NSInteger const kIQPreviousNextButtonToolbarTag     =   -1005;
     didBeginEditingNotificationName:(nonnull NSString *)didBeginEditingNotificationName
       didEndEditingNotificationName:(nonnull NSString *)didEndEditingNotificationName
 {
-    [_registeredClasses removeObject:aClass];
-    
     [[NSNotificationCenter defaultCenter] removeObserver:self name:didBeginEditingNotificationName object:nil];
     [[NSNotificationCenter defaultCenter] removeObserver:self name:didEndEditingNotificationName object:nil];
 }
