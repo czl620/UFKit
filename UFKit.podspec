@@ -25,7 +25,7 @@ s.source       = { :git => 'https://github.com/czl620/UFKit.git', :tag => s.vers
 s.platform     = :ios, '8.0'
 
 #需要包含的源文件
-#s.source_files = 'UFKit/UFKit.framework/Headers/*.{h}'
+s.source_files = 'UFKit/UFKit.framework/Headers/*.{h}'
 
 #你的SDK路径
 s.vendored_frameworks = 'UFKit/UFKit.framework'
