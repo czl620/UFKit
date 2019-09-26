@@ -33,6 +33,7 @@
 #import <UFKit/UFPlateNumberRow.h>
 #import <UFKit/UFActionButton.h>
 
+#import <UFKit/UFImageStyle.h>
 #import <UFKit/UFTextStyle.h>
 #import <UFKit/UFRowTitleStyle.h>
 #import <UFKit/UFSectionStyle.h>

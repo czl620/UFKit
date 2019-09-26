@@ -1,6 +1,0 @@
-framework module UFKit {
-  umbrella header "UFKit.h"
-
-  export *
-  module * { export * }
-}

@@ -14,6 +14,7 @@
 #import <UIKit/UIKit.h>
 #import "UFRowValue.h"
 #import "UFRowTitleStyle.h"
+#import "UFImageStyle.h"
 
 NS_ASSUME_NONNULL_BEGIN
 
@@ -25,6 +26,7 @@ typedef NS_ENUM(NSInteger, UFRowAccessoryType) {
     UFRowAccessoryDetailButton = UITableViewCellAccessoryDetailButton,
     UFRowAccessorySpace
 };
+
 
 @class UFRow;
 typedef void(^UFValueDidChanged)(__kindof UFRow *row, NSString *value);
@@ -39,8 +41,10 @@ typedef void(^UFRowAccessoryDidSelected)(__kindof UFRow *row, UIView *accessoryV
 
 // 图标
 @property (nonatomic, strong, nullable) id image;
-@property (nonatomic, strong, nullable) UIImage *placeholderImage;
-@property (nonatomic, assign) CGSize imageSize;
+@property (nonatomic, strong, nullable) UIImage *placeholderImage __attribute__((deprecated("已过期, 建议使用UFImageStyle")));
+@property (nonatomic, assign) CGSize imageSize __attribute__((deprecated("已过期, 建议使用UFImageStyle")));
+
+@property (nonatomic, strong, nullable) UFImageStyle *imageStyle;
 
 // 标题
 @property (nonatomic, copy, nullable) NSString *title;
@@ -85,8 +89,10 @@ typedef void(^UFRowAccessoryDidSelected)(__kindof UFRow *row, UIView *accessoryV
 @property (nonatomic, strong, readonly) UFRow *row;
 
 @property (nonatomic, copy, readonly) UFRowMaker *(^image)(id image);
-@property (nonatomic, copy, readonly) UFRowMaker *(^placeholderImage)(UIImage *placeholderImage);
-@property (nonatomic, copy, readonly) UFRowMaker *(^imageSize)(CGSize imageSize);
+@property (nonatomic, copy, readonly) UFRowMaker *(^placeholderImage)(UIImage *placeholderImage) __attribute__((deprecated("已过期, 建议使用UFImageStyle")));
+@property (nonatomic, copy, readonly) UFRowMaker *(^imageSize)(CGSize imageSize) __attribute__((deprecated("已过期, 建议使用UFImageStyle")));
+
+@property (nonatomic, copy, readonly) UFRowMaker *(^imageStyle)(UFImageStyle *imageStyle);
 
 @property (nonatomic, copy, readonly) UFRowMaker *(^name)(NSString *name);
 
