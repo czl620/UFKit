@@ -72,7 +72,7 @@
                 .avatarImage([UIImage imageNamed:@"touxiang"])
                 .avatarDidSelected(^(__kindof UFAvatarRow * _Nonnull row, UIImageView * _Nonnull avatarView) {
                     NSLog(@"你点击了头像");
-                    [weakSelf ufk_pickerImageForResult:^(UIImage * _Nonnull image) {
+                    [weakSelf ufk_pickerImageFromView:weakSelf.view forResult:^(UIImage * _Nonnull image) {
                         if (image) {
                             row.avatarImage = image;
                             row.value = nil;
@@ -152,13 +152,13 @@
                     
                 });
             }])
-            .addRow([UFAreaPickerRow makeAreaPickerRow:^(UFAreaPickerRowMaker * _Nonnull make) {
-                make
-                .areaSeparator(@",")
-                .title(@"地址")
-                .name(@"address")
-                .accessoryType(UFRowAccessoryDisclosureIndicator);
-            }])
+//            .addRow([UFAreaPickerRow makeAreaPickerRow:^(UFAreaPickerRowMaker * _Nonnull make) {
+//                make
+//                .areaSeparator(@",")
+//                .title(@"地址")
+//                .name(@"address")
+//                .accessoryType(UFRowAccessoryDisclosureIndicator);
+//            }])
             .addRow([UFSwitchRow makeSwitchRow:^(UFSwitchRowMaker * _Nonnull make) {
                 make
                 .tintColor([UIColor redColor])
@@ -241,7 +241,7 @@
 
     // 查找某一行
 //    UFRow *row_range = [formView findRowInRange:UFMakeRange(0, 9)];
-    UFRow *row_name = [formView findRowByName:@"name"];
+//    UFRow *row_name = [formView findRowByName:@"name"];
 
 
 }
