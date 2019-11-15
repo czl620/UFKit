@@ -12,7 +12,7 @@ NS_ASSUME_NONNULL_BEGIN
 
 @interface MyRow : UFRow
 
-@property (nonatomic, strong) NSString *myCustom;
+@property (nonatomic, copy) NSString *myCustom;
 
 @end
 
