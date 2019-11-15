@@ -12,6 +12,8 @@ NS_ASSUME_NONNULL_BEGIN
 
 @interface MyRowCell : UFRowCell
 
+@property (nonatomic, strong) UILabel *myLabel;
+
 @end
 
 NS_ASSUME_NONNULL_END

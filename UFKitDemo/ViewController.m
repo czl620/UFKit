@@ -46,6 +46,13 @@
     _currentDict = _customArray[0];
     _currentStr = _currentDict[@"children"][0];
 
+    // 自定义ROW
+    MyRow *myRow = [[MyRow alloc] init];
+    myRow.title = @"我的自定义";
+    myRow.name = @"my";
+    myRow.accessoryType = UFRowAccessorySpace;
+    myRow.myCustom = @"我是自定义Row";
+
 
     __weak typeof(self) weakSelf = self;
     __block UFFormView *formView = [UFFormView makeFormView:^(UFFormViewMaker * _Nonnull make) {
@@ -66,6 +73,7 @@
                 .color([UIColor darkTextColor])
                 .textAlignment(NSTextAlignmentRight);
             }])
+            .addRow(myRow)
             .addRow([UFAvatarRow makeAvatarRow:^(UFAvatarRowMaker * _Nonnull make) {
                 make
                 .cornerRadius(30)

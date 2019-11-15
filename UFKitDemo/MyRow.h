@@ -12,6 +12,8 @@ NS_ASSUME_NONNULL_BEGIN
 
 @interface MyRow : UFRow
 
+@property (nonatomic, strong) NSString *myCustom;
+
 @end
 
 NS_ASSUME_NONNULL_END
