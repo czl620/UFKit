@@ -53,6 +53,8 @@
     myRow.accessoryType = UFRowAccessorySpace;
     myRow.myCustom = @"我是自定义Row";
 
+  
+
 
     __weak typeof(self) weakSelf = self;
     __block UFFormView *formView = [UFFormView makeFormView:^(UFFormViewMaker * _Nonnull make) {
