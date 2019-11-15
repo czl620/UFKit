@@ -25,6 +25,7 @@ NS_ASSUME_NONNULL_BEGIN
 // 限制输入的类型
 @property (nonatomic, assign) UFInputLimitType limitType;
 
++ (UFRow *)makeRow:(NS_NOESCAPE void(^)(UFRowMaker *make))block NS_UNAVAILABLE;
 + (UFTextFieldRow *)makeTextFieldRow:(NS_NOESCAPE void(^)(UFTextFieldRowMaker *make))block;
 
 @end

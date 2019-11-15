@@ -27,6 +27,7 @@ NS_ASSUME_NONNULL_BEGIN
 // 是否可编辑
 @property (nonatomic, assign) BOOL editable;
 
++ (UFRow *)makeRow:(NS_NOESCAPE void(^)(UFRowMaker *make))block NS_UNAVAILABLE;
 + (UFRadioGroupRow *)makeRadioGroupRow:(NS_NOESCAPE void(^)(UFRadioGroupRowMaker *make))block;
 
 @end

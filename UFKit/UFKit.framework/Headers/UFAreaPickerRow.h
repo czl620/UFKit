@@ -21,6 +21,7 @@ NS_ASSUME_NONNULL_BEGIN
 // 地址分割符（如：@“ ” @“，” @“-”）
 @property (nonatomic, copy) NSString *areaSeparator;
 
++ (UFTextFieldRow *)makeTextFieldRow:(NS_NOESCAPE void(^)(UFTextFieldRowMaker *make))block NS_UNAVAILABLE;
 + (UFAreaPickerRow *)makeAreaPickerRow:(NS_NOESCAPE void(^)(UFAreaPickerRowMaker *make))block;
 
 @end

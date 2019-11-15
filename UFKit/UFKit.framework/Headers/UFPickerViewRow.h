@@ -21,6 +21,7 @@ NS_ASSUME_NONNULL_BEGIN
 // 选择项
 @property (nonatomic, strong) NSArray <NSString *> *itemArray;
 
++ (UFTextFieldRow *)makeTextFieldRow:(NS_NOESCAPE void(^)(UFTextFieldRowMaker *make))block NS_UNAVAILABLE;
 + (UFPickerViewRow *)makePickerViewRow:(NS_NOESCAPE void(^)(UFPickerViewRowMaker *make))block;
 
 @end

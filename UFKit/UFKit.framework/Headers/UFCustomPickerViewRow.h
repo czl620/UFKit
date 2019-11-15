@@ -36,6 +36,7 @@ typedef void(^UFCustomPickerSelectDidFinished)(__kindof UFCustomPickerViewRow *r
 // 选择完成后点击确定按钮时回调
 @property (nonatomic, copy) UFCustomPickerSelectDidFinished valueDidSelected;
 
++ (UFTextFieldRow *)makeTextFieldRow:(NS_NOESCAPE void(^)(UFTextFieldRowMaker *make))block NS_UNAVAILABLE;
 + (UFCustomPickerViewRow *)makeCustomPickerViewRow:(NS_NOESCAPE void(^)(UFCustomPickerViewRowMaker *make))block;
 
 @end

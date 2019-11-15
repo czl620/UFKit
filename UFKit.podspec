@@ -4,7 +4,7 @@ Pod::Spec.new do |s|
 s.name         = 'UFKit'
 
 #版本号
-s.version      = '1.1.13'
+s.version      = '1.1.14'
 
 #许可证
 s.license      = { :type => 'MIT' }

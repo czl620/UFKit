@@ -27,6 +27,7 @@ typedef void(^UFCodeDidClicked)(__kindof UFMobileCodeRow *row, UIButton *button)
 // 点击获取验证码时回调
 @property (nonatomic, copy) UFCodeDidClicked codeDidClicked;
 
++ (UFTextFieldRow *)makeTextFieldRow:(NS_NOESCAPE void(^)(UFTextFieldRowMaker *make))block NS_UNAVAILABLE;
 + (UFMobileCodeRow *)makeCodeRow:(NS_NOESCAPE void(^)(UFCodeRowMaker *make))block;
 
 @end

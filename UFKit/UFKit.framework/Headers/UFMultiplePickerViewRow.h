@@ -23,6 +23,8 @@ NS_ASSUME_NONNULL_BEGIN
 
 @property (nonatomic, strong) UIColor *checkmarkColor;
 
+
++ (UFTextFieldRow *)makeTextFieldRow:(NS_NOESCAPE void(^)(UFTextFieldRowMaker *make))block NS_UNAVAILABLE;
 + (UFMultiplePickerViewRow *)makeMultiplePickerViewRow:(NS_NOESCAPE void (^)(UFMultiplePickerViewRowMaker *make))block;
 
 @end

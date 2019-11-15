@@ -19,6 +19,7 @@ NS_ASSUME_NONNULL_BEGIN
 @class UFTextViewRowMaker;
 @interface UFTextViewRow : UFRow <UFRowInput>
 
++ (UFRow *)makeRow:(NS_NOESCAPE void(^)(UFRowMaker *make))block NS_UNAVAILABLE;
 + (UFTextViewRow *)makeTextViewRow:(NS_NOESCAPE void(^)(UFTextViewRowMaker *make))block;
 
 @end

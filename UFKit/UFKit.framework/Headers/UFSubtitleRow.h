@@ -23,6 +23,7 @@ NS_ASSUME_NONNULL_BEGIN
 // 子标题样式
 @property (nonatomic, strong, nullable) UFRowTitleStyle *subtitleStyle;
 
++ (UFRow *)makeRow:(NS_NOESCAPE void(^)(UFRowMaker *make))block NS_UNAVAILABLE;
 + (UFSubtitleRow *)makeSubtitleRow:(NS_NOESCAPE void(^)(UFSubtitleRowMaker *make))block;
 
 @end

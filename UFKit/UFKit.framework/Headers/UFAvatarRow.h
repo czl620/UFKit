@@ -33,6 +33,7 @@ typedef void(^UFAvatarDidSelected)(__kindof UFAvatarRow *row, UIImageView *avata
 // 点击头像时回调
 @property (nonatomic, copy) UFAvatarDidSelected avatarDidSelected;
 
++ (UFRow *)makeRow:(NS_NOESCAPE void(^)(UFRowMaker *make))block NS_UNAVAILABLE;
 + (UFAvatarRow *)makeAvatarRow:(NS_NOESCAPE void(^)(UFAvatarRowMaker *make))block;
 
 @end
