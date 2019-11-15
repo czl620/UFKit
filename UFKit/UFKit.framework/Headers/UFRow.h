@@ -33,6 +33,7 @@ typedef void(^UFValueDidChanged)(__kindof UFRow *row, NSString *value);
 typedef void(^UFRowDidSelected)(__kindof UFRow *row);
 typedef void(^UFRowAccessoryDidSelected)(__kindof UFRow *row, UIView *accessoryView);
 
+
 @class UFRowMaker;
 @interface UFRow : NSObject
 
