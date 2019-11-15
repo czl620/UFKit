@@ -46,15 +46,6 @@
     _currentDict = _customArray[0];
     _currentStr = _currentDict[@"children"][0];
 
-    // 自定义ROW
-    MyRow *myRow = [[MyRow alloc] init];
-    myRow.title = @"我的自定义";
-    myRow.name = @"my";
-    myRow.accessoryType = UFRowAccessorySpace;
-    myRow.myCustom = @"我是自定义Row";
-
-  
-
 
     __weak typeof(self) weakSelf = self;
     __block UFFormView *formView = [UFFormView makeFormView:^(UFFormViewMaker * _Nonnull make) {
@@ -63,19 +54,45 @@
         .rowHeight(50)
         .addSection([UFSection makeSection:^(UFSectionMaker * _Nonnull make) {
             make
+
+            // 标题样式设置
             .titleStyle([UFRowTitleStyle makeTitleStyle:^(UFRowTitleStyleMaker * _Nonnull make) {
                 make
                 .width(100)
                 .font([UIFont systemFontOfSize:15])
                 .textAlignment(NSTextAlignmentLeft);
             }])
+
+            // 值样式设置
             .valueStyle([UFTextStyle makeTextStyle:^(UFRowTextStyleMaker * _Nonnull make) {
                 make
                 .font([UIFont systemFontOfSize:15])
                 .color([UIColor darkTextColor])
                 .textAlignment(NSTextAlignmentRight);
             }])
-            .addRow(myRow)
+
+            // 使用block形式添加自定义行
+            .addRowWithBlock(^__kindof UFRow * _Nonnull{
+                // 自定义ROW,使用自定义字段
+                MyRow *myRow = [[MyRow alloc] init];
+                myRow.title = @"我的自定义1";
+                myRow.name = @"my1";
+                myRow.accessoryType = UFRowAccessorySpace;
+                myRow.myCustom = @"我是自定义Row";
+                return myRow;
+            })
+
+            // 添加自定义行
+            .addRow([MyRow makeRow:^(UFRowMaker * _Nonnull make) {
+                // 自定义ROW，使用ext属性
+                make
+                .title(@"我的自定义2")
+                .name(@"name1")
+                .accessoryType(UFRowAccessorySpace)
+                .ext(@"我是自定义Row");
+            }])
+
+            // 添加头像
             .addRow([UFAvatarRow makeAvatarRow:^(UFAvatarRowMaker * _Nonnull make) {
                 make
                 .cornerRadius(30)
@@ -95,6 +112,8 @@
                 .name(@"avatar")
                 .accessoryType(UFRowAccessorySpace);
             }])
+
+            // 添加姓名
             .addRow([UFTextFieldRow makeTextFieldRow:^(UFTextFieldRowMaker * _Nonnull make) {
                 make
                 .maxLength(4)
@@ -103,6 +122,8 @@
                 .name(@"name")
                 .accessoryType(UFRowAccessorySpace);
             }])
+
+            // 添加性别
             .addRow([UFRadioGroupRow makeRadioGroupRow:^(UFRadioGroupRowMaker * _Nonnull make) {
                 make
                 .itemArray(@[@"男",@"女"])
@@ -111,6 +132,8 @@
                 .name(@"gender")
                 .accessoryType(UFRowAccessorySpace);
             }])
+
+            // 添加联系方式
             .addRow([UFTextFieldRow makeTextFieldRow:^(UFTextFieldRowMaker * _Nonnull make) {
                 make
                 .limitType(UFInputLimitTypeMobile)
@@ -119,6 +142,8 @@
                 .name(@"mobile")
                 .accessoryType(UFRowAccessorySpace);
             }])
+
+            // 添加手机验证码
             .addRow([UFMobileCodeRow makeCodeRow:^(UFCodeRowMaker * _Nonnull make) {
                 make
                 .codeStyle([UFMobileCodeStyle makeMobileCodeStyle:^(UFMobileCodeStyleMaker * _Nonnull make) {
@@ -134,6 +159,8 @@
                 .name(@"code")
                 .accessoryType(UFRowAccessorySpace);
             }])
+
+            // 添加单选技能
             .addRow([UFPickerViewRow makePickerViewRow:^(UFPickerViewRowMaker * _Nonnull make) {
                 make
                 .itemArray(@[@"iOS",@"macOS",@"swift",@"iPhone",@"iPad",@"iPod"])
@@ -142,6 +169,8 @@
                 .name(@"skills")
                 .accessoryType(UFRowAccessoryDisclosureIndicator);
             }])
+
+            // 添加多选爱好
             .addRow([UFMultiplePickerViewRow makeMultiplePickerViewRow:^(UFMultiplePickerViewRowMaker * _Nonnull make) {
                 make
                 .itemArray(@[@"看电影",@"旅游",@"看书",@"打游戏",@"篮球",@"足球",@"其他"])
@@ -150,6 +179,8 @@
                 .name(@"hobby")
                 .accessoryType(UFRowAccessoryDisclosureIndicator);
             }])
+
+            // 添加生日
             .addRow([UFDatePickerRow makeDatePickerRow:^(UFDatePickerRowMaker * _Nonnull make) {
                 make
                 .datePickerMode(UIDatePickerModeDate)
@@ -162,13 +193,17 @@
                     
                 });
             }])
-//            .addRow([UFAreaPickerRow makeAreaPickerRow:^(UFAreaPickerRowMaker * _Nonnull make) {
-//                make
-//                .areaSeparator(@",")
-//                .title(@"地址")
-//                .name(@"address")
-//                .accessoryType(UFRowAccessoryDisclosureIndicator);
-//            }])
+
+            // 添加三级地址选择
+            .addRow([UFAreaPickerRow makeAreaPickerRow:^(UFAreaPickerRowMaker * _Nonnull make) {
+                make
+                .areaSeparator(@",")
+                .title(@"地址")
+                .name(@"address")
+                .accessoryType(UFRowAccessoryDisclosureIndicator);
+            }])
+
+            // 添加免打扰开关
             .addRow([UFSwitchRow makeSwitchRow:^(UFSwitchRowMaker * _Nonnull make) {
                 make
                 .tintColor([UIColor redColor])
@@ -184,6 +219,8 @@
                     }
                 });
             }])
+
+            // 添加机动车车牌
             .addRow([UFPlateNumberRow makePlateNumberRow:^(UFPlateNumberRowMaker * _Nonnull make) {
                 make
                 .title(@"车牌号")
@@ -196,6 +233,8 @@
                 .name(@"plate")
                 .accessoryType(UFRowAccessorySpace);
             }])
+
+            // 添加自定义选择器
             .addRow([UFCustomPickerViewRow makeCustomPickerViewRow:^(UFCustomPickerViewRowMaker * _Nonnull make) {
                 make.
                 delegate(weakSelf)
@@ -208,6 +247,8 @@
                 .name(@"custom")
                 .accessoryType(UFRowAccessoryDisclosureIndicator);;
             }])
+
+            // 添加带有子标题的支付
             .addRow([UFSubtitleRow makeSubtitleRow:^(UFSubtitleRowMaker * _Nonnull make) {
                 make
                 .subtitle(@"推荐支付宝用户使用")
@@ -222,6 +263,8 @@
                 .title(@"支付宝")
                 .image([UIImage imageNamed:@"alipay"]);
             }])
+
+            // 添加多行个人简介
             .addRow([UFTextViewRow makeTextViewRow:^(UFTextViewRowMaker * _Nonnull make) {
                 make
                 .maxLength(0)
@@ -231,6 +274,8 @@
                 .accessoryType(UFRowAccessorySpace);
             }]);
         }])
+
+        // 添加提交按钮
         .addSubmitButton([UFActionButton makeActionButton:^(UFActionButtonMaker * _Nonnull make) {
             make
             .titleForState(@"提交", UIControlStateNormal)

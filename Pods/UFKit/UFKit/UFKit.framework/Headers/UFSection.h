@@ -27,6 +27,10 @@ NS_ASSUME_NONNULL_BEGIN
  */
 - (__kindof UFRow *)addRow:(__kindof UFRow *)row;
 - (void)addRows:(NSArray <__kindof UFRow *> *)rows;
+- (__kindof UFRow *)insertRow:(__kindof UFRow *)row atIndex:(NSInteger)index;
+- (void)removeRowAtIndex:(NSInteger)index;
+
+- (__kindof UFRow *)addRowWithBlock:(__kindof UFRow *(^)(void))block;
 
 @property (nonatomic, copy, readonly, nullable) NSArray<UFRow *> *rows;
 
@@ -88,6 +92,9 @@ NS_ASSUME_NONNULL_BEGIN
 @property (nonatomic, copy, readonly) UFSectionMaker *(^valueStyle)(UFTextStyle *valueStyle);
 
 @property (nonatomic, copy, readonly) UFSectionMaker *(^addRow)(__kindof UFRow *row);
+@property (nonatomic, copy, readonly) UFSectionMaker *(^addRowWithBlock)(__kindof UFRow *(^)(void));
+@property (nonatomic, copy, readonly) UFSectionMaker *(^insertRow)(__kindof UFRow *row, NSInteger index);
+@property (nonatomic, copy, readonly) UFSectionMaker *(^removeRowAtIndex)(NSInteger index);
 
 @end
 

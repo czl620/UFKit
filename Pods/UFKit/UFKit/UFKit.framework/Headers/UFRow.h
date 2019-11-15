@@ -33,6 +33,7 @@ typedef void(^UFValueDidChanged)(__kindof UFRow *row, NSString *value);
 typedef void(^UFRowDidSelected)(__kindof UFRow *row);
 typedef void(^UFRowAccessoryDidSelected)(__kindof UFRow *row, UIView *accessoryView);
 
+
 @class UFRowMaker;
 @interface UFRow : NSObject
 
@@ -68,6 +69,9 @@ typedef void(^UFRowAccessoryDidSelected)(__kindof UFRow *row, UIView *accessoryV
 // 必填项，标题前加红色*，你也可以使用attributedTitle自定义
 @property (nonatomic, assign) BOOL isRequired;
 
+// 扩展字段
+@property (nonatomic, strong) id ext;
+
 // 值发生改变时回调
 @property (nonatomic, copy) UFValueDidChanged valueDidChanged;
 // 行点击时回调
@@ -76,7 +80,7 @@ typedef void(^UFRowAccessoryDidSelected)(__kindof UFRow *row, UIView *accessoryV
 @property (nonatomic, copy) UFRowAccessoryDidSelected accessoryDidSelected;
 
 
-+ (UFRow *)makeRow:(NS_NOESCAPE void(^)(UFRowMaker *make))block;
++ (__kindof UFRow *)makeRow:(NS_NOESCAPE void(^)(UFRowMaker *make))block;
 
 @end
 
@@ -110,6 +114,8 @@ typedef void(^UFRowAccessoryDidSelected)(__kindof UFRow *row, UIView *accessoryV
 @property (nonatomic, copy, readonly) UFRowMaker *(^accessoryImage)(UIImage *accessoryImage);
 
 @property (nonatomic, copy, readonly) UFRowMaker *(^isRequired)(BOOL isRequired);
+
+@property (nonatomic, copy, readonly) UFRowMaker *(^ext)(id ext);
 
 @property (nonatomic, copy, readonly) UFRowMaker *(^valueDidChanged)(UFValueDidChanged valueDidChanged);
 @property (nonatomic, copy, readonly) UFRowMaker *(^rowDidSelected)(UFRowDidSelected rowDidSelected);

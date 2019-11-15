@@ -23,7 +23,7 @@
     if (self) {
 
         // 自定义UI
-        _myLabel = [[UILabel alloc] initWithFrame:CGRectMake(100, 0, 100, 40)];
+        _myLabel = [[UILabel alloc] initWithFrame:CGRectMake(100, 0, 150, 40)];
         _myLabel.backgroundColor = [UIColor redColor];
         [self.contentView addSubview:_myLabel];
     }
@@ -34,7 +34,13 @@
     _myRow = (MyRow *)row;
     [super setRow:row];
 
-    self.myLabel.text = _myRow.myCustom;
+    if (_myRow.myCustom) {
+        // 使用自定义字段
+        self.myLabel.text = _myRow.myCustom;
+    } else {
+        // 使用ext属性
+        self.myLabel.text = _myRow.ext;
+    }
 }
 
 - (void)setupConstraints {

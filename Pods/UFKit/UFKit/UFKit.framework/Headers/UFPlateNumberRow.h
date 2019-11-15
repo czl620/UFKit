@@ -23,6 +23,7 @@ NS_ASSUME_NONNULL_BEGIN
 
 @property (nonatomic, assign) CGFloat inputWidth;
 
++ (UFTextFieldRow *)makeTextFieldRow:(NS_NOESCAPE void(^)(UFTextFieldRowMaker *make))block NS_UNAVAILABLE;
 + (UFPlateNumberRow *)makePlateNumberRow:(NS_NOESCAPE void(^)(UFPlateNumberRowMaker *make))block;
 
 @end

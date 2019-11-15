@@ -4,7 +4,7 @@ inhibit_all_warnings!
 
 target 'UFKitDemo' do
     #use_frameworks!
-    pod 'UFKit', '~> 1.1.12'
+    pod 'UFKit', '~> 1.1.16'
 
 end
 

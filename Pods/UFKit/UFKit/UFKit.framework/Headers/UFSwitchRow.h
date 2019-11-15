@@ -25,6 +25,7 @@ UFKIT_EXTERN NSString * const SWITCH_OFF;
 // 开关颜色
 @property (nonatomic, strong) UIColor *tintColor;
 
++ (UFRow *)makeRow:(NS_NOESCAPE void(^)(UFRowMaker *make))block NS_UNAVAILABLE;
 + (UFSwitchRow *)makeSwitchRow:(NS_NOESCAPE void(^)(UFSwitchRowMaker *make))block;
 
 @end

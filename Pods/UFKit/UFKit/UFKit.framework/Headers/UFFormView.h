@@ -44,6 +44,8 @@ typedef void(^UFActionsDidClicked)(UIButton *button, NSInteger index);
  */
 - (__kindof UFSection *)addSection:(__kindof UFSection *)section;
 - (void)addSections:(NSArray <__kindof UFSection *> *)sections;
+- (__kindof UFSection *)insertSection:(__kindof UFSection *)section atIndex:(NSInteger)index;
+- (void)removeSectionAtIndex:(NSInteger)index;
 
 @property (nonatomic, copy, readonly, nullable) NSArray <UFSection *> *sections;
 @property (nonatomic, copy, readonly, nullable) NSArray <__kindof UFRow *> *rows;
@@ -135,6 +137,8 @@ typedef void(^UFActionsDidClicked)(UIButton *button, NSInteger index);
 @property (nonatomic, copy, readonly) UFFormViewMaker *(^separatorColor)(UIColor *separatorColor);
 
 @property (nonatomic, copy, readonly) UFFormViewMaker *(^addSection)(__kindof UFSection *section);
+@property (nonatomic, copy, readonly) UFFormViewMaker *(^insertSection)(__kindof UFSection *section, NSInteger index);
+@property (nonatomic, copy, readonly) UFFormViewMaker *(^removeSectionAtIndex)(NSInteger index);
 
 @property (nonatomic, copy, readonly) UFFormViewMaker *(^addCancelButton)(UFActionButton *cancelButton);
 @property (nonatomic, copy, readonly) UFFormViewMaker *(^addSubmitButton)(UFActionButton *submitButton);
