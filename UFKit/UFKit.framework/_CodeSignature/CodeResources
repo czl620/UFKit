@@ -130,12 +130,39 @@
 		</data>
 		<key>Info.plist</key>
 		<data>
-		P8ck8rXVgAuPSVjAR6IlOPpaCd4=
+		ugTvOWO020nWQA+iZNGO8eOUg9Q=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
 		7Tsu1BSrLADmpFvFtee6F1Z8zpE=
 		</data>
+		<key>en.lproj/Localizable.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			vzv91jwpYzpXfM8Gkdu+CO3NWNA=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>zh-Hans.lproj/Localizable.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			g/gIJDgstpZaQkM4EtyM63bzoNw=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>zh-Hant.lproj/Localizable.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			/yJiJhYvUTVgrwghpY8odBY6XzI=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
 	</dict>
 	<key>files2</key>
 	<dict>
@@ -490,6 +517,45 @@
 			<data>
 			Y7ctCt8yrzvQ/j1i4HV27mW8MEmK0fvCBb+w7TRKzrM=
 			</data>
+		</dict>
+		<key>en.lproj/Localizable.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			vzv91jwpYzpXfM8Gkdu+CO3NWNA=
+			</data>
+			<key>hash2</key>
+			<data>
+			LiRyxQRMju4U2wM5gGdyizoC+GmGyFg2PecVYnvW0EU=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>zh-Hans.lproj/Localizable.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			g/gIJDgstpZaQkM4EtyM63bzoNw=
+			</data>
+			<key>hash2</key>
+			<data>
+			3Ry4WYM/gehb1+fpuIkZy3vf6rzyhGB0egfzw36QdJs=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>zh-Hant.lproj/Localizable.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			/yJiJhYvUTVgrwghpY8odBY6XzI=
+			</data>
+			<key>hash2</key>
+			<data>
+			TwEhj5yc0vOKJ+Ym848TVyObtq1AX3EZlL7v8f6trkA=
+			</data>
+			<key>optional</key>
+			<true/>
 		</dict>
 	</dict>
 	<key>rules</key>

@@ -1,0 +1,14 @@
+/* 
+  Localizable.strings
+  UFKit
+
+  Created by Chen Zhangli on 2019/11/16.
+  Copyright © 2019 Uniauto. All rights reserved.
+*/
+
+"cancel"       = "取消";
+"done"         = "確定";
+"input"        = "請輸入";
+"select"       = "請選擇";
+"camera"       = "拍照";
+"photoAlbum"   = "從相冊選擇";

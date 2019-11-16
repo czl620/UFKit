@@ -1,0 +1,16 @@
+/* 
+  Localizable.strings
+  UFKit
+
+  Created by Chen Zhangli on 2019/11/16.
+  Copyright © 2019 Uniauto. All rights reserved.
+*/
+
+"cancel"       = "Cancel";
+"done"         = "Done";
+"input"        = "Please input ";
+"select"       = "Please select ";
+"camera"       = "Taking pictures";
+"photoAlbum"   = "Select from album";
+
+
