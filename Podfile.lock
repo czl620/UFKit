@@ -4,13 +4,13 @@ PODS:
   - SDWebImage (5.3.1):
     - SDWebImage/Core (= 5.3.1)
   - SDWebImage/Core (5.3.1)
-  - UFKit (1.1.16):
+  - UFKit (1.1.17):
     - IQKeyboardManager (>= 6.3.0)
     - Masonry (>= 1.1.0)
     - SDWebImage (>= 5.0.6)
 
 DEPENDENCIES:
-  - UFKit (~> 1.1.16)
+  - UFKit (~> 1.1.17)
 
 SPEC REPOS:
   trunk:
@@ -23,8 +23,8 @@ SPEC CHECKSUMS:
   IQKeyboardManager: 72b359cd7e777e3a984cedbe05f8da45320cbb63
   Masonry: 678fab65091a9290e40e2832a55e7ab731aad201
   SDWebImage: 7137d57385fb632129838c1e6ab9528a22c666cc
-  UFKit: bb65a16395c67cbed5d90c0a390ab53bba1f2d7b
+  UFKit: bb5118add9097585d1c776fc44abd058f023a853
 
-PODFILE CHECKSUM: 688ff315baea3872f0878c3b7bdb551f04369ed3
+PODFILE CHECKSUM: 5f00e7d06127ff8176d241b3e66756bf18db378c
 
 COCOAPODS: 1.8.4

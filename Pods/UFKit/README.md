@@ -686,6 +686,17 @@ UFSection *section = [UFSection makeSection:^(UFSectionMaker * _Nonnull make) {
 }];
 ```
 
+```objective-c
+ UFSection *section = [UFSection makeSection:^(UFSectionMaker * _Nonnull make) {
+                    make
+                    .addRowWithBlock(^__kindof UFRow * _Nonnull{
+                        // 你定义的行
+                        UFRow *row = [[UFRow alloc] init];
+                        return row;
+                    });
+            }];
+```
+
 #### 5、提交
 
 1、添加提交按钮
@@ -735,3 +746,16 @@ pod 'UFKit'
 
 #### 8、联系方式
 QQ:893419255（请注明UFKit）
+
+
+
+---
+
+版本记录：
+
+- ###### 1.1.17  
+
+   支持国际化（简体中文、繁体中文、英文）
+
+
+
