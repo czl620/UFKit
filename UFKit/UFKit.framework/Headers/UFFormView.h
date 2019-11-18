@@ -102,7 +102,6 @@ typedef void(^UFActionsDidClicked)(UIButton *button, NSInteger index);
  */
 @property (nonatomic, strong) UFTextStyle *valueStyle;
 
-
 /**
  注册自定义行
 
@@ -110,6 +109,14 @@ typedef void(^UFActionsDidClicked)(UIButton *button, NSInteger index);
  @param cellClass 单元格(UFRowCell及其子类)
  */
 - (void)registerRow:(Class)rowClass byCell:(Class)cellClass;
+
+/// 添加取消按钮
+/// @param cancelButton 取消按钮
+- (void)setCancelButton:(UFActionButton *)cancelButton;
+
+/// 添加提交按钮
+/// @param submitButton 提交按钮
+- (void)setSubmitButton:(UFActionButton *)submitButton;
 
 /**
  创建表单
