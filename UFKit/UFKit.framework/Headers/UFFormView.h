@@ -118,6 +118,8 @@ typedef void(^UFActionsDidClicked)(UIButton *button, NSInteger index);
 /// @param submitButton 提交按钮
 - (void)setSubmitButton:(UFActionButton *)submitButton;
 
+@property (nonatomic, assign) CGFloat submitScale;
+
 /**
  创建表单
 

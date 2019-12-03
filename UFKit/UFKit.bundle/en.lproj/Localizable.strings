@@ -12,5 +12,5 @@
 "select"       = "Please select ";
 "camera"       = "Taking pictures";
 "photoAlbum"   = "Select from album";
-
-
+"code"         = "Get verification code";
+"retry"        = "Retry";
