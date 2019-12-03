@@ -136,33 +136,6 @@
 		<data>
 		7Tsu1BSrLADmpFvFtee6F1Z8zpE=
 		</data>
-		<key>en.lproj/Localizable.strings</key>
-		<dict>
-			<key>hash</key>
-			<data>
-			wMBCjGZvDWVH77K3zUDgKFvNSFY=
-			</data>
-			<key>optional</key>
-			<true/>
-		</dict>
-		<key>zh-Hans.lproj/Localizable.strings</key>
-		<dict>
-			<key>hash</key>
-			<data>
-			7RJo30ZkATXRhjuZgaZ7gqCZ3hA=
-			</data>
-			<key>optional</key>
-			<true/>
-		</dict>
-		<key>zh-Hant.lproj/Localizable.strings</key>
-		<dict>
-			<key>hash</key>
-			<data>
-			SEu60FxHYg+CGmhZhckc84DRxBw=
-			</data>
-			<key>optional</key>
-			<true/>
-		</dict>
 	</dict>
 	<key>files2</key>
 	<dict>
@@ -517,45 +490,6 @@
 			<data>
 			Y7ctCt8yrzvQ/j1i4HV27mW8MEmK0fvCBb+w7TRKzrM=
 			</data>
-		</dict>
-		<key>en.lproj/Localizable.strings</key>
-		<dict>
-			<key>hash</key>
-			<data>
-			wMBCjGZvDWVH77K3zUDgKFvNSFY=
-			</data>
-			<key>hash2</key>
-			<data>
-			StEptaq+j7hkybvdkzQuF0ReP27Pgeexzkiv97+K79E=
-			</data>
-			<key>optional</key>
-			<true/>
-		</dict>
-		<key>zh-Hans.lproj/Localizable.strings</key>
-		<dict>
-			<key>hash</key>
-			<data>
-			7RJo30ZkATXRhjuZgaZ7gqCZ3hA=
-			</data>
-			<key>hash2</key>
-			<data>
-			vBX3UMFXDmfKW1mH0TOWhy3BtyF6xc5Huz5N5H9lzik=
-			</data>
-			<key>optional</key>
-			<true/>
-		</dict>
-		<key>zh-Hant.lproj/Localizable.strings</key>
-		<dict>
-			<key>hash</key>
-			<data>
-			SEu60FxHYg+CGmhZhckc84DRxBw=
-			</data>
-			<key>hash2</key>
-			<data>
-			6m1yKIZnIEk0WV4jEjVHwejoNbGUKFr8qvCUx0DXh0Y=
-			</data>
-			<key>optional</key>
-			<true/>
 		</dict>
 	</dict>
 	<key>rules</key>
