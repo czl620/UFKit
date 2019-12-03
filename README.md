@@ -11,6 +11,16 @@
 ### 效果
 ![在这里插入图片描述](https://img-blog.csdnimg.cn/20190830150133864.gif)
 
+
+
+### 要求
+
+- **iOS 8.0 or later**
+
+- **Xcode 11.0 or later**
+
+  
+
 #### 1、表单UFFormView
 
 ```objective-c
