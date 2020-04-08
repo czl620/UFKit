@@ -8,7 +8,7 @@
 
 "cancel"       = "Cancel";
 "done"         = "Done";
-"input"        = "Please input ";
+"input"        = "Please enter ";
 "select"       = "Please select ";
 "camera"       = "Taking pictures";
 "photoAlbum"   = "Select from album";

@@ -102,6 +102,9 @@ typedef void(^UFActionsDidClicked)(UIButton *button, NSInteger index);
  */
 @property (nonatomic, strong) UFTextStyle *valueStyle;
 
+/// 行内边距
+@property (nonatomic, assign) UIEdgeInsets rowEdgeInsets;
+
 /**
  注册自定义行
 
@@ -142,6 +145,7 @@ typedef void(^UFActionsDidClicked)(UIButton *button, NSInteger index);
 @property (nonatomic, copy, readonly) UFFormViewMaker *(^rowHeight)(CGFloat rowHeight);
 @property (nonatomic, copy, readonly) UFFormViewMaker *(^titleStyle)(UFRowTitleStyle *titleStyle);
 @property (nonatomic, copy, readonly) UFFormViewMaker *(^valueStyle)(UFTextStyle *valueStyle);
+@property (nonatomic, copy, readonly) UFFormViewMaker *(^rowEdgeInsets)(UIEdgeInsets rowEdgeInsets);
 
 @property (nonatomic, copy, readonly) UFFormViewMaker *(^separatorColor)(UIColor *separatorColor);
 

@@ -34,6 +34,10 @@ typedef void(^UFRowDidSelected)(__kindof UFRow *row);
 typedef void(^UFRowAccessoryDidSelected)(__kindof UFRow *row, UIView *accessoryView);
 
 
+extern CGFloat const UFRowHeightAutomatic;
+extern CGFloat const UFRowHeightDefault;
+
+
 @class UFRowMaker;
 @interface UFRow : NSObject
 
@@ -79,6 +83,11 @@ typedef void(^UFRowAccessoryDidSelected)(__kindof UFRow *row, UIView *accessoryV
 
 @property (nonatomic, copy) UFRowAccessoryDidSelected accessoryDidSelected;
 
+// 内边距
+@property (nonatomic, assign) UIEdgeInsets edgeInsets;
+// 分割线
+@property (nonatomic, assign) UIEdgeInsets separatorInset;
+
 
 + (__kindof UFRow *)makeRow:(NS_NOESCAPE void(^)(UFRowMaker *make))block;
 
@@ -120,6 +129,8 @@ typedef void(^UFRowAccessoryDidSelected)(__kindof UFRow *row, UIView *accessoryV
 @property (nonatomic, copy, readonly) UFRowMaker *(^valueDidChanged)(UFValueDidChanged valueDidChanged);
 @property (nonatomic, copy, readonly) UFRowMaker *(^rowDidSelected)(UFRowDidSelected rowDidSelected);
 @property (nonatomic, copy, readonly) UFRowMaker *(^accessoryDidSelected)(UFRowAccessoryDidSelected accessoryDidSelected);
+
+@property (nonatomic, copy, readonly) UFRowMaker *(^edgeInsets)(UIEdgeInsets edgeInsets);
 
 @end
 

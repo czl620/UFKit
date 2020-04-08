@@ -1,4 +1,19 @@
 PODS:
+  - BlocksKit (2.2.5):
+    - BlocksKit/All (= 2.2.5)
+  - BlocksKit/All (2.2.5):
+    - BlocksKit/Core
+    - BlocksKit/DynamicDelegate
+    - BlocksKit/MessageUI
+    - BlocksKit/UIKit
+  - BlocksKit/Core (2.2.5)
+  - BlocksKit/DynamicDelegate (2.2.5)
+  - BlocksKit/MessageUI (2.2.5):
+    - BlocksKit/Core
+    - BlocksKit/DynamicDelegate
+  - BlocksKit/UIKit (2.2.5):
+    - BlocksKit/Core
+    - BlocksKit/DynamicDelegate
   - IQKeyboardManager (6.5.4)
   - Masonry (1.1.0)
   - SDWebImage (5.3.1):
@@ -10,21 +25,24 @@ PODS:
     - SDWebImage (>= 5.0.6)
 
 DEPENDENCIES:
+  - BlocksKit (~> 2.2.5)
   - UFKit (~> 1.1.17)
 
 SPEC REPOS:
   trunk:
+    - BlocksKit
     - IQKeyboardManager
     - Masonry
     - SDWebImage
     - UFKit
 
 SPEC CHECKSUMS:
+  BlocksKit: 7f422b971407001178d181a43b99014ea2591fe6
   IQKeyboardManager: 72b359cd7e777e3a984cedbe05f8da45320cbb63
   Masonry: 678fab65091a9290e40e2832a55e7ab731aad201
   SDWebImage: 7137d57385fb632129838c1e6ab9528a22c666cc
   UFKit: bb5118add9097585d1c776fc44abd058f023a853
 
-PODFILE CHECKSUM: 5f00e7d06127ff8176d241b3e66756bf18db378c
+PODFILE CHECKSUM: 3dc76f36bb4f3cce03ea3421e6c8ee14975e3c68
 
 COCOAPODS: 1.8.4
