@@ -30,7 +30,7 @@
 		</data>
 		<key>Headers/UFFormView.h</key>
 		<data>
-		d49gDDu1qdH6kocPb1q0G7bLpHk=
+		bnm78Z/WJmtBX/2mmPyA5b0DrbU=
 		</data>
 		<key>Headers/UFImageStyle.h</key>
 		<data>
@@ -38,7 +38,7 @@
 		</data>
 		<key>Headers/UFKit.h</key>
 		<data>
-		oQ7/jyyO8GDbuhIrpMLSqufaUhI=
+		P2IW9occMEdRh6ccBsZAn9fwGos=
 		</data>
 		<key>Headers/UFKitDefines.h</key>
 		<data>
@@ -46,7 +46,7 @@
 		</data>
 		<key>Headers/UFMobileCodeRow.h</key>
 		<data>
-		JhZigOWGpapkucJqan6d8hqBKjc=
+		s1/5iopIzp0xrQK+3ezQRSW281Y=
 		</data>
 		<key>Headers/UFMobileCodeStyle.h</key>
 		<data>
@@ -62,7 +62,7 @@
 		</data>
 		<key>Headers/UFPlateNumberRow.h</key>
 		<data>
-		kUiwLgX7bpWc8zMsP5vHFfW9/Cs=
+		UavxhUa6bzJZMYTf+T6R2sGdkvU=
 		</data>
 		<key>Headers/UFRadioGroupRow.h</key>
 		<data>
@@ -74,7 +74,7 @@
 		</data>
 		<key>Headers/UFRow.h</key>
 		<data>
-		9SJG8pmjSdbwrKD4LAYs5VRR25A=
+		vkZZL528HDqkTfDShazlzxqSokY=
 		</data>
 		<key>Headers/UFRowCell.h</key>
 		<data>
@@ -124,45 +124,22 @@
 		<data>
 		zGN+aGz1bVpP0wM7FjmIGtk6LR8=
 		</data>
+		<key>Headers/UIColor+UFKit.h</key>
+		<data>
+		Jvf1mhHVtxiKS4+Jp7lB/Xr9FSk=
+		</data>
 		<key>Headers/UIViewController+UFKit.h</key>
 		<data>
 		UU+V7AlinouWaEzMI6Q2Cvzpb1o=
 		</data>
 		<key>Info.plist</key>
 		<data>
-		ugTvOWO020nWQA+iZNGO8eOUg9Q=
+		+VCRJZ2onkQAnXUIMtqomYrsosc=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
 		7Tsu1BSrLADmpFvFtee6F1Z8zpE=
 		</data>
-		<key>en.lproj/Localizable.strings</key>
-		<dict>
-			<key>hash</key>
-			<data>
-			vzv91jwpYzpXfM8Gkdu+CO3NWNA=
-			</data>
-			<key>optional</key>
-			<true/>
-		</dict>
-		<key>zh-Hans.lproj/Localizable.strings</key>
-		<dict>
-			<key>hash</key>
-			<data>
-			g/gIJDgstpZaQkM4EtyM63bzoNw=
-			</data>
-			<key>optional</key>
-			<true/>
-		</dict>
-		<key>zh-Hant.lproj/Localizable.strings</key>
-		<dict>
-			<key>hash</key>
-			<data>
-			/yJiJhYvUTVgrwghpY8odBY6XzI=
-			</data>
-			<key>optional</key>
-			<true/>
-		</dict>
 	</dict>
 	<key>files2</key>
 	<dict>
@@ -236,11 +213,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			d49gDDu1qdH6kocPb1q0G7bLpHk=
+			bnm78Z/WJmtBX/2mmPyA5b0DrbU=
 			</data>
 			<key>hash2</key>
 			<data>
-			U3tIDVCnp11SRUDEr+j6Ec6IgmQKMTITjHLd58bMF/Y=
+			KP7aRgzk3yVTDQ6QlZP8PJneZqzHtfu3VFl9W9K4ZyM=
 			</data>
 		</dict>
 		<key>Headers/UFImageStyle.h</key>
@@ -258,11 +235,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			oQ7/jyyO8GDbuhIrpMLSqufaUhI=
+			P2IW9occMEdRh6ccBsZAn9fwGos=
 			</data>
 			<key>hash2</key>
 			<data>
-			rQv3xougDmuGFaepXag4itojSnN6MtwLPL7jljjNgtk=
+			yovWdj5iykqN6igqYVDL0WfglJZfUtIIe9Mv/A80e3Y=
 			</data>
 		</dict>
 		<key>Headers/UFKitDefines.h</key>
@@ -280,11 +257,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			JhZigOWGpapkucJqan6d8hqBKjc=
+			s1/5iopIzp0xrQK+3ezQRSW281Y=
 			</data>
 			<key>hash2</key>
 			<data>
-			WMj/cTzi/goVdy5ZbB+brIi2vh3ZUpEDyyWQpnfJSiA=
+			L7QL4CCp5HqqhvpXuM9Udq09ipwaojjau46a56Mws+M=
 			</data>
 		</dict>
 		<key>Headers/UFMobileCodeStyle.h</key>
@@ -324,11 +301,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			kUiwLgX7bpWc8zMsP5vHFfW9/Cs=
+			UavxhUa6bzJZMYTf+T6R2sGdkvU=
 			</data>
 			<key>hash2</key>
 			<data>
-			8En1rfpsp0yPZfIwtJlUYUFfoGb3KsvzVSxCDq3FijU=
+			syTps8xHzBAEouXpVkkcCX3NzH17RZWup1tATOwLWRU=
 			</data>
 		</dict>
 		<key>Headers/UFRadioGroupRow.h</key>
@@ -357,11 +334,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			9SJG8pmjSdbwrKD4LAYs5VRR25A=
+			vkZZL528HDqkTfDShazlzxqSokY=
 			</data>
 			<key>hash2</key>
 			<data>
-			zFqwv8FgtQFGUv/C9ZQPBEose+jkYMYl+WNPc4qjpjs=
+			cXI9BrcRHmyGGMeMudQcTJvVDbuOeV4hDbf2lxRpL3A=
 			</data>
 		</dict>
 		<key>Headers/UFRowCell.h</key>
@@ -496,6 +473,17 @@
 			OorY8OkLbGTpEXOPhaYVxkPdiQHOlRjNnMVprRlwB1w=
 			</data>
 		</dict>
+		<key>Headers/UIColor+UFKit.h</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			Jvf1mhHVtxiKS4+Jp7lB/Xr9FSk=
+			</data>
+			<key>hash2</key>
+			<data>
+			fMb0piYOzi8fgiFG82p50aqSk2kuWbafBYpJSAvu7r0=
+			</data>
+		</dict>
 		<key>Headers/UIViewController+UFKit.h</key>
 		<dict>
 			<key>hash</key>
@@ -517,45 +505,6 @@
 			<data>
 			Y7ctCt8yrzvQ/j1i4HV27mW8MEmK0fvCBb+w7TRKzrM=
 			</data>
-		</dict>
-		<key>en.lproj/Localizable.strings</key>
-		<dict>
-			<key>hash</key>
-			<data>
-			vzv91jwpYzpXfM8Gkdu+CO3NWNA=
-			</data>
-			<key>hash2</key>
-			<data>
-			LiRyxQRMju4U2wM5gGdyizoC+GmGyFg2PecVYnvW0EU=
-			</data>
-			<key>optional</key>
-			<true/>
-		</dict>
-		<key>zh-Hans.lproj/Localizable.strings</key>
-		<dict>
-			<key>hash</key>
-			<data>
-			g/gIJDgstpZaQkM4EtyM63bzoNw=
-			</data>
-			<key>hash2</key>
-			<data>
-			3Ry4WYM/gehb1+fpuIkZy3vf6rzyhGB0egfzw36QdJs=
-			</data>
-			<key>optional</key>
-			<true/>
-		</dict>
-		<key>zh-Hant.lproj/Localizable.strings</key>
-		<dict>
-			<key>hash</key>
-			<data>
-			/yJiJhYvUTVgrwghpY8odBY6XzI=
-			</data>
-			<key>hash2</key>
-			<data>
-			TwEhj5yc0vOKJ+Ym848TVyObtq1AX3EZlL7v8f6trkA=
-			</data>
-			<key>optional</key>
-			<true/>
 		</dict>
 	</dict>
 	<key>rules</key>

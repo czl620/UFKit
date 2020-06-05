@@ -12,3 +12,5 @@
 "select"       = "請選擇";
 "camera"       = "拍照";
 "photoAlbum"   = "從相冊選擇";
+"code"         = "獲取驗證碼";
+"retry"        = "重新獲取";

@@ -38,7 +38,7 @@
 		</data>
 		<key>Headers/UFKit.h</key>
 		<data>
-		P2IW9occMEdRh6ccBsZAn9fwGos=
+		fC5juki9jYGGPgaV0YWpxQYgC3Y=
 		</data>
 		<key>Headers/UFKitDefines.h</key>
 		<data>
@@ -74,7 +74,7 @@
 		</data>
 		<key>Headers/UFRow.h</key>
 		<data>
-		vkZZL528HDqkTfDShazlzxqSokY=
+		zPAmnP2G7VReHxlBxzaTgb3+nOM=
 		</data>
 		<key>Headers/UFRowCell.h</key>
 		<data>
@@ -108,6 +108,10 @@
 		<data>
 		YrY8K+5taeXD66Z3mNiLV+fSXJg=
 		</data>
+		<key>Headers/UFTextField.h</key>
+		<data>
+		jeypajoYcO7Q1X0oYvOW1QbdsLg=
+		</data>
 		<key>Headers/UFTextFieldRow.h</key>
 		<data>
 		aLM4q5xHA70jaDKvOVYZpHHCZHY=
@@ -134,7 +138,7 @@
 		</data>
 		<key>Info.plist</key>
 		<data>
-		+VCRJZ2onkQAnXUIMtqomYrsosc=
+		P0UasPf6N0LEt54nYlszzTZc4mA=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -235,11 +239,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			P2IW9occMEdRh6ccBsZAn9fwGos=
+			fC5juki9jYGGPgaV0YWpxQYgC3Y=
 			</data>
 			<key>hash2</key>
 			<data>
-			yovWdj5iykqN6igqYVDL0WfglJZfUtIIe9Mv/A80e3Y=
+			nWtYM6Etz+UryrYIhI00JSuI8eplULG8hQwjglUNXu0=
 			</data>
 		</dict>
 		<key>Headers/UFKitDefines.h</key>
@@ -334,11 +338,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			vkZZL528HDqkTfDShazlzxqSokY=
+			zPAmnP2G7VReHxlBxzaTgb3+nOM=
 			</data>
 			<key>hash2</key>
 			<data>
-			cXI9BrcRHmyGGMeMudQcTJvVDbuOeV4hDbf2lxRpL3A=
+			2xANKHIsBeTcIyHV9bDiXusDhHAsczq1t3dXJAHrRZg=
 			</data>
 		</dict>
 		<key>Headers/UFRowCell.h</key>
@@ -427,6 +431,17 @@
 			<key>hash2</key>
 			<data>
 			HAkE5r6LyQJLQaPlizGMd8v0L+6U5SZTrBIiUAZizD4=
+			</data>
+		</dict>
+		<key>Headers/UFTextField.h</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			jeypajoYcO7Q1X0oYvOW1QbdsLg=
+			</data>
+			<key>hash2</key>
+			<data>
+			v16drNzKNDrZCGQLDd6gVI4Tz4cFSEEYrexyvVyZVik=
 			</data>
 		</dict>
 		<key>Headers/UFTextFieldRow.h</key>

@@ -45,5 +45,8 @@
 #import <UFKit/UIButton+UFKit.h>
 #import <UFKit/UIColor+UFKit.h>
 
+#import <UFKit/UFTextField.h>
+
+
 // UFKit版本号
 UFKIT_EXTERN NSString * const UFKIT_VERSION;

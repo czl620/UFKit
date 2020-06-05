@@ -22,6 +22,7 @@ typedef void(^UFCodeDidClicked)(__kindof UFMobileCodeRow *row, UIButton *button)
 @class UFCodeRowMaker;
 @interface UFMobileCodeRow : UFTextFieldRow
 
+@property (nonatomic, copy) NSString *codeTitle;
 // 验证码按钮样式
 @property (nonatomic, strong, nullable) UFMobileCodeStyle *codeStyle;
 // 点击获取验证码时回调
@@ -40,6 +41,7 @@ typedef void(^UFCodeDidClicked)(__kindof UFMobileCodeRow *row, UIButton *button)
 
 @property (nonatomic, strong, readonly) UFMobileCodeRow *codeRow;
 
+@property (nonatomic, copy, readonly) UFCodeRowMaker *(^codeTitle)(NSString *codeTitle);
 @property (nonatomic, copy, readonly) UFCodeRowMaker *(^codeStyle)(UFMobileCodeStyle *codeStyle);
 @property (nonatomic, copy, readonly) UFCodeRowMaker *(^codeDidClicked)(UFCodeDidClicked codeDidClicked);
 

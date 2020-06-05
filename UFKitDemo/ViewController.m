@@ -59,6 +59,7 @@
             .titleStyle([UFRowTitleStyle makeTitleStyle:^(UFRowTitleStyleMaker * _Nonnull make) {
                 make
                 .width(100)
+                .color([UIColor ufk_titleColor])
                 .font([UIFont systemFontOfSize:15])
                 .textAlignment(NSTextAlignmentLeft);
             }])
@@ -67,7 +68,7 @@
             .valueStyle([UFTextStyle makeTextStyle:^(UFRowTextStyleMaker * _Nonnull make) {
                 make
                 .font([UIFont systemFontOfSize:15])
-                .color([UIColor darkTextColor])
+                .color([UIColor ufk_titleColor])
                 .textAlignment(NSTextAlignmentRight);
             }])
 
@@ -223,6 +224,7 @@
             // 添加机动车车牌
             .addRow([UFPlateNumberRow makePlateNumberRow:^(UFPlateNumberRowMaker * _Nonnull make) {
                 make
+                .color([UIColor ufk_titleColor])
                 .title(@"车牌号")
                 .value(@"鲁A12345")
                 .titleStyle([UFRowTitleStyle makeTitleStyle:^(UFRowTitleStyleMaker * _Nonnull make) {
@@ -294,8 +296,6 @@
     }];
 
     
-    formView.subviews[0].backgroundColor = [UIColor blueColor];
-
     // 查找某一行
 //    UFRow *row_range = [formView findRowInRange:UFMakeRange(0, 9)];
 //    UFRow *row_name = [formView findRowByName:@"name"];
