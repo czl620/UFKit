@@ -295,6 +295,12 @@
         make.edges.mas_equalTo(self.view);
     }];
 
+    dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (int64_t)(2 * NSEC_PER_SEC)), dispatch_get_main_queue(), ^{
+        UFRow *r = [formView findRowByName:@"skills"];
+        r.value = @"iPhone";
+        [formView reloadData];
+    });
+
     
     // 查找某一行
 //    UFRow *row_range = [formView findRowInRange:UFMakeRange(0, 9)];

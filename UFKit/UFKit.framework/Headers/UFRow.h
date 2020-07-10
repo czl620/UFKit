@@ -12,6 +12,7 @@
 //     \ _ _ _ _ /  /__/        /__/     \__\  /__/        /__/
 
 #import <UIKit/UIKit.h>
+#import "UFKitDefines.h"
 #import "UFRowValue.h"
 #import "UFRowTitleStyle.h"
 #import "UFImageStyle.h"
@@ -34,8 +35,8 @@ typedef void(^UFRowDidSelected)(__kindof UFRow *row);
 typedef void(^UFRowAccessoryDidSelected)(__kindof UFRow *row, UIView *accessoryView);
 
 
-extern CGFloat const UFRowHeightAutomatic;
-extern CGFloat const UFRowHeightDefault;
+UFKIT_EXTERN CGFloat const UFRowHeightAutomatic;
+UFKIT_EXTERN CGFloat const UFRowHeightDefault;
 
 
 @class UFRowMaker;
