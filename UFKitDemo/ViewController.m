@@ -52,6 +52,7 @@
         make
         .registerRow([MyRow class], [MyRowCell class])
         .rowHeight(50)
+        .rowEdgeInsets(UIEdgeInsetsMake(15, 15, 15, 15))
         .addSection([UFSection makeSection:^(UFSectionMaker * _Nonnull make) {
             make
 

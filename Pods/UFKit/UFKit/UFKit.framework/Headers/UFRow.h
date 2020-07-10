@@ -12,6 +12,7 @@
 //     \ _ _ _ _ /  /__/        /__/     \__\  /__/        /__/
 
 #import <UIKit/UIKit.h>
+#import "UFKitDefines.h"
 #import "UFRowValue.h"
 #import "UFRowTitleStyle.h"
 #import "UFImageStyle.h"
@@ -34,8 +35,8 @@ typedef void(^UFRowDidSelected)(__kindof UFRow *row);
 typedef void(^UFRowAccessoryDidSelected)(__kindof UFRow *row, UIView *accessoryView);
 
 
-extern CGFloat const UFRowHeightAutomatic;
-extern CGFloat const UFRowHeightDefault;
+UFKIT_EXTERN CGFloat const UFRowHeightAutomatic;
+UFKIT_EXTERN CGFloat const UFRowHeightDefault;
 
 
 @class UFRowMaker;
@@ -62,6 +63,9 @@ extern CGFloat const UFRowHeightDefault;
 @property (nonatomic, copy, nullable) NSString *value;
 // 值样式
 @property (nonatomic, strong, nullable) UFTextStyle *valueStyle;
+
+@property (nonatomic, assign) NSInteger numberOfLines;
+
 
 // 行高
 @property (nonatomic, assign) CGFloat height;
@@ -131,6 +135,7 @@ extern CGFloat const UFRowHeightDefault;
 @property (nonatomic, copy, readonly) UFRowMaker *(^accessoryDidSelected)(UFRowAccessoryDidSelected accessoryDidSelected);
 
 @property (nonatomic, copy, readonly) UFRowMaker *(^edgeInsets)(UIEdgeInsets edgeInsets);
+@property (nonatomic, copy, readonly) UFRowMaker *(^numberOfLines)(NSInteger numberOfLines);
 
 @end
 
