@@ -33,6 +33,7 @@
 		4CA0CD1022C4B0EE00EAB6DE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		4CA0CD1222C4B0EE00EAB6DE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		4CA0CD1322C4B0EE00EAB6DE /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		4CEA442C24B80F6D000A8629 /* UFKitDemo.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = UFKitDemo.entitlements; sourceTree = "<group>"; };
 		60E42D064419BDC79FF6E2E1 /* libPods-UFKitDemo.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-UFKitDemo.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		7023B363C5240B097E6B40A9 /* Pods-UFKitDemo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-UFKitDemo.release.xcconfig"; path = "Target Support Files/Pods-UFKitDemo/Pods-UFKitDemo.release.xcconfig"; sourceTree = "<group>"; };
 		7CCC83EC02D125822D5C34CA /* Pods-UFKitDemo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-UFKitDemo.debug.xcconfig"; path = "Target Support Files/Pods-UFKitDemo/Pods-UFKitDemo.debug.xcconfig"; sourceTree = "<group>"; };
@@ -71,6 +72,7 @@
 		4CA0CD0322C4B0ED00EAB6DE /* UFKitDemo */ = {
 			isa = PBXGroup;
 			children = (
+				4CEA442C24B80F6D000A8629 /* UFKitDemo.entitlements */,
 				4CA0CD0422C4B0ED00EAB6DE /* AppDelegate.h */,
 				4CA0CD0522C4B0ED00EAB6DE /* AppDelegate.m */,
 				4CA0CD0722C4B0ED00EAB6DE /* ViewController.h */,
@@ -366,6 +368,7 @@
 			baseConfigurationReference = 7CCC83EC02D125822D5C34CA /* Pods-UFKitDemo.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = UFKitDemo/UFKitDemo.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = MZDN3V652A;
 				FRAMEWORK_SEARCH_PATHS = (
@@ -380,6 +383,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = me.uniauto.UFKitDemo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTS_MACCATALYST = NO;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
@@ -389,6 +393,7 @@
 			baseConfigurationReference = 7023B363C5240B097E6B40A9 /* Pods-UFKitDemo.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = UFKitDemo/UFKitDemo.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = MZDN3V652A;
 				FRAMEWORK_SEARCH_PATHS = (
@@ -403,6 +408,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = me.uniauto.UFKitDemo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTS_MACCATALYST = NO;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;

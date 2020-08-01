@@ -28,6 +28,8 @@ NS_ASSUME_NONNULL_BEGIN
 + (UFRow *)makeRow:(NS_NOESCAPE void(^)(UFRowMaker *make))block NS_UNAVAILABLE;
 + (UFTextFieldRow *)makeTextFieldRow:(NS_NOESCAPE void(^)(UFTextFieldRowMaker *make))block;
 
+- (void)becomeFirstResponder;
+
 @end
 
 
@@ -54,7 +56,6 @@ NS_ASSUME_NONNULL_BEGIN
 
 @property (nonatomic, copy, readonly) UFTextFieldRowMaker *(^barTintColor)(UIColor *barTintColor);
 @property (nonatomic, copy, readonly) UFTextFieldRowMaker *(^keyboardDidDone)(UFKeyboardDidDone keyboardDidDone);
-
 
 @end
 

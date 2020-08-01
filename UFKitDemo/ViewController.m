@@ -122,7 +122,8 @@
                 .title(@"姓名")
                 .value(@"")
                 .name(@"name")
-                .accessoryType(UFRowAccessorySpace);
+                .accessoryType(UFRowAccessorySpace)
+                .height(200);
             }])
 
             // 添加性别
@@ -142,7 +143,8 @@
                 .isRequired(YES)
                 .title(@"联系方式")
                 .name(@"mobile")
-                .accessoryType(UFRowAccessorySpace);
+                .accessoryType(UFRowAccessorySpace)
+                .edgeInsets(UIEdgeInsetsMake(30, 40, 50, 60));
             }])
 
             // 添加手机验证码
@@ -159,7 +161,8 @@
                 .limitType(UFInputLimitTypeNumbers)
                 .title(@"验证码")
                 .name(@"code")
-                .accessoryType(UFRowAccessorySpace);
+                .accessoryType(UFRowAccessorySpace)
+                .height(0);
             }])
 
             // 添加单选技能
@@ -274,7 +277,8 @@
                 .title(@"个人简介")
                 .value(@"苹果公司是美国一家高科技公司。由史蒂夫·乔布斯、斯蒂夫·沃兹尼亚克和罗·韦恩等人于1976年4月1日创立，总部位于加利福尼亚州的库比蒂诺")
                 .name(@"introduction")
-                .accessoryType(UFRowAccessorySpace);
+                .accessoryType(UFRowAccessorySpace)
+                .height(240);
             }]);
         }])
 

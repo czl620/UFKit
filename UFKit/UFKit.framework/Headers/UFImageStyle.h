@@ -3,7 +3,7 @@
 //  UFKit
 //
 //  Created by Chen Zhangli on 2019/9/26.
-//  Copyright © 2019 Uniauto. All rights reserved.
+//  Copyright © 2019 UFKit. All rights reserved.
 //
 
 #import <UIKit/UIKit.h>
