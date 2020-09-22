@@ -49,6 +49,7 @@ typedef NS_ENUM(NSUInteger, UFInputLimitType) {
 @class UFRow;
 @protocol UFRowInput;
 typedef void(^UFKeyboardDidDone)(__kindof UFRow <UFRowInput> *row, NSString *text);
+typedef void(^UFRowBecomeFirstResponder)(__kindof UFRow <UFRowInput> *row);
 
 @protocol UFRowInput <NSObject>
 
@@ -69,6 +70,7 @@ typedef void(^UFKeyboardDidDone)(__kindof UFRow <UFRowInput> *row, NSString *tex
 // 是否允许复制粘贴选择等
 @property (nonatomic, assign) BOOL canPerformAction;
 
+- (void)becomeFirstResponder;
 
 @end
 

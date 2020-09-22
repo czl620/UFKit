@@ -143,8 +143,7 @@
                 .isRequired(YES)
                 .title(@"联系方式")
                 .name(@"mobile")
-                .accessoryType(UFRowAccessorySpace)
-                .edgeInsets(UIEdgeInsetsMake(30, 40, 50, 60));
+                .accessoryType(UFRowAccessorySpace);
             }])
 
             // 添加手机验证码
@@ -188,11 +187,12 @@
             // 添加生日
             .addRow([UFDatePickerRow makeDatePickerRow:^(UFDatePickerRowMaker * _Nonnull make) {
                 make
+                .minimumDate([NSDate date])
                 .datePickerMode(UIDatePickerModeDate)
-                .dateFormat(@"yyyy-MM-dd")
+                .dateFormat(@"yyyy年MM月dd日")
                 .title(@"生日")
                 .name(@"birthday")
-                .value(@"")
+                .value(@"2051-12-22")
                 .accessoryType(UFRowAccessoryDisclosureIndicator)
                 .valueDidChanged(^(__kindof UFRow * _Nonnull row, NSString * _Nonnull value) {
                     
